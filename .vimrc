@@ -12,10 +12,17 @@ set number
 
 """""
 " show number line and character count
-" for more info Ctrl-g
+" for more info Ctrl-g - it has been overwritten
 "
 """"
 set ruler
+
+"""""
+" show filename in status bar
+" to get full path `set statusline+=%F`
+"
+"""""
+set laststatus=2
 
 """""
 " set relative line number from the cursor
@@ -52,6 +59,13 @@ set ignorecase
 "
 """"
 set smartcase
+
+"""""
+" set paste nopaste toggle with F3. If in paste mode, autoindetation is off.
+" usefull when pasting from clipboard.
+"
+""""
+set pastetoggle=<F3>
 
 """""
 " enabling syntax highlight
@@ -711,9 +725,21 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:40'
 " Ignore .gitignore files
 "
 """""
+ "let g:ctrlp_user_command = [
+ "      \'.git',
+ "      \'cd %s && git ls-files --recurse-submodules |& egrep -v "\.(png|jpg|jpeg|gif)$|dist"',
+ "      \'find %s -type f'
+ "      \]
+
+ "let g:ctrlp_user_command = [
+ "      \'.git',
+ "      \'git -C $(git rev-parse --show-toplevel) ls-files -c --others --exclude-standard --exclude=dist/* |& egrep -v "\.(png|jpg|jpeg|gif)$|dist"',
+ "      \'find %s -type f'
+ "      \]
+
  let g:ctrlp_user_command = [
        \'.git',
-       \'cd %s && git ls-files --recurse-submodules |& egrep -v "\.(png|jpg|jpeg|gif)$|dist"',
+       \'cd %s && git ls-files -c --others --exclude-standard --exclude=dist/* |& egrep -v "\.(png|jpg|jpeg|gif)$|dist"',
        \'find %s -type f'
        \]
 
@@ -808,7 +834,14 @@ let g:ale_echo_msg_error_str = 'error'
 let g:ale_echo_msg_warning_str = 'warning'
 let g:ale_echo_msg_format = '[%linter%] %s [%code%][%severity%]'
 
-
+""""
+" Disable ALE linter on change and input.
+" Leave only when saving files.
+"
+""""
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_enter = 0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""

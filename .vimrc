@@ -562,6 +562,13 @@ Plug 'junegunn/fzf.vim', { 'do': { -> fzf#install() } }
 """"
 Plug 'ctrlpvim/ctrlp.vim'
 
+""""
+" a plugin which disables the arrow keys, the hjkl keys,
+" the page up/down keys, and a handful of other keys
+"
+""""
+Plug 'wikitopian/hardmode'
+
 call plug#end()
 
 
@@ -1008,4 +1015,9 @@ let g:tsuquyomi_disable_quickfix = 1
 "let g:syntastic_vue_checkers = ['eslint']
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""" HARD MODE """"""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
+let g:HardMode_level = 'wannabe'

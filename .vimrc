@@ -569,6 +569,12 @@ Plug 'ctrlpvim/ctrlp.vim'
 """"
 Plug 'wikitopian/hardmode'
 
+""""
+" surroundings: parentheses, brackets, quotes, XML tags, and more.
+"
+""""
+Plug 'tpope/vim-surround'
+
 call plug#end()
 
 
@@ -593,6 +599,15 @@ autocmd CompleteDone * pclose
 " Custom remappings after plugins
 "
 """""
+
+"""""
+" Remap scrolling
+"
+"""""
+nnoremap J <C-e>
+nnoremap K <C-y>
+nnoremap <S-C-j> <C-d>
+nnoremap <S-C-k> <C-u>
 
 """""
 " Remap hjkl in Insert mode
@@ -710,7 +725,7 @@ let g:fzf_action = {
 "
 """""
 "nnoremap <C-k> :Files<CR>
-nnoremap <C-k> :FZF ../
+"nnoremap <C-k> :FZF ../
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""

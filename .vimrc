@@ -629,6 +629,9 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
+nnoremap <C-o> <C-o>zz
+nnoremap <C-i> <C-i>zz
+
 """""
 " Mapping for search and replace word under cursor
 " Ctrl-s
@@ -657,6 +660,17 @@ nmap <silent> <C-M> :cp<CR>zz
 "
 """"
 nnoremap <silent> <Space> :set hlsearch!<Bar>:echo<CR>
+
+"""""
+" Remap CTAGS command "go to defintion"
+" Lowercase 'gd' go to defintion by skipping prompt of selecting defintion
+" Uppercase 'gD' go to defintion in a splitted window
+" Both uppercase 'GD' show prompt
+"
+""""
+nnoremap gd g]1<CR><CR>zz
+nnoremap gD :<c-u>rightbelow vertical stjump <c-r><c-w><cr>zz
+nnoremap GD g]
 
 """""
 " Autoclose (X)HTML tags

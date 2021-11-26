@@ -114,6 +114,18 @@ set shiftwidth=2
 inoremap {}<Left><CR> {<CR>}<C-o>O
 
 """""
+" to not remove the indentation when pressing Esc
+"
+""""
+inoremap <esc> ~<bs><esc>
+
+"""""
+" to not remove the indentation when pressing Enter
+"
+""""
+inoremap <cr> ~<bs><cr>
+
+"""""
 " set show command to true
 "
 """"
@@ -258,6 +270,9 @@ autocmd ColorScheme *
 	\ highlight SpecialKey ctermfg=241 guifg=#626262 |
 	\ highlight cssTagName ctermfg=111 guifg=#87afff |
 	\ highlight sassClass ctermfg=117 guifg=#87d7ff |
+	\ highlight cssClassName ctermfg=75 guifg=#5fafff |
+	\ highlight cssClassNameDot ctermfg=75 guifg=#5fafff |
+	\ highlight storageClass ctermfg=141 guifg=#af87ff |
 	\ highlight jsObjectKey ctermfg=147 guifg=#afafff |
 	\ highlight jsFunction ctermfg=141 guifg=#af87ff |
 	"\ highlight Keyword ctermfg=110 guifg=#87afd7 |
@@ -411,7 +426,8 @@ command! AutoRead :call ToggleAutoRead()
 " For typescript support https://github.com/jb55/typescript-ctags
 "
 """"
-command! MakeTags !ctags -R .
+"command! MakeTags !ctags -R .
+command! MakeTags !ctags -R --exclude=.git --exclude=node_modules .
 set tags=tags;/
 
 """""
@@ -455,6 +471,12 @@ set swapfile
 "
 """""
 let g:polyglot_disabled = ['sensible']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""" COMMANDS """"""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+command Vt vertical terminal
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""" PLUGINS """""""""""""""""""""""""
@@ -628,6 +650,7 @@ nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
+nnoremap G Gzz
 
 nnoremap <C-o> <C-o>zz
 nnoremap <C-i> <C-i>zz
@@ -645,6 +668,12 @@ nnoremap <C-S> :%s/\<<C-r><C-w>\>/
 "
 """""
 nnoremap <C-G> :grep -R 
+
+"""""
+" Mapping for :tabclose
+"
+"""""
+command! Tc :tabclose
 
 """""
 " Remap ctrl-n to :cn for going next entry to quicklist after :grep
@@ -670,7 +699,7 @@ nnoremap <silent> <Space> :set hlsearch!<Bar>:echo<CR>
 """"
 nnoremap gd g]1<CR><CR>zz
 nnoremap gD :<c-u>rightbelow vertical stjump <c-r><c-w><cr>zz
-nnoremap GD g]
+"nnoremap GD g]
 
 """""
 " Autoclose (X)HTML tags
@@ -919,10 +948,10 @@ set completeopt-=preview
 
 let g:ycm_autoclose_preview_window_after_insertion = 0
 
-"let g:ycm_semantic_triggers = {
-"  \ 'css': [ 're!^', 're!^\s+', ': ' ], 
-"  \ 'scss': [ 're!^', 're!^\s+', ': ' ],
-"  \ 'sass': [ 're!^', 're!^\s+', ': ' ]
+let g:ycm_semantic_triggers = {
+  \ 'css': [ 're!^', 're!^\s+', ': ' ], 
+  \ 'scss': [ 're!^', 're!^\s+', ': ' ],
+  \ 'sass': [ 're!^', 're!^\s+', ': ' ]
 \ }
 
 
@@ -937,13 +966,16 @@ let g:gitgutter_max_signs=999
 """"""""""""""""" NERDCommenter """""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"\ 'vue': {'left': '//'}
 let g:NERDCustomDelimiters = {
-	\ 'c': {'left': '/**', 'right': '*/'}, 
+	\ 'c': {'left': '/** ', 'right': ' */'}, 
 	\ 'json': {'left': '// '},
 	\ 'typescript': {'left': '// '},
 	\ 'javascript': {'left': '// '},
-	\ 'vue': {'left': '<!-- ', 'right': '-->'}
+	\ 'vue': {'left': '<!-- ', 'right': ' -->'},
+	\ 'html': {'left': '<!-- ', 'right': ' -->'},
+	\ 'css': {'left': '/* ', 'right': ' */'},
+	\ 'scss': {'left': '/* ', 'right': ' */'},
+	\ 'sass': {'left': '/* ', 'right': ' */'}
 \}
 
 let g:NERDDefaultAlign = 'left'
@@ -1050,3 +1082,5 @@ let g:tsuquyomi_disable_quickfix = 1
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 let g:HardMode_level = 'wannabe'
+
+

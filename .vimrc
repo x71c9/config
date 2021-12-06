@@ -589,7 +589,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 " the page up/down keys, and a handful of other keys
 "
 """"
-Plug 'wikitopian/hardmode'
+"Plug 'wikitopian/hardmode'
 
 """"
 " surroundings: parentheses, brackets, quotes, XML tags, and more.
@@ -1079,8 +1079,22 @@ let g:tsuquyomi_disable_quickfix = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""" HARD MODE """"""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+"autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
-let g:HardMode_level = 'wannabe'
+"let g:HardMode_level = 'wannabe'
 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""" Autotoggle :set paste"""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction

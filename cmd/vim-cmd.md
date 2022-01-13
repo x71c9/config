@@ -12,6 +12,17 @@ mkdir ~/.vim_backups/
 ```
 
 ##### Installing YouCompleteMe
+
+```
+cd ~/.vim/plugged/YouCompleteMe
+python3 ./install.py --ts-completer
+```
+
+```
+cd ~/.vim/plugged/YouCompleteMe
+python3 ./install.py --all
+```
+
 ```
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
@@ -114,6 +125,8 @@ Press F10 with the cursor over the word.
 
 :tabc[lose]
 
+// User defined command:
+:Tc 
 
 ##### REPLACE A WORD WITH ONE IN REGISTER
 
@@ -151,6 +164,15 @@ set nospell
 
 set spell spelllang=it
 set spell spelllang=en
+```
+In order to use suggestions for misspelled word use:
+
+```
+z=
+```
+To replace the misspelled word with the first suggestion:
+```
+zg
 ```
 
 

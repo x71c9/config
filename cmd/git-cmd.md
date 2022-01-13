@@ -1,3 +1,19 @@
+#### GIT PUSH TO ALL ORIGINS
+```
+git remote | xargs -L1 git push --all
+```
+
+#### GIT ADD ALIAS TO PUSH TO ALL ORIGINS
+
+```
+git config --global alias.push-all '!git remote | xargs -L1 git push --all'
+```
+
+And then use:
+```
+git push-all
+```
+
 #### REMOVE SUBMODULE
 ```
 git submodule deinit [path/to/submodule]
@@ -29,6 +45,35 @@ Check if submodule of submodule are checked out.
 ```
 git add .
 git commit -m "added submodule"
+```
+
+#### MOVE FROM BITBUCKET TO GITHUB
+
+```
+git clone --mirror git@bitbucket.org:nbl7/repository-to-mirror.git
+
+cd repository-to-mirror.git
+
+git remote add github git@github.com:nbl7/new-repo.git
+
+git push github --mirror
+
+```
+
+If only master is needed
+```
+git clone git@bitbucket.org:nbl7/repository-to-mirror.git
+
+cd repository-to-mirror
+
+git remote rename origin bitbucket
+
+git remote add origin git@github.com:nbl7/new-repo.git
+
+git push origin --mirror
+
+git push origin --tags
+
 ```
 
 #### REMOVE SUBMODULE (OLD)
@@ -68,7 +113,6 @@ git clone <link> --recursive
 
 #### NOT IN A BRANCH
 
-
 If you have not committed:
 ```
 git stash
@@ -91,3 +135,20 @@ git checkout some-branch
 git merge ${commit-sha}
 git stash pop
 ```
+
+#### RESET ONE FILE
+
+```
+git checkout HEAD -- file.txt
+```
+
+#### DELETE SENSITIVE FILES FROM GIT HISTORY
+https://stackoverflow.com/questions/872565/remove-sensitive-files-and-their-commits-from-git-history
+
+If pushed to remote:
+``` 
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA" --prune-empty --tag-name-filter cat -- --all
+git push --force --verbose --dry-run
+git push --force
+```
+

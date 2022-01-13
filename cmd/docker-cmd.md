@@ -89,6 +89,27 @@ docker-compose exec service_name /bin/bash
 docker-compose logs --follow service_name
 
 
+#### START A STOPPED CONTAINER WITH ANOTHER CMD
+
+https://stackoverflow.com/questions/32353055/how-to-start-a-stopped-docker-container-with-a-different-command
+
+This command saves modified container state into a new image user/test_image
+
+```
+docker commit $CONTAINER_ID new_image
+```
+```
+docker run -ti --entrypoint=sh new_image
+```
+
+#### REMOVE CONTAINER AFTER STOPPING IT
+
+```
+--rm
+
+docker run -it --rm ...
+```
+
 #### UPGRADE DOCKER COMPOSE
 
 First, remove the old version:
@@ -115,6 +136,59 @@ DESTINATION=/usr/local/bin/docker-compose
 sudo curl -L https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m) -o $DESTINATION
 sudo chmod 755 $DESTINATION
 
+
+#### DOCKER BUILDKIT
+
+To enable docker BuildKit by default, set daemon configuration in
+`/etc/docker/daemon.json` feature to true and restart the daemon:
+
+```
+{
+	"debug": true,
+	"experimental": true,
+	"features": { "buildkit": true }
+}
+```
+
+Also possible to set manually every time before building with:
+```
+export DOCKER_BUILDKIT=1
+```
+
+
+#### SSH KEY
+
+The command `--ssh default` will pass to the installer the default ssh key of the client
+```
+docker build --ssh default -t urn-xxx:0.0.1 .
+```
+
+Create and start a container with its own node_modules folder
+```
+docker run -it -v $(pwd):/app -v /app/node_modules/ --network="host" urn-xxx:0.0.1
+```
+
+#### Start container
+
+##### Start the container with Docker
+```
+docker start -i container_name
+```
+
+##### Start the container with Docker Compose
+
+Docker compose must be version 1.25.1 or higher
+
+In order to start developing use:
+
+```
+docker-compose up --build
+```
+
+After built
+```
+docker-compose up
+```
 
 
 

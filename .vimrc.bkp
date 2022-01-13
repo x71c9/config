@@ -73,18 +73,6 @@ set pastetoggle=<F3>
 """"
 syntax enable
 
-""""
-" syntax highlight breaks on large files.
-" This should fix it, however it might slow down Vim
-" issue: https://github.com/vim/vim/issues/2790
-" https://stackoverflow.com/questions/27235102/vim-randomly-breaks-syntax-highlighting
-"
-""""
-"set re=1
-"set redrawtime=10000
-"syntax sync fromstart
-autocmd BufEnter * syntax sync fromstart
-
 """""
 " set relative number in Normal mode
 " set absolute number in Insert mode
@@ -536,13 +524,13 @@ Plug 'airblade/vim-gitgutter'
 " TSServer
 "
 """""
-" "Plug 'Quramy/tsuquyomi'
+Plug 'Quramy/tsuquyomi'
 
 """""
 " Typescript for Vue
 "
 """""
-" "Plug 'Quramy/tsuquyomi-vue'
+Plug 'Quramy/tsuquyomi-vue'
 
 """""
 " Syntax Highlighting for Vue
@@ -586,7 +574,7 @@ Plug 'Valloric/MatchTagAlways'
 " set rtp+=~/.fzf See below plugin section
 "
 """""
-" "Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf.vim', { 'do': { -> fzf#install() } }
 
 """"
@@ -601,7 +589,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 " the page up/down keys, and a handful of other keys
 "
 """"
-" "Plug 'wikitopian/hardmode'
+"Plug 'wikitopian/hardmode'
 
 """"
 " surroundings: parentheses, brackets, quotes, XML tags, and more.
@@ -996,8 +984,8 @@ let g:NERDDefaultAlign = 'left'
 " Mapping comment for Ctrl+/ - In vim Ctrl+/ is C-_
 "
 """""
-"nnoremap <C-_> :call NERDComment(0, "toggle")<C-m>
-nnoremap <C-_> :call nerdcommenter#Comment(0, "toggle")<C-m>
+nnoremap <C-_> :call NERDComment(0, "toggle")<C-m>
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""

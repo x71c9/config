@@ -52,13 +52,20 @@ docker build -t urn-type:0.0.x
 
 #### CREATE A CONTAINER WITH ITS OWN NODE_MODULES FOLDER
 
-docker run -it -p 80:3000 -v $(pwd):/app -v /app/node_modules/ --network="host" urn-type:0.0.x¶
+docker run -it -p 80:3000 -v $(pwd):/app -v /app/node_modules/ --network="host" urn-type:0.0.x
 
 
 #### START THE CONTAINER (INTERACTIVE)
 
 docker start -i container_name
 
+#### CREATE A CONTAINER WITH DIFFERENT ENTRYPOINT FOR KEEPING IT RUNNING
+
+docker create --entrypoint="tail -f /dev/null" image_name
+
+#### ENTER CONATINER IN BASH
+
+docker exec -it container_name bash
 
 
 ### DOCKER COMPOSE

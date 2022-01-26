@@ -836,7 +836,7 @@ let g:ctrlp_prompt_mappings = {
 " Remap Ctrl-h to launch CtrlP from repo root
 "
 """""
-nnoremap <C-h> :CtrlP ~/repos/<CR>
+"nnoremap <C-h> :CtrlP ~/repos/<CR>
 
 """""
 " Clear cache on exit

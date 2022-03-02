@@ -25,3 +25,37 @@ npm uninstall -g my-project
 ```
 npm list -g --depth 0
 ```
+
+### Link a package for local development
+
+On the repo you want to link
+```
+yarn link
+```
+
+On the repo you want to use the linked package
+```
+yarn link [name of linked package]
+```
+
+List all links
+```
+ll ~/.config/yarn/link
+```
+
+### Alias a package
+
+```
+npm install local-pack@npm:pack
+```
+```
+import local form 'local-pack';
+```
+--
+
+```
+yarn add uranio@ssh+git://git@github.com/nbl7/uranio-core.git
+```
+```
+import uranio from 'uranio';
+```

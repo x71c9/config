@@ -3,6 +3,26 @@
 git remote | xargs -L1 git push --all
 ```
 
+#### GIT SHOW FILE HISTORY
+```
+git log -p -- filename
+```
+
+#### GIT LIST ALL CONFIG
+```
+git config --list
+```
+
+#### GIT SET EDITOR
+```
+git config --global core.editor vim
+```
+
+#### GIT REVERT
+```
+git revert 2ee5b59..HEAD
+```
+
 #### GIT ADD ALIAS TO PUSH TO ALL ORIGINS
 
 ```

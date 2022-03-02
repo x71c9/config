@@ -11,6 +11,14 @@ sudo make install
 mkdir ~/.vim_backups/
 ```
 
+##### Replace all import folder with /index in ts files.
+
+```
+:grep -R "/';" .
+
+:cdo %s/\/';/\/index';/ | update
+```
+
 ##### Installing YouCompleteMe
 
 ```
@@ -51,6 +59,19 @@ or
 ```
 
 In .vimrc it has been remap `:cn` to `ctrl-n` and `:cp` to `ctrl-m`
+
+#### SEARCH AND REPLACE IN ALL PROJECT
+
+Populate a quicklist
+```
+:grep -R 'patter' .
+```
+```
+:cdo %s/[pattern]/[replace]/ | update
+```
+
+` | update` will avoid asking for save the file each time.
+
 
 
 #### RECORDING

@@ -8,6 +8,11 @@ git remote | xargs -L1 git push --all
 git log -p -- filename
 ```
 
+#### GIT SHOW DIFF LAST COMMIT
+```
+git show
+```
+
 #### GIT LIST ALL CONFIG
 ```
 git config --list
@@ -44,7 +49,7 @@ git add .
 git commit -m "removed submodule"
 ```
 
-#### ADD NEW SUBMODULE
+#### ADD NEW SUBMODUL
 ```
 git submodule add -b <branch> git+ssh://[link/to/remote/repo/origin] <destination/folder>
 git config -f .gitmodules submodule.[path/to/submodule].update rebase

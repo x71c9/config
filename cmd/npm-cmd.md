@@ -1,5 +1,11 @@
 ## NPM
 
+### Show dependency tree
+
+```
+npm list --depth=1
+```
+
 ### Link executable module to global
 
 ```

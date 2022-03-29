@@ -514,11 +514,12 @@ Plug 'pangloss/vim-javascript'
 " A collection of language packs for Vim.
 "
 " With this plugin Vue files are superslow.
-" 
+"
 " -- Needed to be disable.
+" -- It is forcing PHP file to tab with 4 spaces.
 "
 """""
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 
 """""
 " A Vim plugin which shows a git diff in the sign column.
@@ -560,7 +561,19 @@ Plug 'posva/vim-vue'
 " Plugin for comment shortcut
 "
 """""
-Plug 'preservim/nerdcommenter'
+" "Plug 'preservim/nerdcommenter'
+
+"""""
+" Another plugin for comment
+"
+"""""
+Plug 'tpope/vim-commentary'
+
+"""""
+" Another plugin for comment
+"
+"""""
+" "Plug 'tomtom/tcomment_vim'
 
 """""
 " Plugin for linting
@@ -627,6 +640,15 @@ call plug#end()
 "set noexpandtab
 "autocmd FileType sass setlocal noexpandtab
 "autocmd FileType php setlocal noexpandtab
+
+"""""
+" add indentation with tabs also to empty lines for PHP files
+" For some reason on PHP it wasn't working.
+"
+""""
+autocmd FileType php setlocal autoindent
+autocmd FileType php inoremap <esc> ~<bs><esc>
+autocmd FileType php inoremap <cr> <space><bs><cr>
 
 """""
 " This will close the info windows when autocomplete has been selected
@@ -1063,7 +1085,7 @@ nnoremap <C-_> :call nerdcommenter#Comment(0, "toggle")<C-m>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "let g:mta_filetypes = {'html' : 1, 'xhtml' : 1, 'xml' : 1, 'vue' : 1}
-let g:mta_filetypes = {'html' : 1, 'xhtml' : 1, 'xml' : 1}
+let g:mta_filetypes = {'html' : 1, 'xhtml' : 1, 'xml' : 1, 'php': 1}
 let g:mta_use_matchparen_group = 0
 let g:mta_set_default_matchtag_color = 0
 
@@ -1168,3 +1190,4 @@ function! XTermPasteBegin()
   set paste
   return ""
 endfunction
+

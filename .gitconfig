@@ -1,0 +1,6 @@
+# This is Git's per-user configuration file.
+[user]
+	name = nbl7
+	email = mail@nbl7.net
+[core]
+	editor = /usr/local/bin/vim

@@ -893,9 +893,15 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:40'
  "      \'find %s -type f'
  "      \]
 
+ " let g:ctrlp_user_command = [
+ "       \'.git',
+ "       \'cd %s && git ls-files -c --others --exclude-standard --exclude=dist/* |& egrep -v "\.(png|jpg|jpeg|gif)$|dist"',
+ "       \'find %s -type f'
+ "       \]
+
  let g:ctrlp_user_command = [
        \'.git',
-       \'cd %s && git ls-files -c --others --exclude-standard --exclude=dist/* |& egrep -v "\.(png|jpg|jpeg|gif)$|dist"',
+       \'cd %s && git ls-files -c --others --exclude-standard --exclude=dist/. |& egrep -v "\.(png|jpg|jpeg|gif)$|dist"',
        \'find %s -type f'
        \]
 

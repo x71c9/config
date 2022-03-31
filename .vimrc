@@ -1197,3 +1197,17 @@ function! XTermPasteBegin()
   return ""
 endfunction
 
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""" Increase version file on save """"""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" pass git root to uv.sh script
+" autocmd BufWritePost * !git rev-parse --show-toplevel | uv.sh
+
+autocmd BufWritePost * silent !ROOT=$(git rev-parse --show-toplevel)
+			\ && VFILE="$ROOT/version.txt"
+			\ && IFILE="$ROOT/uv.sh"
+			\ && if [ -f "$VFILE" ] && [ -f "$IFILE" ]; then
+			\ VERSION=$(eval "sh $IFILE $ROOT");
+			\ fi

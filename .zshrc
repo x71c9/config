@@ -19,3 +19,5 @@ if [ -f '/Users/nbl7/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/nbl7
 # This enable autocomplete ignoring capitalization
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+export PROMPT="%~$ "

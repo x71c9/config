@@ -628,6 +628,18 @@ Plug 'tpope/vim-surround'
 """"
 "Plug 'preservim/nerdtree'
 
+""""
+" Vim-prettier
+"
+""""
+Plug 'prettier/vim-prettier'
+
+""""
+" Vim-pug
+"
+""""
+Plug 'digitaltoad/vim-pug'
+
 call plug#end()
 
 
@@ -1203,9 +1215,12 @@ endfunction
 """""""" Increase version file on save """"""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " pass git root to uv.sh script
-" autocmd BufWritePost * !git rev-parse --show-toplevel | uv.sh
+" autocmd BufWritePost * !git rev-parse --show-toplevel
 
-autocmd BufWritePost * silent !ROOT=$(git rev-parse --show-toplevel)
+autocmd BufWritePost * silent !ROOT=$(git rev-parse --show-toplevel 2> /dev/null)
+			\ && if [ "$ROOT" = "" ]; then
+			\ ROOT='.'
+			\ fi
 			\ && VFILE="$ROOT/version.txt"
 			\ && IFILE="$ROOT/uv.sh"
 			\ && if [ -f "$VFILE" ] && [ -f "$IFILE" ]; then

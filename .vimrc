@@ -640,6 +640,12 @@ Plug 'prettier/vim-prettier'
 """"
 Plug 'digitaltoad/vim-pug'
 
+""""
+" Vim-pug
+"
+""""
+Plug 'cespare/vim-toml'
+
 call plug#end()
 
 
@@ -1218,11 +1224,15 @@ endfunction
 " autocmd BufWritePost * !git rev-parse --show-toplevel
 
 autocmd BufWritePost * silent !ROOT=$(git rev-parse --show-toplevel 2> /dev/null)
-			\ && if [ "$ROOT" = "" ]; then
-			\ ROOT='.'
-			\ fi
+			\ && if [ "$ROOT" = "" ]; then ROOT='.'; fi
 			\ && VFILE="$ROOT/version.txt"
 			\ && IFILE="$ROOT/uv.sh"
 			\ && if [ -f "$VFILE" ] && [ -f "$IFILE" ]; then
 			\ VERSION=$(eval "sh $IFILE $ROOT");
 			\ fi
+
+" autocmd BufWritePost * silent !VFILE="./version.txt" && IFILE="./uv.sh"
+" 			\ && if [ -f "$VFILE" ] && [ -f "$IFILE" ]; then
+" 			\ VERSION=$(eval "sh $IFILE .");
+" 			\ fi
+

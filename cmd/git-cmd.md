@@ -177,3 +177,21 @@ git push --force --verbose --dry-run
 git push --force
 ```
 
+By using `git-filter-repo`
+https://blog.gitguardian.com/rewriting-git-history-cheatsheet/
+```
+brew install git-filter-repo
+or
+pip3 install git-filter-repo //not recommended
+```
+```
+git filter-repo --replace-text ../replacements.txt
+```
+```
+// replacemtent.txt
+ahsdfihaksdhastoremve==>DELETE
+```
+or entire files:
+```
+git filter-repo --use-base-name --path [PATHTOFILETOREMOVE] --invert-paths
+```

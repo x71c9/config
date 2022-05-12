@@ -42,3 +42,26 @@ pass generate host/username 21
 ```
 > 21 is the length of the passqword it will be generated.
 
+
+#### GPG
+
+##### Change cache time passphrase
+Change file `~/.gnupg/gpg-agent.conf`
+```
+default-cache-ttl 600
+max-cache-ttl 7200
+```
+Values are in seconds.
+
+Then RESTART the agent
+
+##### Restart the agent
+End the session by restarting gpg-agent.
+```
+gpgconf --kill gpg-agent
+gpg-agent --daemon --use-standard-socket
+```
+or
+```
+gpgconf --kill all
+```

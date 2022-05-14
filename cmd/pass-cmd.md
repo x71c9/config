@@ -65,3 +65,10 @@ or
 ```
 gpgconf --kill all
 ```
+
+##### Export keys in ASCII
+
+```
+gpg --export -a D4763C61 > key.pub
+gpg --export-secret-keys -a D4763C61 > key
+```

@@ -3,6 +3,8 @@
 Install extension from Extension Store
 https://chrome.google.com/webstore/detail/browserpass/naepdomgkenhinolocfifgehidddafch?hl=en
 
+> Trying installing browserpass without GPGSuite for Mac, becuase it is probably not needed.
+
 Install GPG Suite for Mac
 https://gpgtools.org/
 

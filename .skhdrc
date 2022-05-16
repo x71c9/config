@@ -1,0 +1,12 @@
+# Reload yabai
+# ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+
+# Application Shortcuts
+cmd + shift - f : open ~
+cmd + shift - c : open -na /Applications/Google Chrome.app
+cmd + shift - b : open -na /Applications/Brave Browser.app
+cmd + shift - h : open -na /Applications/Hyper.app
+cmd + shift - , : open -na "x-apple.systempreferences:"
+cmd + shift - m : open -na /System/Applications/Mail.app
+cmd + shift - i : open -na /System/Applications/Calendar.app
+

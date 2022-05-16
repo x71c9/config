@@ -3,14 +3,6 @@
 Install extension from Extension Store
 https://chrome.google.com/webstore/detail/browserpass/naepdomgkenhinolocfifgehidddafch?hl=en
 
-> Trying installing browserpass without GPGSuite for Mac, becuase it is probably not needed.
-
-Install GPG Suite for Mac
-https://gpgtools.org/
-
-> This will install also GPG Mail that encrypt the email for the Mac client Mail.
-> For now I am not using it.
-
 In order the extension to work need a native app `browserpass-native`
 https://github.com/browserpass/browserpass-native
 
@@ -34,6 +26,9 @@ PREFIX='/usr/local/opt/browserpass' make hosts-brave-user -f '/usr/local/opt/bro
 // Chromium
 PREFIX='/usr/local/opt/browserpass' make hosts-chromium-user -f '/usr/local/opt/browserpass/lib/browserpass/Makefile'
 ```
+
+This app allow browserpass to communicate with the machine via Native Messaging API
+https://developer.chrome.com/docs/apps/nativeMessaging/
 
 
 #### Pass

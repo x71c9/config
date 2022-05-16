@@ -5,6 +5,8 @@ unsetopt PROMPT_SP
 ## List hidden ordered human size
 alias ll='ls -aohG'
 
+alias passp='pass -c crypt/a'
+
 #### NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

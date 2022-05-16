@@ -4,6 +4,7 @@
 # Application Shortcuts
 cmd + shift - b : open -na "/Applications/Brave Browser.app"
 cmd + shift - h : open /Applications/Hyper.app
+cmd + shift - x : open /System/Applications/Utilities/Terminal.app
 cmd + shift - , : open -na "x-apple.systempreferences:"
 cmd + shift - m : open -na /System/Applications/Mail.app
 

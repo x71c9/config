@@ -5,7 +5,21 @@ unsetopt PROMPT_SP
 ## List hidden ordered human size
 alias ll='ls -aohG'
 
+## Unlock pass
 alias passp='pass -c crypt/a'
+
+## Go to NOTES
+alias note='cd ~/repos/notes && ll'
+
+## Open link in Brave
+function brave() {
+	if [[ $1 == http* || -d $1 || -f $1 ]] then
+		URL=$1
+	else
+		URL="https://$1"
+	fi
+	open -a /Applications/Brave\ Browser.app $URL
+}
 
 #### NVM
 export NVM_DIR="$HOME/.nvm"

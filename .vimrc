@@ -641,10 +641,16 @@ Plug 'prettier/vim-prettier'
 Plug 'digitaltoad/vim-pug'
 
 """"
-" Vim-pug
+" Vim-toml
 "
 """"
 Plug 'cespare/vim-toml'
+
+""""
+" Vim-plist
+"
+""""
+Plug 'darfink/vim-plist'
 
 call plug#end()
 

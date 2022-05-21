@@ -740,6 +740,15 @@ nnoremap <C-G> :grep -R
 command! Tc :tabclose
 
 """""
+" Mapping missspelled
+"
+"""""
+command WQ wq
+command Wq wq
+command W w
+command Q q
+
+"""""
 " Remap ctrl-n to :cn for going next entry to quicklist after :grep
 " Remap ctrl-m to :cp for going previous entry to quicklist after :grep
 "

@@ -1,7 +1,58 @@
+# Layout - stack, managed, bsp, float - default "float"
+yabai -m config layout bsp
 
-yabai -m config layout                       bsp
-yabai -m config top_padding                  3
-yabai -m config bottom_padding               3
-yabai -m config left_padding                 3
-yabai -m config right_padding                3
-yabai -m config window_gap                   10
+# Pagging
+yabai -m config top_padding       3
+yabai -m config bottom_padding    3
+yabai -m config left_padding      3
+yabai -m config right_padding     3
+yabai -m config window_gap        6
+
+# Debug but don't know where yet
+yabai -m config debug_output      on
+
+# Open new split ratio
+yabai -m config split_ratio       0.5
+
+# floating windows are always on top (default: off)
+yabai -m config window_topmost on
+
+# modify window shadows (default: on, options: on, off, float)
+yabai -m config window_shadow float # only float windows have shadow
+
+# window opacity (default: off)
+yabai -m config window_opacity on
+yabai -m config active_window_opacity 1.0
+yabai -m config normal_window_opacity 1.0
+
+# window border
+yabai -m config window_border on
+
+# add 0 padding to the top and 0 padding to the bottom of every space located on the main display
+yabai -m config external_bar main:0:0
+
+# New window spawns to the left if vertical split, or top if horizontal split
+yabai -m config window_placement first_child # use second_child to invert
+
+# Floating window rules
+yabai -m rule --add label="System Preferences" app="^System Preferences$" title=".*" manage=off
+
+## Mouse actions
+
+# set mouse interaction modifier key (default: fn)
+yabai -m config mouse_modifier fn
+
+# set modifier + left-click drag to move window (default: move)
+yabai -m config mouse_action1 move
+
+# set modifier + right-click drag to resize window (default: resize)
+yabai -m config mouse_action2 resize
+
+# set focus follows mouse mode (default: off, options: off, autoraise, autofocus)
+# yabai -m config focus_follows_mouse autoraise
+
+
+## Limelight
+
+# killall limelight &> /dev/null
+# limelight &> /dev/null &

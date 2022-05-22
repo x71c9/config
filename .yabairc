@@ -11,11 +11,15 @@ yabai -m config window_gap        6
 # Debug but don't know where yet
 yabai -m config debug_output      on
 
+#### SEE LOGS IN
+#tail -f /usr/local/var/log/yabai/yabai.out.log
+#tail -f /usr/local/var/log/yabai/yabai.err.log
+
 # Open new split ratio
 yabai -m config split_ratio       0.5
 
 # floating windows are always on top (default: off)
-yabai -m config window_topmost on
+# yabai -m config window_topmost on
 
 # modify window shadows (default: on, options: on, off, float)
 yabai -m config window_shadow float # only float windows have shadow
@@ -36,6 +40,7 @@ yabai -m config window_placement first_child # use second_child to invert
 
 # Floating window rules
 yabai -m rule --add label="System Preferences" app="^System Preferences$" title=".*" manage=off
+yabai -m rule --add label="ExpressVPN" app="^ExpressVPN$" title=".*" manage=off
 
 ## Mouse actions
 

@@ -5,10 +5,14 @@
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-### #Remove First character in terminal Hyper `%`
+### Remove First character in terminal Hyper `%`
 unsetopt PROMPT_SP
 
+#### Set prompt text
+export PROMPT="%~$ "
+
 #### Set aliases
+
 ## List hidden ordered human size
 alias ll='ls -aohG'
 
@@ -18,7 +22,7 @@ alias passp='pass -c crypt/a'
 ## Go to NOTES
 alias note='cd ~/repos/notes && ll'
 
-## Open link in Brave
+## Open link in Brave - Run `brave google.com`
 function brave() {
 	if [[ $1 == http* || -d $1 || -f $1 ]] then
 		URL=$1
@@ -45,6 +49,3 @@ if [ -f '/Users/nbl7/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/nbl7
 # This enable autocomplete ignoring capitalization
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-
-#### Set prompt text
-export PROMPT="%~$ "

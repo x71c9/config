@@ -29,7 +29,8 @@ module.exports = {
         // set to `true` (without backticks and without quotes) for blinking cursor
         cursorBlink: true,
         // color of the text
-        foregroundColor: '#dcdcdc',
+        // foregroundColor: '#dcdcdc',
+        foregroundColor: '#c0c0c0',
         // terminal background color
         // opacity is only supported on macOS
         backgroundColor: '#222319',
@@ -38,57 +39,57 @@ module.exports = {
         // border color (window, tabs)
         borderColor: '#336',
         // custom CSS to embed in the main window
-        css: `
-        body {
-            padding: 0;
-            margin: 0;
-            -webkit-backface-visibility: unset;
-            backface-visibility: unset;
-        }
-        .terms_19b1ydh {
-            margin-top: 20px;
-        }
-        .header_windowHeader {
-            display: none;
-        }
-        .tabs_nav {
-            top: 0;
-        }
-        .terms_terms {
-            margin-top: 30px;
-        }
-        .terms_termsShifted {
-            margin-top: 30px;
-        }
-        `,
-        // custom CSS to embed in the terminal window
-        termCSS: `
-            .terms_19b1ydh {
-            }
-            .header_windowHeader {
-                display: none;
-            }
-            .tabs_nav {
-                top: 0;
-            }
-            .terms_terms {
-                margin-top: 0;
-            }
-            .terms_termsShifted {
-                margin-top: 30px;
-            }
-        `,
+        // css: `
+        // body {
+        //     padding: 0;
+        //     margin: 0;
+        //     -webkit-backface-visibility: unset;
+        //     backface-visibility: unset;
+        // }
+        // .terms_19b1ydh {
+        //     margin-top: 20px;
+        // }
+        // .header_windowHeader {
+        //     display: none;
+        // }
+        // .tabs_nav {
+        //     top: 0;
+        // }
+        // .terms_terms {
+        //     margin-top: 30px;
+        // }
+        // .terms_termsShifted {
+        //     margin-top: 30px;
+        // }
+        // `,
+        // // custom CSS to embed in the terminal window
+        // termCSS: `
+        //     .terms_19b1ydh {
+        //     }
+        //     .header_windowHeader {
+        //         display: none;
+        //     }
+        //     .tabs_nav {
+        //         top: 0;
+        //     }
+        //     .terms_terms {
+        //         margin-top: 0;
+        //     }
+        //     .terms_termsShifted {
+        //         margin-top: 30px;
+        //     }
+        // `,
         // set custom startup directory (must be an absolute path)
         workingDirectory: '',
         // if you're using a Linux setup which show native menus, set to false
         // default: `true` on Linux, `true` on Windows, ignored on macOS
-        showHamburgerMenu: '',
+        showHamburgerMenu: false,
         // set to `false` (without backticks and without quotes) if you want to hide the minimize, maximize and close buttons
         // additionally, set to `'left'` if you want them on the left, like in Ubuntu
         // default: `true` (without backticks and without quotes) on Windows and Linux, ignored on macOS
-        showWindowControls: '',
+        showWindowControls: false,
         // custom padding (CSS format, i.e.: `top right bottom left`)
-        padding: '12px 14px',
+        // padding: '12px 14px',
         // the full list. if you're going to provide the full color palette,
         // including the 6 x 6 color cubes and the grayscale map, just provide
         // an array here instead of a color map object

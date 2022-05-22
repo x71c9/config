@@ -196,6 +196,7 @@ set backup
 set backupdir=~/.vim_backups/
 
 """""
+" yes will make a copy of the file as backup
 " Set to yes so that webpack can better watch file changing
 "
 """""
@@ -209,7 +210,7 @@ set backupcopy=yes
 
 """""
 " Before writing append to its name date and time
-" I believe &bex is backup extension
+" &bex is backup extension
 "
 """"
 autocmd BufWritePre * let &bex = '-' . strftime("%Y-%m-%d-%H-%M")

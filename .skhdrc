@@ -53,8 +53,12 @@ focus           < shift - tab       : yabai -m display --focus prev
 # New window
 # new < h : open "/Applications/Hyper.app" && osascript -e 'tell app "Hyper" to tell application "System Events" to keystroke "n" using {command down}'; skhd -k "escape"
 
-new < h : open "/Users/nbl7/scripts/new_hyper_window.app"; skhd -k "escape"
+new < h : sh "/Users/nbl7/repos/config/scripts/open_hyper_new_window.sh"; skhd -k "escape"
 
+# app specific binds
+# cmd - 0x2B [
+#   "Hyper" : open "/Users/nbl7/scripts/new_hyper_window.app"; skhd -k "escape"
+# ]
 
 # Application Shortcuts
 # Focus

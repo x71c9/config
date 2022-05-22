@@ -48,6 +48,10 @@ yabai -m rule --add label="ExpressVPN" app="^ExpressVPN$" title=".*" manage=off
 yabai -m rule --add label="Archive Utility" app="^Archive Utility$" title=".*" manage=off
 yabai -m rule --add label="HDMI" app="^HDMI ($" title=".*" manage=off
 yabai -m rule --add label="Tray" app="^Tray$" title=".*" manage=off
+yabai -m rule --add label="kitty" app="^kitty$" title=".*" manage=off
+yabai -m rule --add label="Alacritty" app="^Alacritty$" title=".*" manage=off
+yabai -m rule --add label="Info" app="^Finder$" title="^.* Info$" manage=off
+yabai -m rule --add label="Application launcher" title="Application launcher" manage=off sicky=on layer=above border=off
 
 ## Mouse actions
 

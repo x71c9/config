@@ -48,6 +48,9 @@ ctrl + alt - j : yabai -m display --focus south
 ctrl + alt - k : yabai -m display --focus north
 ctrl + alt - l : yabai -m display --focus east || yabai -m display --focus next || yabai -m display --focus first
 
+# FZF Application
+# cmd - space : 
+
 # Definìe modes
 # :: default  : yabai -m config active_window_border_color 0xff61afef
 # :: default  : yabai -m config active_window_border_color 0xffa5d034

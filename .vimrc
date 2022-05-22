@@ -653,6 +653,12 @@ Plug 'cespare/vim-toml'
 """"
 Plug 'darfink/vim-plist'
 
+""""
+" Vim-coffe-script syntax
+"
+""""
+Plug 'kchmck/vim-coffee-script'
+
 call plug#end()
 
 
@@ -1107,7 +1113,8 @@ let g:NERDCustomDelimiters = {
 	\ 'php': {'left': '<!-- ', 'right': ' -->'},
 	\ 'css': {'left': '/* ', 'right': ' */'},
 	\ 'scss': {'left': '/* ', 'right': ' */'},
-	\ 'sass': {'left': '/* ', 'right': ' */'}
+	\ 'sass': {'left': '/* ', 'right': ' */'},
+	\ 'coffee': {'left': '// ', 'right': ''}
 \}
 
 let g:NERDDefaultAlign = 'left'

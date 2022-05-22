@@ -5,7 +5,7 @@ ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 # ctrl + alt + cmd - k : brew services restart skhd
 
 # Fast focus app
-shift + alt - h : open "/Applications/Hyper.app"
+shift + alt - n : open "/Applications/Hyper.app"
 shift + alt - b : open "/Applications/Brave Browser.app"
 shift + alt - t : open "/System/Applications/Utilities/Terminal.app"
 shift + alt - f : open "/Users/nbl7"
@@ -18,9 +18,9 @@ shift + alt - c : open "/System/Applications/Calendar.app"
 shift + alt - 0x2B : open "x-apple.systempreferences:" # 0x2B is , (comma)
 
 # Fast new window Hyper
-cmd + shift - h : sh "/Users/nbl7/repos/config/scripts/open_hyper_new_window.sh"; skhd -k "escape"
+ctrl + shift + alt - n : sh "/Users/nbl7/repos/config/scripts/open_hyper_new_window.sh"; skhd -k "escape"
 
-# toggle window zoom
+# Toggle window zoom
 alt - d : yabai -m window --toggle zoom-parent
 alt - f : yabai -m window --toggle zoom-fullscreen
 

@@ -4,7 +4,12 @@ ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 # Reload skhd
 # ctrl + alt + cmd - k : brew services restart skhd
 
+# Switch layout
+shift + alt - 8 : yabai -m config layout stack
+shift + alt - 9 : yabai -m config layout bsp
+
 # Fast focus app
+shift + alt - return : open "/Applications/kitty.app" ~
 shift + alt - n : open "/Applications/Hyper.app"
 shift + alt - b : open "/Applications/Brave Browser.app"
 shift + alt - t : open "/System/Applications/Utilities/Terminal.app"
@@ -19,6 +24,7 @@ shift + alt - 0x2B : open "x-apple.systempreferences:" # 0x2B is , (comma)
 
 # Fast new window Hyper
 ctrl + shift + alt - n : sh "/Users/nbl7/repos/config/scripts/open_hyper_new_window.sh"; skhd -k "escape"
+ctrl + shift + alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
 
 # Toggle window zoom
 alt - d : yabai -m window --toggle zoom-parent
@@ -49,7 +55,7 @@ ctrl + alt - k : yabai -m display --focus north
 ctrl + alt - l : yabai -m display --focus east || yabai -m display --focus next || yabai -m display --focus first
 
 # FZF Application
-# cmd - space : 
+cmd - space : sh ~/repos/config/scripts/popup.sh
 
 # Definìe modes
 # :: default  : yabai -m config active_window_border_color 0xff61afef
@@ -64,6 +70,7 @@ ctrl + alt - l : yabai -m display --focus east || yabai -m display --focus next 
 # :: warpnf @ : yabai -m config active_window_border_color 0xffd19a66  # Same, but don't follow focus
 # :: resize @ : yabai -m config active_window_border_color 0xff98c379  # Resize window operations
 
+
 # Enter FOCUS mode with cmd + .
 # Enter NEW mode with cmd + ctrl + .
 # Getting out of any mode can also be done with ESCAPE.
@@ -73,6 +80,7 @@ default, focus                      < cmd + shift - 0x2F   ; new
 focus, new                          < escape               ; default
 
 # Focus app
+focus < return : open "/Applications/kitty.app"; skhd -k "escape"
 focus < h : open "/Applications/Hyper.app"; skhd -k "escape"
 focus < b : open "/Applications/Brave Browser.app"; skhd -k "escape"
 focus < t : open "/System/Applications/Utilities/Terminal.app"; skhd -k "escape"
@@ -239,7 +247,6 @@ new < h : sh "/Users/nbl7/repos/config/scripts/open_hyper_new_window.sh"; skhd -
 # send window to monitor and follow focus
 # ctrl + cmd - c  : yabai -m window --display next; yabai -m display --focus next
 # ctrl + cmd - v  : yabai -m window --display next; yabai -m display --focus prev
-# ctrl + cmd - 1  : yabai -m window --display 1; yabai -m display --focus 1
 # ctrl + cmd - 2  : yabai -m window --display 2; yabai -m display --focus 2
 # ctrl + cmd - 3  : yabai -m window --display 3; yabai -m display --focus 3
 # ctrl + cmd - 4  : yabai -m window --display 4; yabai -m display --focus 4

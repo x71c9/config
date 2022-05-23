@@ -22,6 +22,9 @@ alias passp='pass -c crypt/a'
 ## Go to NOTES
 alias note='cd ~/repos/notes && ll'
 
+## Go to Ubersicht widget folder
+alias cdubersicht='cd ~/Library/Application\ Support/Übersicht/widgets'
+
 ## Open link in Brave - Run `brave google.com`
 function brave() {
 	if [[ $1 == http* || -d $1 || -f $1 ]] then

@@ -1259,3 +1259,10 @@ autocmd BufWritePost * silent !ROOT=$(git rev-parse --show-toplevel 2> /dev/null
 " 			\ VERSION=$(eval "sh $IFILE .");
 " 			\ fi
 
+
+"""""
+" Fix Kitty background bug
+" https://sw.kovidgoyal.net/kitty/faq/#using-a-color-theme-with-a-background-color-does-not-work-well-in-vim
+"
+""""
+let &t_ut=''

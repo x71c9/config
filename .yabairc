@@ -1,5 +1,5 @@
 # Layout - stack, managed, bsp, float - default "float"
-yabai -m config layout bsp
+yabai -m config layout stack
 
 # Set window_border_color
 yabai -m config active_window_border_color 0xff7503cb
@@ -36,7 +36,7 @@ yabai -m config normal_window_opacity 1.0
 yabai -m config window_border on
 
 # add 0 padding to the top and 0 padding to the bottom of every space located on the main display
-yabai -m config external_bar main:24:0
+# yabai -m config external_bar main:24:0
 yabai -m config external_bar all:24:0
 
 # New window spawns to the left if vertical split, or top if horizontal split
@@ -48,10 +48,13 @@ yabai -m rule --add label="ExpressVPN" app="^ExpressVPN$" title=".*" manage=off
 yabai -m rule --add label="Archive Utility" app="^Archive Utility$" title=".*" manage=off
 yabai -m rule --add label="HDMI" app="^HDMI ($" title=".*" manage=off
 yabai -m rule --add label="Tray" app="^Tray$" title=".*" manage=off
-yabai -m rule --add label="kitty" app="^kitty$" title=".*" manage=off
 yabai -m rule --add label="Alacritty" app="^Alacritty$" title=".*" manage=off
+yabai -m rule --add label="Finder" app="^Finder$" title="^.*$" manage=off
 yabai -m rule --add label="Info" app="^Finder$" title="^.* Info$" manage=off
-yabai -m rule --add label="Application launcher" title="Application launcher" manage=off sicky=on layer=above border=off
+yabai -m rule --add label="Mail" app="^Mail$" title=".*" manage=off
+
+# yabai -m rule --add label="Popup" app="^kitty$" title="^.*sh popup.sh$" manage=off sticky=on layer=above border=off
+yabai -m rule --add label="Application launcher" app="^kitty$" title="^.*Application launcher$" manage=off sticky=on layer=above
 
 ## Mouse actions
 
@@ -66,9 +69,3 @@ yabai -m config mouse_action2 resize
 
 # set focus follows mouse mode (default: off, options: off, autoraise, autofocus)
 # yabai -m config focus_follows_mouse autoraise
-
-
-## Limelight
-
-# killall limelight &> /dev/null
-# limelight &> /dev/null &

@@ -35,6 +35,15 @@ function brave() {
 	open -a /Applications/Brave\ Browser.app $URL
 }
 
+## Open link in Chrome - Run `chrome google.com`
+function chrome() {
+	if [[ $1 == http* || -d $1 || -f $1 ]] then
+		URL=$1
+	else
+		URL="https://$1"
+	fi
+	open -a /Applications/Google\ Chrome.app $URL
+}
 #### NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

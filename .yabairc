@@ -52,6 +52,7 @@ yabai -m rule --add label="Alacritty" app="^Alacritty$" title=".*" manage=off
 yabai -m rule --add label="Finder" app="^Finder$" title="^.*$" manage=off
 yabai -m rule --add label="Info" app="^Finder$" title="^.* Info$" manage=off
 yabai -m rule --add label="Mail" app="^Mail$" title=".*" manage=off
+yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" title=".*" manage=off
 
 # yabai -m rule --add label="Popup" app="^kitty$" title="^.*sh popup.sh$" manage=off sticky=on layer=above border=off
 yabai -m rule --add label="Application launcher" app="^kitty$" title="^.*Application launcher$" manage=off sticky=on layer=above

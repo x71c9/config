@@ -5,6 +5,7 @@ ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 # ctrl + alt + cmd - k : brew services restart skhd
 
 # Switch layout
+shift + alt - 7 : yabai -m config layout float
 shift + alt - 8 : yabai -m config layout stack
 shift + alt - 9 : yabai -m config layout bsp
 
@@ -55,7 +56,7 @@ ctrl + alt - k : yabai -m display --focus north
 ctrl + alt - l : yabai -m display --focus east || yabai -m display --focus next || yabai -m display --focus first
 
 # FZF Application
-cmd - space : sh ~/repos/config/scripts/popup.sh
+cmd + alt -space : sh ~/repos/config/scripts/popup.sh
 
 # Definìe modes
 # :: default  : yabai -m config active_window_border_color 0xff61afef

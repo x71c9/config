@@ -17,6 +17,30 @@ git show
 ```
 git config --list
 ```
+#### GIT SET AUTHOR USERNAME AND EMAIL
+```
+git config user.name "John Doe"
+git config user.email "john@doe.com"
+```
+Global - This will edit `~/.gitconfig` file
+```
+git config --global user.name "John Doe"
+git config --global user.email "john@doe.com"
+```
+#### CHANGE REPO AUTHOR FOR ALL PAST COMMITS
+Not recommended
+```
+https://mhagemann.medium.com/how-to-change-the-user-for-all-your-git-commits-ffefbacf2652
+```
+
+Recommended - Use git filter-repo `https://github.com/newren/git-filter-repo/`
+```
+// my-mailmap file
+Correct Name <correct@email.com> <old@email.com>
+
+// Run
+git filter-repo --mailmap my-mailmap
+```
 
 #### GIT SET EDITOR
 ```

@@ -20,3 +20,4 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 1
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 ```
+Logout

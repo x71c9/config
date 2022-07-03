@@ -8,8 +8,19 @@ export LC_ALL=en_US.UTF-8
 ### Remove First character in terminal Hyper `%`
 unsetopt PROMPT_SP
 
+#### Set Version Control System in prompt
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+#### Add git branch to prompt
+zstyle ':vcs_info:git:*' formats '%b '
+
 #### Set prompt text
-export PROMPT="%~$ "
+#export PROMPT="%~$ "
+
+#### Set prompt text
+setopt PROMPT_SUBST
+PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 
 #### Set aliases
 

@@ -62,7 +62,7 @@ yabai -m config window_placement first_child # use second_child to invert
 
 yabai -m rule --add label="All" app="^.*$" title=".*" manage=off
 yabai -m rule --add label="Hyper" app="^Hyper$" title=".*" manage=on
-yabai -m rule --add label="Brave" app="^Brave$" title=".*" manage=on
+yabai -m rule --add label="Brave" app="^Brave Browser$" title=".*" manage=on
 yabai -m rule --add label="Chrome" app="^Chrome$" title=".*" manage=on
 
 # yabai -m rule --add label="Popup" app="^kitty$" title="^.*sh popup.sh$" manage=off sticky=on layer=above border=off

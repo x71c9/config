@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>net.nbl7.gitwatch.notes</string>
+	<string>com.x71c9.gitwatch.notes</string>
 	<key>LaunchOnlyOnce</key>
 	<true/>
 	<key>RunAtLoad</key>
@@ -19,12 +19,12 @@
 		<string>5</string>
 		<string>-r</string>
 		<string>origin</string>
-		<string>/Users/nbl7/repos/notes/</string>
+		<string>/Users/x71c9/repos/notes/</string>
 	</array>
 	<key>StandardErrorPath</key>
-	<string>/tmp/net.nbl7.gitwatch.notes</string>
+	<string>/tmp/com.x71c9.gitwatch.notes</string>
 	<key>StandardOutPath</key>
-	<string>/tmp/net.nbl7.gitwatch.notes</string>
+	<string>/tmp/com.x71c9.gitwatch.notes</string>
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>PATH</key>

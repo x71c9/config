@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>net.nbl7.gitwatch.gnupg</string>
+	<string>com.x71c9.gitwatch.gnupg</string>
 	<key>LaunchOnlyOnce</key>
 	<true/>
 	<key>RunAtLoad</key>
@@ -19,12 +19,12 @@
 		<string>60</string>
 		<string>-r</string>
 		<string>origin</string>
-		<string>/Users/nbl7/.gnupg/</string>
+		<string>/Users/x71c9/.gnupg/</string>
 	</array>
 	<key>StandardErrorPath</key>
-	<string>/tmp/net.nbl7.gitwatch.gnupg</string>
+	<string>/tmp/com.x71c9.gitwatch.gnupg</string>
 	<key>StandardOutPath</key>
-	<string>/tmp/net.nbl7.gitwatch.gnupg</string>
+	<string>/tmp/com.x71c9.gitwatch.gnupg</string>
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>PATH</key>

@@ -494,6 +494,14 @@ set swapfile
 """""
 let g:polyglot_disabled = ['sensible']
 
+
+"""""
+" Enable syntax highlight in markdown code blocks
+"
+"""""
+let g:markdown_fenced_languages = ['html', 'js', 'javascript', 'vim', 'rust', 'php', 'bash']
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""" COMMANDS """"""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""

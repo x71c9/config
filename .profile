@@ -69,12 +69,14 @@ if [ -f '/Users/nbl7/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/nbl7/googl
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/nbl7/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/nbl7/google-cloud-sdk/completion.zsh.inc'; fi
 
-# This enable autocomplete ignoring capitalization
-autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-
 # This will allow autocomplete for pass with tab
 # ZSH has autocomplete functions in $FPATH or $fpath
 # This line will add the folder with _pass autocomplete function
 # Name of the file must be _pass
+# This must be defined before autoload `compinit` (maybe)
 fpath=(~/repos/config/pass $fpath)
+
+# This enable autocomplete ignoring capitalization
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+

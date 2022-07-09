@@ -1,0 +1,72 @@
+# Show hidden file as default
+set hidden true
+
+# Ignore case
+set ignorecase true
+
+# Override open
+cmd open ${{
+    test -L $f && f=$(readlink -f $f)
+    case $(file --mime-type $f -b) in
+        text/*) vim $fx;;
+        *) for f in $fx; do xdg-open $f > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+# Mkdir
+cmd mkdir ${{
+  printf "Directory name: "
+  read ans
+  mkdir $ans
+}}
+
+# Touch
+cmd touch ${{
+  printf "File name: "
+  read ans
+  #$EDITOR $ans
+  touch $ans
+}}
+
+# Show progress bar for file copying
+cmd paste &{{
+    set -- $(cat ~/.local/share/lf/files)
+    mode="$1"
+    shift
+    case "$mode" in
+        copy)
+            rsync -av --ignore-existing --progress -- "$@" . |
+            stdbuf -i0 -o0 -e0 tr '\r' '\n' |
+            while IFS= read -r line; do
+                lf -remote "send $id echo $line"
+            done
+            ;;
+        move) mv -n -- "$@" .;;
+    esac
+    rm ~/.local/share/lf/files
+    lf -remote "send clear"
+}}
+
+# Bindings
+# Remove some defaults
+map m
+map o
+map n
+map "'"
+map '"'
+map d
+
+# Basic Functions
+map . set hidden!
+map DD delete
+map p paste
+map x cut
+map y copy
+map <enter> open
+map R reload
+map t touch
+map md mkdir
+
+# Movement
+map gc cd ~/.config
+map gr cd ~/repos

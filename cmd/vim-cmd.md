@@ -19,6 +19,20 @@ mkdir ~/.vim_backups/
 :cdo %s/\/';/\/index';/ | update
 ```
 
+##### Install Vim Plug
+https://github.com/junegunn/vim-plug
+```
+mkdir ~/.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+##### Installing COC Autocomplte
+```
+ln -s ~/repo/config/coc-settings.json ~/.vim/coc-settings.json
+:CocInstall coc-tsserver coc-json coc-css
+```
+
 ##### Installing YouCompleteMe
 
 ```

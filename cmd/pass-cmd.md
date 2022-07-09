@@ -19,12 +19,21 @@ Install the native app
 ```
 // Chrome
 PREFIX='/usr/local/opt/browserpass' make hosts-chrome-user -f '/usr/local/opt/browserpass/lib/browserpass/Makefile'
+PREFIX='/opt/homebrew/opt/browserpass' make hosts-chrome-user -f '/opt/homebrew/opt/browserpass/lib/browserpass/Makefile'
 
 // Brave
 PREFIX='/usr/local/opt/browserpass' make hosts-brave-user -f '/usr/local/opt/browserpass/lib/browserpass/Makefile'
+PREFIX='/opt/homebrew/opt/browserpass' make hosts-brave-user -f '/opt/homebrew/opt/browserpass/lib/browserpass/Makefile'
 
 // Chromium
 PREFIX='/usr/local/opt/browserpass' make hosts-chromium-user -f '/usr/local/opt/browserpass/lib/browserpass/Makefile'
+PREFIX='/opt/homebrew/opt/browserpass' make hosts-chromium-user -f '/opt/homebrew/opt/browserpass/lib/browserpass/Makefile'
+```
+
+### browserpass extension need gpg to be in `/usr/local/bin/gpg`
+### if it is not installed there make a link, for example:
+```
+sudo ln -s /opt/homebrew/bin/gpg /usr/local/bin/gpg
 ```
 
 This app allow browserpass to communicate with the machine via Native Messaging API

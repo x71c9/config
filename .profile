@@ -18,11 +18,17 @@ zstyle ':vcs_info:git:*' formats '%b '
 #### Set prompt text
 #export PROMPT="%~$ "
 
+#### Set env var EDITOR
+export EDITOR=vim
+
 #### Set prompt text
 setopt PROMPT_SUBST
 PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 
 #### Set aliases
+
+## Python as python3
+alias python='python3'
 
 ## List hidden ordered human size
 alias ll='ls -aohG'
@@ -35,6 +41,11 @@ alias note='cd ~/repos/notes && ll'
 
 ## Go to Ubersicht widget folder
 alias cdubersicht='cd ~/Library/Application\ Support/Übersicht/widgets'
+
+## Alias go to
+alias gr='cd ~/repos'
+alias gc='cd ~/repos/config'
+alias gu='cd ~/repos/uranio'
 
 ## Open link in Brave - Run `brave google.com`
 function brave() {
@@ -80,3 +91,6 @@ fpath=(~/repos/config/pass $fpath)
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+
+# Alias for NCDU
+alias ncdu='ncdu --color dark'

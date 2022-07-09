@@ -499,7 +499,9 @@ let g:polyglot_disabled = ['sensible']
 " Enable syntax highlight in markdown code blocks
 "
 """""
-let g:markdown_fenced_languages = ['html', 'js', 'javascript', 'vim', 'rust', 'php', 'bash']
+let g:markdown_fenced_languages = [
+  \ 'bash=sh', 'javascript', 'js=javascript', 'json=javascript', 'typescript',
+  \ 'ts=typescript', 'php', 'html', 'css', 'rust', 'sql']
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -517,16 +519,22 @@ command Vt vertical terminal
 call plug#begin('~/.vim/plugged')
 
 """""
+" Autocomplete
+"
+"""""
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"""""
 " For autocomplete while typeing
 "
 """""
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 
 """""
 " Javascript syntax
 "
 """""
-Plug 'pangloss/vim-javascript'
+" Plug 'pangloss/vim-javascript'
 
 """""
 " A collection of language packs for Vim.
@@ -609,7 +617,7 @@ Plug 'dense-analysis/ale'
 " Highlight HTML matching tags
 "
 """""
-Plug 'Valloric/MatchTagAlways'
+" Plug 'Valloric/MatchTagAlways'
 
 """""
 " Install FZF in VIM - FuzzyFinder
@@ -644,7 +652,7 @@ Plug 'tpope/vim-surround'
 " NERDTree
 "
 """"
-"Plug 'preservim/nerdtree'
+" "Plug 'preservim/nerdtree'
 
 """"
 " Vim-prettier
@@ -825,6 +833,20 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 map <F9> :echo "fg<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg") . '> bg<'
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"bg") . ">"<CR>
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""" COC Autocomplete """"""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""

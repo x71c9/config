@@ -10,7 +10,7 @@
 	<true />
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/gitwatch</string>
+		<string>/opt/homebrew/bin/gitwatch</string>
 		<string>-l</string>
 		<string>1</string>
 		<string>-m</string>

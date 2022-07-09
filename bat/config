@@ -19,9 +19,15 @@
 # enable mouse scrolling support in `bat` when running inside tmux. This might
 # disable text selection, unless you press shift.
 #--pager="less --RAW-CONTROL-CHARS --quit-if-one-screen --mouse"
+# -X will keep the printed text on the terminal after exit
+--pager="less -X --RAW-CONTROL-CHARS"
 
 # Syntax mappings: map a certain filename pattern to a language.
 #   Example 1: use the C++ syntax for .ino files
 #   Example 2: Use ".gitignore"-style highlighting for ".ignore" files
 #--map-syntax "*.ino:C++"
 #--map-syntax ".ignore:Git Ignore"
+
+# Show line numbers, Git modifications and file header (but no grid)
+# --style="numbers,changes,header"
+# --style="numbers,grid,changes,header"

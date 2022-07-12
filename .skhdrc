@@ -13,6 +13,7 @@
 # shift + alt - return : open "/Applications/kitty.app" ~
 shift + alt - n : open "/Applications/Hyper.app"
 shift + alt - b : open "/Applications/Brave Browser.app"
+shift + alt - g : open "/Applications/Google Chrome.app"
 # shift + alt - t : open "/System/Applications/Utilities/Terminal.app"
 shift + alt - f : open "/Users/x71c9"
 # shift + alt - u : open "/Applications/Transmit.app"

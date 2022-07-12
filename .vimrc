@@ -1137,6 +1137,11 @@ let g:ycm_semantic_triggers = {
 
 let g:gitgutter_max_signs=999
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""" vim-commentary """"""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType vifm setlocal commentstring=\"\ %s
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""" NERDCommenter """""""""""""""""""""
@@ -1153,7 +1158,8 @@ let g:NERDCustomDelimiters = {
 	\ 'css': {'left': '/* ', 'right': ' */'},
 	\ 'scss': {'left': '/* ', 'right': ' */'},
 	\ 'sass': {'left': '/* ', 'right': ' */'},
-	\ 'coffee': {'left': '// ', 'right': ''}
+	\ 'coffee': {'left': '// ', 'right': ''},
+	\ 'vifm': {'left': '" ', 'right': ''},
 \}
 
 let g:NERDDefaultAlign = 'left'

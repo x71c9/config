@@ -21,3 +21,12 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 ```
 Logout
+
+### Check temperature
+```
+sudo powermetrics -s thermal
+```
+### Check CPU GPU
+```
+sudo powermetrics -s cpu_power,gpu_power
+```

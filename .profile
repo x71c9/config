@@ -74,12 +74,6 @@ export NVM_DIR="$HOME/.nvm"
 #### FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/nbl7/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/nbl7/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/nbl7/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/nbl7/google-cloud-sdk/completion.zsh.inc'; fi
-
 # This will allow autocomplete for pass with tab
 # ZSH has autocomplete functions in $FPATH or $fpath
 # This line will add the folder with _pass autocomplete function
@@ -91,6 +85,14 @@ fpath=(~/repos/config/pass $fpath)
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-
 # Alias for NCDU
 alias ncdu='ncdu --color dark'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/x71c9/installs/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/x71c9/installs/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/x71c9/installs/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/x71c9/installs/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Add Yarn binaries to PATH
+export PATH="$(yarn global bin):$PATH"

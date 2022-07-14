@@ -6,7 +6,7 @@
 " The basic format for each item is shown with an example.
 
 " ------------------------------------------------------------------------------
-" User defined
+" USER
 
 " Set dotfile - Show hidden files as default
 set dotfiles
@@ -24,6 +24,9 @@ nnoremap <silent> w : if &quickview && !layoutis('only')
                    \|     execute 'wincmd w'
                    \| endif
                    \| <cr>
+
+" Remap q to quit
+nnoremap <silent> q :q<cr>
 
 " ------------------------------------------------------------------------------
 
@@ -348,7 +351,10 @@ fileviewer {*.docx},
 
 " What should be saved automatically between vifm sessions.  Drop "savedirs"
 " value if you don't want vifm to remember last visited directories for you.
-set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
+" set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
+    " \phistory,fhistory,dirstack,registers,bookmarks,bmarks
+" I removed `savedirs` - it open last active directory istead of the current.
+set vifminfo=dhistory,chistory,state,tui,shistory,
     \phistory,fhistory,dirstack,registers,bookmarks,bmarks
 
 " ------------------------------------------------------------------------------

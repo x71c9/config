@@ -47,6 +47,12 @@ alias gr='cd ~/repos'
 alias gc='cd ~/repos/config'
 alias gu='cd ~/repos/uranio'
 
+## Alias open websites
+alias og='brave github.com/x71c9'
+
+# Alias for NCDU
+alias ncdu='ncdu --color off'
+
 ## Open link in Brave - Run `brave google.com`
 function brave() {
 	if [[ $1 == http* || -d $1 || -f $1 ]] then
@@ -84,9 +90,6 @@ fpath=(~/repos/config/pass $fpath)
 # This enable autocomplete ignoring capitalization
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-
-# Alias for NCDU
-alias ncdu='ncdu --color dark'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/x71c9/installs/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/x71c9/installs/google-cloud-sdk/path.zsh.inc'; fi

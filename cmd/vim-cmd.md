@@ -210,4 +210,7 @@ To replace the misspelled word with the first suggestion:
 zg
 ```
 
-
+##### Open link under cursor
+```
+gx
+```

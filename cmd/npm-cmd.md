@@ -65,3 +65,9 @@ yarn add uranio@ssh+git://git@github.com/nbl7/uranio-core.git
 ```
 import uranio from 'uranio';
 ```
+
+### Link local package to Global binary
+```
+npm link
+```
+In package directory

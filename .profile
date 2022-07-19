@@ -33,6 +33,10 @@ alias python='python3'
 ## List hidden ordered human size
 alias ll='ls -aohG'
 
+## Default ctags not working on Mac
+## Install via homebrew `brew install ctags` then use this alias
+alias ctags="`brew --prefix`/bin/ctags"
+
 ## Unlock pass
 alias passp='pass -c crypt/a'
 

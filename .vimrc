@@ -575,7 +575,7 @@ Plug 'airblade/vim-gitgutter'
 " Syntax Highlighting for Vue
 "
 """""
-Plug 'posva/vim-vue'
+" Plug 'posva/vim-vue'
 
 """""
 " JS and TS indent
@@ -605,7 +605,7 @@ Plug 'tpope/vim-commentary'
 " Plugin for linting
 "
 """""
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 
 """""
 " Plugin for linting
@@ -646,7 +646,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 " surroundings: parentheses, brackets, quotes, XML tags, and more.
 "
 """"
-Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-surround'
 
 """"
 " NERDTree
@@ -658,13 +658,13 @@ Plug 'tpope/vim-surround'
 " Vim-prettier
 "
 """"
-Plug 'prettier/vim-prettier'
+" Plug 'prettier/vim-prettier'
 
 """"
 " Vim-pug
 "
 """"
-Plug 'digitaltoad/vim-pug'
+" Plug 'digitaltoad/vim-pug'
 
 """"
 " Vim-toml
@@ -682,7 +682,7 @@ Plug 'darfink/vim-plist'
 " Vim-coffe-script syntax
 "
 """"
-Plug 'kchmck/vim-coffee-script'
+" Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 
@@ -848,6 +848,14 @@ inoremap <silent><expr> <Tab>
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
 
+"" Enable and disable coc-extension according to filetype
+" augroup toggleCocExtensions
+"     autocmd!
+"     autocmd BufEnter *.ts call CocActionAsync('activeExtension', 'coc-tsserver')
+"     autocmd BufEnter *.ts call CocActionAsync('deactivateExtension', 'coc-eslint')
+"     " autocmd BufLeave *.ts call CocActionAsync('deactivateExtension', 'coc-tsserver')
+"     " autocmd BufLeave *.ts call CocActionAsync('activeExtension', 'coc-eslint')
+" augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""" NERDTree """"""""""""""""""""""""

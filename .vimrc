@@ -68,6 +68,14 @@ set smartcase
 set pastetoggle=<F3>
 
 """""
+" If set to high value like 999 the cursor will be always in the middle of
+" the window.
+" The value is how many rows must be always before and after the cursor.
+"
+""""
+" set scrolloff=999
+
+"""""
 " enabling syntax highlight
 "
 """"
@@ -646,7 +654,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 " surroundings: parentheses, brackets, quotes, XML tags, and more.
 "
 """"
-" Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 """"
 " NERDTree
@@ -856,6 +864,28 @@ inoremap <silent><expr> <Tab>
 "     " autocmd BufLeave *.ts call CocActionAsync('deactivateExtension', 'coc-tsserver')
 "     " autocmd BufLeave *.ts call CocActionAsync('activeExtension', 'coc-eslint')
 " augroup END
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call ShowDocumentation()<CR>
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor.
+" autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Run the Code Lens action on the current line.
+nmap <leader>cl  <Plug>(coc-codelens-action)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""" NERDTree """"""""""""""""""""""""

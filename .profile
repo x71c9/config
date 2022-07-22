@@ -57,6 +57,9 @@ alias og='brave github.com/x71c9'
 # Alias for NCDU
 alias ncdu='ncdu --color off'
 
+## Run script show_plist
+alias show_plist='sh ~/repos/config/scripts/show_plists.sh';
+
 ## Open link in Brave - Run `brave google.com`
 function brave() {
 	if [[ $1 == http* || -d $1 || -f $1 ]] then

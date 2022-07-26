@@ -28,6 +28,12 @@ nnoremap <silent> w : if &quickview && !layoutis('only')
 " Remap q to quit
 nnoremap <silent> q :q<cr>
 
+" Show line number
+set number
+
+" Show relative line number
+set relativenumber
+
 " ------------------------------------------------------------------------------
 
 " Command used to edit files in various contexts.  The default is vim.

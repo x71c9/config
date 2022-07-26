@@ -28,10 +28,14 @@ PREFIX='/opt/homebrew/opt/browserpass' make hosts-brave-user -f '/opt/homebrew/o
 // Chromium
 PREFIX='/usr/local/opt/browserpass' make hosts-chromium-user -f '/usr/local/opt/browserpass/lib/browserpass/Makefile'
 PREFIX='/opt/homebrew/opt/browserpass' make hosts-chromium-user -f '/opt/homebrew/opt/browserpass/lib/browserpass/Makefile'
+
+// Firefox
+PREFIX='/usr/local/opt/browserpass' make hosts-firefox-user -f '/usr/local/opt/browserpass/lib/browserpass/Makefile'
+PREFIX='/opt/homebrew/opt/browserpass' make hosts-firefox-user -f '/opt/homebrew/opt/browserpass/lib/browserpass/Makefile'
 ```
 
 ### browserpass extension need gpg to be in `/usr/local/bin/gpg`
-### if it is not installed there make a link, for example:
+### if it is not installed there, make a link, for example:
 ```
 sudo ln -s /opt/homebrew/bin/gpg /usr/local/bin/gpg
 ```

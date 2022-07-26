@@ -825,6 +825,12 @@ nnoremap gD :<c-u>rightbelow vertical stjump <c-r><c-w><cr>zz
 inoremap ><Tab> ><Esc>F<lyt>A</<C-r>"><Esc>F<i
 
 """""
+" Autocompleting HTML tags
+"
+"""""
+autocmd FileType html,php,vue set omnifunc=htmlcomplete#CompleteTags
+
+"""""
 " Press F10 to
 " show highlight group name under the cursor
 "

@@ -67,6 +67,7 @@ set smartcase
 """"
 set pastetoggle=<F3>
 
+
 """""
 " If set to high value like 999 the cursor will be always in the middle of
 " the window.
@@ -692,8 +693,19 @@ Plug 'darfink/vim-plist'
 """"
 " Plug 'kchmck/vim-coffee-script'
 
+""""
+" Search with ack
+"
+""""
+" Plug 'mileszs/ack.vim'
+
 call plug#end()
 
+""""
+" Change ACK with AG The silver searcher
+"
+""""
+" let g:ackprg = 'ag --vimgrep'
 
 """""
 " The plugin manager https://github.com/junegunn/vim-plug was forcing to use 
@@ -861,6 +873,16 @@ inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
+
+" Cursor disappeared after exit CocList
+" Possible bug with guicursor option on your terminal, you can disable
+" transparent cursor by
+let g:coc_disable_transparent_cursor = 1
+
+" Use <Tab> and <S-Tab> to navigate the completion list
+" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 
 "" Enable and disable coc-extension according to filetype
 " augroup toggleCocExtensions

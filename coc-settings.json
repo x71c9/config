@@ -2,6 +2,7 @@
 	"diagnostic.checkCurrentLine": true,
 	"diagnostic.messageTarget": "echo",
 	"javascript.suggestionActions.enabled": false,
-	"tsserver.enableJavascript": false,
-	"suggest.autoTrigger": "trigger"
+	"tsserver.enableJavascript": true,
+	"suggest.autoTrigger": "trigger",
+	"suggest.languageSourcePriority": 99
 }

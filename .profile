@@ -28,7 +28,8 @@ export EDITOR=vim
 
 #### Set prompt text
 setopt PROMPT_SUBST
-PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
+# PROMPT='%F{green}%D{%a.%d %H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
+PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 
 #### Set aliases
 
@@ -51,6 +52,9 @@ alias gu='cd ~/repos/uranio'
 
 ## Alias open websites
 alias og='firefox github.com/x71c9'
+
+## Alias open websites
+alias on='firefox npmjs.com/~x71c9'
 
 ## Alias open websites
 alias om='firefox mail.proton.me'

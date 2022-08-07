@@ -175,6 +175,12 @@ Create and start a container with its own node_modules folder
 docker run -it -v $(pwd):/app -v /app/node_modules/ --network="host" urn-xxx:0.0.1
 ```
 
+#### Add ssh key to current agent
+
+```
+ssh-add -K
+```
+
 #### Start container
 
 ##### Start the container with Docker

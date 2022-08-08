@@ -16,3 +16,25 @@ ssh -i "private_key.pem" root@ec2-18-102-49-110.eu-south-1.compute.amazonaws.com
 ```
 ssh -i "private_key.pem" ec2-user@ec2-18-102-49-110.eu-south-1.compute.amazonaws.com
 ```
+
+### Install docker on EC2
+
+```
+sudo yum update -y
+sudo yum install docker -y
+```
+Add the ec2-user to the docker group so you can execute Docker commands without using sudo.
+Need to logout and login again.
+```
+sudo usermod -a -G docker ec2-user
+```
+or
+```
+sudo usermod -a -G docker $USER
+```
+
+### Start docker
+```
+sudo service docker start
+```
+

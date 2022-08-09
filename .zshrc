@@ -1,9 +1,4 @@
 
-### Loading .profile
-if [ -f ~/repos/config/.profile ]; then
-	. ~/repos/config/.profile
-fi
-
 ### Remove First character in terminal Hyper `%`
 unsetopt PROMPT_SP
 
@@ -70,4 +65,9 @@ if [ -f '/Users/x71c9/installs/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/x71c9/installs/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/x71c9/installs/google-cloud-sdk/completion.zsh.inc'; fi
+
+### Loading .profile
+if [ -f ~/repos/config/.profile ]; then
+	. ~/repos/config/.profile
+fi
 

@@ -73,7 +73,7 @@ git add .
 git commit -m "removed submodule"
 ```
 
-#### ADD NEW SUBMODUL
+#### ADD NEW SUBMODULE
 ```
 git submodule add -b <branch> git+ssh://[link/to/remote/repo/origin] <destination/folder>
 git config -f .gitmodules submodule.[path/to/submodule].update rebase

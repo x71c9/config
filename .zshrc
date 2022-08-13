@@ -1,6 +1,7 @@
 
 #### Remove First character in terminal Hyper `%`
-unsetopt PROMPT_SP
+#### This is causing to not print the last line of `cat`
+# unsetopt PROMPT_SP
 
 ##### Set Version Control System in prompt
 autoload -Uz vcs_info

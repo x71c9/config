@@ -97,3 +97,6 @@ ln -s ~/repo/config/coc-settings.json ~/.vim/coc-settings.json
 vim
 :CocInstall coc-tsserver coc-json coc-css
 ```
+
+
+

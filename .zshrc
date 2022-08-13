@@ -60,7 +60,8 @@ fpath=(~/repos/config/docker $fpath)
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-
+#### Set location for autocomplete cache files
+ZSH_COMPDUMP=~/.cache/zsh/zcompdump
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/x71c9/installs/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/x71c9/installs/google-cloud-sdk/path.zsh.inc'; fi

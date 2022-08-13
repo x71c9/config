@@ -98,5 +98,8 @@ vim
 :CocInstall coc-tsserver coc-json coc-css
 ```
 
-
+Installing jq
+```
+sudo yum install jq -y
+```
 

@@ -50,10 +50,13 @@ Install config repo
 ```
 git clone https://github.com/x71c9/config.git
 ```
+
+
 Install VIM (Already installed on Amazon Linux)
 ```
 mkdir ~/.vim_backups/
 mkdir ~/.vim/
+ln -s ~/repos/config/colors ~/.vim/colors
 ```
 Install Vim Plug
 ```

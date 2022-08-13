@@ -1,8 +1,8 @@
 
-### Remove First character in terminal Hyper `%`
+#### Remove First character in terminal Hyper `%`
 unsetopt PROMPT_SP
 
-#### Set Version Control System in prompt
+##### Set Version Control System in prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }
 

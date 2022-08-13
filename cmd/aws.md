@@ -38,3 +38,12 @@ sudo usermod -a -G docker $USER
 sudo service docker start
 ```
 
+### Fresh install
+
+```
+sudo yum update -y
+sudo yum install git -y
+mkdir ~/repos/
+cd ~/repos/
+git clone https://github.com/x71c9/config.git
+```

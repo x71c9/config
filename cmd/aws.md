@@ -63,6 +63,23 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 vim
 :PlugInstall
 ```
+Installing NODE
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+Check if the installation worked - (you might want to logout and login again)
+```
+command -v nvm
+```
+It should output `nvm`
+
+Use NVM
+```
+nvm install 16
+````
+```
+nvm use 16
+```
 
 Installing COC Autocomplte
 ```

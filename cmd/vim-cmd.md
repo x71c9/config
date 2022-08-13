@@ -214,3 +214,5 @@ zg
 ```
 gx
 ```
+
+##### Count occurrances

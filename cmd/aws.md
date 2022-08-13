@@ -45,5 +45,28 @@ sudo yum update -y
 sudo yum install git -y
 mkdir ~/repos/
 cd ~/repos/
+```
+Install config repo
+```
 git clone https://github.com/x71c9/config.git
+```
+Install VIM (Already installed on Amazon Linux)
+```
+mkdir ~/.vim_backups/
+mkdir ~/.vim/
+```
+Install Vim Plug
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+```
+vim
+:PlugInstall
+```
+
+Installing COC Autocomplte
+```
+ln -s ~/repo/config/coc-settings.json ~/.vim/coc-settings.json
+vim
+:CocInstall coc-tsserver coc-json coc-css
 ```

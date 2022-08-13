@@ -3,6 +3,10 @@
 #### This is causing to not print the last line of `cat`
 # unsetopt PROMPT_SP
 
+### If a file do not end with new line a "%" will be shown
+# with this variable it can set the character instead of "%"
+# export PROMPT_EOL_MARK=""
+
 ##### Set Version Control System in prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }

@@ -54,7 +54,7 @@ git clone https://github.com/x71c9/config.git
 Add to `.bash_profile`
 ```
 # Add custom profile
-if [ -f ~/repos/config/.bash_profile]; then
+if [ -f ~/repos/config/.bash_profile ]; then
 	. ~/repos/config/.bash_profile
 fi
 ```

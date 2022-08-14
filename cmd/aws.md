@@ -103,3 +103,17 @@ Installing jq
 sudo yum install jq -y
 ```
 
+
+### Add new keypair
+
+Generate a new keypair in EC2 > Network & Security > KeyPairs
+
+Then extract the public key from the private key:
+
+```
+ssh-keygen -y -f <path_to_private_key>
+```
+
+Add the public key to remote `~/.ssh/authorized_keys`
+
+

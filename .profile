@@ -26,6 +26,12 @@ alias note='cd ~/repos/notes && ll'
 alias gr='cd ~/repos'
 alias gc='cd ~/repos/config'
 alias gu='cd ~/repos/uranio'
+alias guc='cd ~/repos/uranio/urn-core'
+alias gua='cd ~/repos/uranio/urn-api'
+alias gut='cd ~/repos/uranio/urn-trx'
+alias gud='cd ~/repos/uranio/urn-adm'
+alias gub='cd ~/repos/uranio/urn-bld'
+alias gul='cd ~/repos/uranio/urn-cli'
 
 ## Alias open websites
 alias og='firefox github.com/x71c9'

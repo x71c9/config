@@ -79,3 +79,8 @@ if [ -f ~/repos/config/.profile ]; then
 	. ~/repos/config/.profile
 fi
 
+
+# pnpm
+export PNPM_HOME="/Users/x71c9/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

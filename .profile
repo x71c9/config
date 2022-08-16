@@ -32,6 +32,9 @@ alias gut='cd ~/repos/uranio/urn-trx'
 alias gud='cd ~/repos/uranio/urn-adm'
 alias gub='cd ~/repos/uranio/urn-bld'
 alias gul='cd ~/repos/uranio/urn-cli'
+alias gus='cd ~/repos/uranio/urn-ass'
+alias gui='cd ~/repos/uranio/urn-lib'
+alias guci='cd ~/repos/uranio/urn-cicd'
 
 ## Alias open websites
 alias og='firefox github.com/x71c9'

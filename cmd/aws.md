@@ -119,6 +119,7 @@ Add the public key to remote `~/.ssh/authorized_keys`
 
 ### Installing Load Balancer HAProxy
 
+https://devcoops.com/install-haproxy-on-amazon-linux-2/
 https://www.haproxy.com/blog/haproxy-configuration-basics-load-balance-your-servers/
 
 ```
@@ -168,7 +169,7 @@ So I ran this:
 sudo amazon-linux-extras install epel
 ```
 
-Install snapd
+Install snapd NOT WORKING ...................................
 ```
 sudo yum install snapd
 sudo yum install snapd-2.47.1-1.amzn2.1

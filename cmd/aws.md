@@ -130,3 +130,25 @@ The configuration file can be found in:
 ```
 sudo vim /etc/haproxy/haproxy.cfg
 ```
+Restart the deamon
+```
+sudo systemctl restart haproxy
+```
+
+Example config:
+```
+frontend main
+    bind 0.0.0.0:80
+    bind 0.0.0.0:443 ssl crt /etc/ssl/x81da.com/x81da.com.pem
+    redirect scheme https if !{ ssl_fc }
+    use_backend node1 if { dst_port 80 }
+    use_backend node1 if { hdr(host) -m dom node1.x81da.com }
+    use_backend node2 if { hdr(host) -m dom node2.x81da.com }
+    default_backend node1
+
+backend node1
+   server server1 127.0.0.1:7001
+
+backend node2
+   server server2 127.0.0.1:7002
+```

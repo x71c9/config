@@ -152,3 +152,30 @@ backend node1
 backend node2
    server server2 127.0.0.1:7002
 ```
+
+### Installing Certbot
+
+#### Installing Snap (Linux App Store)
+https://snapcraft.io/docs/installing-snap-on-centos
+
+On Amazon Linux this package cannot be found:
+```
+sudo yum install epel-release
+```
+
+So I ran this:
+```
+sudo amazon-linux-extras install epel
+```
+
+Install snapd
+```
+sudo yum install snapd
+```
+
+Once installed, the systemd unit that manages the main snap communication socket needs to be enabled:
+```
+sudo systemctl enable --now snapd.socket
+```
+
+

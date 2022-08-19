@@ -171,6 +171,7 @@ sudo amazon-linux-extras install epel
 Install snapd
 ```
 sudo yum install snapd
+sudo yum install snapd-2.47.1-1.amzn2.1
 ```
 
 Once installed, the systemd unit that manages the main snap communication socket needs to be enabled:
@@ -178,4 +179,8 @@ Once installed, the systemd unit that manages the main snap communication socket
 sudo systemctl enable --now snapd.socket
 ```
 
+To enable classic snap support, enter the following to create a symbolic link between /var/lib/snapd/snap and /snap:
+```
+sudo ln -s /var/lib/snapd/snap /snap
+```
 

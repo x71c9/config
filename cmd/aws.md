@@ -117,3 +117,16 @@ ssh-keygen -y -f <path_to_private_key>
 Add the public key to remote `~/.ssh/authorized_keys`
 
 
+### Installing Load Balancer HAProxy
+
+https://www.haproxy.com/blog/haproxy-configuration-basics-load-balance-your-servers/
+
+```
+sudo yum update
+sudo yum install haproxy
+```
+
+The configuration file can be found in:
+```
+sudo vim /etc/haproxy/haproxy.cfg
+```

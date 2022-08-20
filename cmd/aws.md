@@ -189,6 +189,27 @@ https://certbot.eff.org/instructions?ws=other&os=centosrhel7
 sudo certbot certonly --standalone
 ```
 
+#### List certificate
+```
+sudo certbot certificates
+```
+#### Delete certificate
+```
+sudo certbot delete
+```
+
+
+
+
+
+
+
+
+
+
+
+
+NOT WORKING
 
 #### Installing Snap (Linux App Store)
 https://snapcraft.io/docs/installing-snap-on-centos

@@ -164,8 +164,6 @@ haproxy -f /etc/haproxy/haproxy.cfg -c
 
 ### Installing Certbot
 
-#### Installing Snap (Linux App Store)
-https://snapcraft.io/docs/installing-snap-on-centos
 https://aws.amazon.com/premiumsupport/knowledge-center/ec2-enable-epel/
 
 ```
@@ -175,12 +173,17 @@ sudo amazon-linux-extras install epel
 sudo yum install certbot
 ```
 
+#### Generate certificate.
+
+https://certbot.eff.org/instructions?ws=other&os=centosrhel7
+**Stop the web server** and:
+```
+sudo certbot certonly --standalone
+```
 
 
-
-
-
-
+#### Installing Snap (Linux App Store)
+https://snapcraft.io/docs/installing-snap-on-centos
 
 Install snapd NOT WORKING ...................................
 ```

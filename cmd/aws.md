@@ -183,6 +183,28 @@ sudo yum install certbot
 
 #### Generate certificate.
 
+Run:
+```
+sudo certbot certonly --manual
+```
+Select a domain with wildcard in from `*.x81da.com`.
+
+Update the DNS and continue:
+
+Concatenate files into one single PEM for HAProxy
+```
+mkdir -p /home/ec2-user/.certs/x81da.com/
+
+sudo cat /etc/letsencrypt/live/x81da.com/fullchain.pem \
+  /etc/letsencrypt/live/x81da.com/privkey.pem \
+  > /home/ec2-user/.certs/x81da.com/cert.pem
+```
+
+
+
+
+
+
 https://certbot.eff.org/instructions?ws=other&os=centosrhel7
 To generate a certificate with the server running see the article above.
 

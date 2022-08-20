@@ -206,6 +206,10 @@ mkdir -p /home/ec2-user/.certs/node1.x81da.com/
 sudo cat /etc/letsencrypt/live/node1.x81da.com/fullchain.pem \
   /etc/letsencrypt/live/node1.x81da.com/privkey.pem \
   | sudo tee /home/ec2-user/.certs/node1.x81da.com/cert.pem
+
+sudo cat /etc/letsencrypt/live/node1.x81da.com/fullchain.pem \
+  /etc/letsencrypt/live/node1.x81da.com/privkey.pem \
+  > /home/ec2-user/.certs/node1.x81da.com/cert.pem
 ```
 
 Add new line in HAProxy config file

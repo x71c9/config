@@ -189,6 +189,16 @@ https://certbot.eff.org/instructions?ws=other&os=centosrhel7
 sudo certbot certonly --standalone
 ```
 
+Concatenate files into one single PEM for HAProxy
+```
+mkdir -p /home/ec2-user/.certs/node1.x81da.com/
+
+sudo cat /etc/letsencrypt/live/node1.x81da.com/fullchain.pem \
+  /etc/letsencrypt/live/node1.x81da.com/privkey.pem \
+  | sudo tee /home/ec1-user/.certs/node1.x81da.com/cert.pem
+```
+
+
 #### List certificate
 ```
 sudo certbot certificates

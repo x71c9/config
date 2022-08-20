@@ -227,7 +227,11 @@ sudo certbot certonly --manual --preferred-challenges=http --manual-auth-hook ./
 
 #### Crontab certifiacate
 ```
-0 7 * * * sudo /home/ec2-user/repos/static-server/bin/renew_certificate.sh /home/ec2-user/repos/static-server/bin -d x81da.com -    -force-renewal >> /home/ec2-user/crontab.log
+touch ~/crontab.log
+vim /etc/crontab
+```
+```
+0 7 * * * sudo /home/ec2-user/repos/static-server/bin/renew_certificate.sh /home/ec2-user/repos/static-server/bin x81da.com >> /home/ec2-user/crontab.log
 ```
 
 

@@ -184,10 +184,20 @@ sudo yum install certbot
 #### Generate certificate.
 
 https://certbot.eff.org/instructions?ws=other&os=centosrhel7
+To generate a certificate with the server running see the article above.
+
 **Stop the web server** and:
+```
+sudo systemctl stop haproxy
+```
 ```
 sudo certbot certonly --standalone
 ```
+**Start the web server**:
+```
+sudo systemctl start haproxy
+```
+
 
 Concatenate files into one single PEM for HAProxy
 ```
@@ -197,6 +207,12 @@ sudo cat /etc/letsencrypt/live/node1.x81da.com/fullchain.pem \
   /etc/letsencrypt/live/node1.x81da.com/privkey.pem \
   | sudo tee /home/ec1-user/.certs/node1.x81da.com/cert.pem
 ```
+
+Add new line in HAProxy config file
+```
+sudo vim /etc/haproxy/haproxy.cfg
+```
+
 
 
 #### List certificate

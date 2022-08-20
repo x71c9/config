@@ -198,6 +198,9 @@ sudo certbot certificates
 sudo certbot delete
 ```
 
+RENEW
+https://serversforhackers.com/c/letsencrypt-with-haproxy
+
 
 
 

@@ -217,6 +217,17 @@ To generate a certificate with the server running see the article above.
 
 https://serversforhackers.com/c/letsencrypt-with-haproxy
 
+#### Renew certificate
+
+https://eff-certbot.readthedocs.io/en/stable/using.html#id32
+The following command force renew the certificate:
+```
+sudo certbot certonly --manual --preferred-challenges=http --manual-auth-hook ./authenticator.sh --manual-cleanup-hook ./cleanup.sh -d x81da.com -d *.x81da.com --force-renewal
+```
+
+
+
+
 #### List certificate
 ```
 sudo certbot certificates

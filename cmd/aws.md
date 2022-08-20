@@ -163,6 +163,14 @@ https://aws.amazon.com/premiumsupport/knowledge-center/ec2-enable-epel/
 ```
 sudo amazon-linux-extras install epel
 ```
+```
+sudo yum install certbot
+```
+
+
+
+
+
 
 
 

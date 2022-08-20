@@ -162,6 +162,14 @@ Check if file is valid
 haproxy -f /etc/haproxy/haproxy.cfg -c
 ```
 
+Commands:
+```
+sudo systemctl start haproxy
+sudo systemctl restart haproxy
+sudo systemctl reload haproxy
+sudo systemctl stop haproxy
+```
+
 ### Installing Certbot
 
 https://aws.amazon.com/premiumsupport/knowledge-center/ec2-enable-epel/

@@ -215,6 +215,16 @@ frontend
 https://certbot.eff.org/instructions?ws=other&os=centosrhel7
 To generate a certificate with the server running see the article above.
 
+https://serversforhackers.com/c/letsencrypt-with-haproxy
+
+#### List certificate
+```
+sudo certbot certificates
+```
+#### Delete certificate
+```
+sudo certbot delete
+```
 
 ---
 
@@ -252,14 +262,6 @@ sudo vim /etc/haproxy/haproxy.cfg
 
 
 
-#### List certificate
-```
-sudo certbot certificates
-```
-#### Delete certificate
-```
-sudo certbot delete
-```
 
 RENEW
 https://serversforhackers.com/c/letsencrypt-with-haproxy

@@ -158,16 +158,13 @@ backend node2
 
 #### Installing Snap (Linux App Store)
 https://snapcraft.io/docs/installing-snap-on-centos
+https://aws.amazon.com/premiumsupport/knowledge-center/ec2-enable-epel/
 
-On Amazon Linux this package cannot be found:
-```
-sudo yum install epel-release
-```
-
-So I ran this:
 ```
 sudo amazon-linux-extras install epel
 ```
+
+
 
 Install snapd NOT WORKING ...................................
 ```

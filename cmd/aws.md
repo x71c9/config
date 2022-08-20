@@ -200,13 +200,24 @@ sudo cat /etc/letsencrypt/live/x81da.com/fullchain.pem \
   > /home/ec2-user/.certs/x81da.com/cert.pem
 ```
 
+#### Update HAProxy config
 
-
-
-
+```
+sudo vim /etc/haproxy/haproxy.cfg
+```
+```
+frontend
+	...
+	bind 0.0.0.0:443 ssl crt /home/ec2-user/.certs/x81da.com/cert.pem
+	...
+```
 
 https://certbot.eff.org/instructions?ws=other&os=centosrhel7
 To generate a certificate with the server running see the article above.
+
+
+---
+
 
 **Stop the web server** and:
 ```

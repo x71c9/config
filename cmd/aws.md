@@ -225,6 +225,11 @@ The following command force renew the certificate:
 sudo certbot certonly --manual --preferred-challenges=http --manual-auth-hook ./authenticator.sh --manual-cleanup-hook ./cleanup.sh -d x81da.com -d *.x81da.com --force-renewal
 ```
 
+#### Crontab certifiacate
+```
+0 7 * * * sudo /home/ec2-user/repos/static-server/bin/renew_certificate.sh /home/ec2-user/repos/static-server/bin -d x81da.com -    -force-renewal >> /home/ec2-user/crontab.log
+```
+
 
 
 

@@ -103,7 +103,6 @@ Installing jq
 sudo yum install jq -y
 ```
 
-
 ### Add new keypair
 
 Generate a new keypair in EC2 > Network & Security > KeyPairs
@@ -142,10 +141,13 @@ frontend main
     bind 0.0.0.0:80
     bind 0.0.0.0:443 ssl crt /etc/ssl/x81da.com/x81da.com.pem
     redirect scheme https if !{ ssl_fc }
-    use_backend node1 if { dst_port 80 }
     use_backend node1 if { hdr(host) -m dom node1.x81da.com }
     use_backend node2 if { hdr(host) -m dom node2.x81da.com }
+    use_backend node0 if { hdr(host) -i x81da.com }
     default_backend node1
+
+backend node0
+   server server1 127.0.0.1:7017
 
 backend node1
    server server1 127.0.0.1:7001
@@ -176,18 +178,16 @@ https://aws.amazon.com/premiumsupport/knowledge-center/ec2-enable-epel/
 
 ```
 sudo amazon-linux-extras install epel
-```
-```
 sudo yum install certbot
 ```
 
-#### Generate certificate.
+#### Generate certificate
 
 Run:
 ```
 sudo certbot certonly --manual
 ```
-Select a domain with wildcard in from `*.x81da.com`.
+Select 2 domain, one main one with wildcard `x81da.com *.x81da.com`.
 
 Update the DNS and continue:
 

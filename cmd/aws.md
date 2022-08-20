@@ -154,6 +154,14 @@ backend node2
    server server2 127.0.0.1:7002
 ```
 
+Testing Your HAProxy Configuration
+https://www.haproxy.com/blog/testing-your-haproxy-configuration/
+
+Check if file is valid
+```
+haproxy -f /etc/haproxy/haproxy.cfg -c
+```
+
 ### Installing Certbot
 
 #### Installing Snap (Linux App Store)

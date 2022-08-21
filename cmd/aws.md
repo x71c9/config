@@ -33,7 +33,7 @@ or
 sudo usermod -a -G docker $USER
 ```
 
-### Start docker
+#### Start docker
 ```
 sudo service docker start
 ```
@@ -46,7 +46,7 @@ sudo yum install git -y
 mkdir ~/repos/
 cd ~/repos/
 ```
-Install config repo
+#### Install config repo
 ```
 git clone https://github.com/x71c9/config.git
 ```
@@ -59,13 +59,13 @@ if [ -f ~/repos/config/.bash_profile ]; then
 fi
 ```
 
-Install VIM (Already installed on Amazon Linux)
+#### Install VIM (Already installed on Amazon Linux)
 ```
-mkdir ~/.vim_backups/
 mkdir ~/.vim/
+mkdir ~/.vim/.vim_backups/
 ln -s ~/repos/config/colors ~/.vim/colors
 ```
-Install Vim Plug
+#### Install Vim Plug
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
@@ -73,7 +73,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 vim
 :PlugInstall
 ```
-Installing NODE
+#### Installing NODE
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
@@ -91,16 +91,22 @@ nvm install 16
 nvm use 16
 ```
 
-Installing COC Autocomplte
+#### Installing COC Autocomplte
 ```
 ln -s ~/repo/config/coc-settings.json ~/.vim/coc-settings.json
 vim
 :CocInstall coc-tsserver coc-json coc-css
 ```
 
-Installing jq
+#### Installing jq
 ```
 sudo yum install jq -y
+```
+
+#### Install fzf
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 ```
 
 ### Add new keypair

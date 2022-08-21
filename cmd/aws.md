@@ -134,7 +134,7 @@ sudo yum install haproxy
 
 The configuration file can be found in:
 ```
-sudo vim /etc/haproxy/haproxy.cfg
+sudo -e /etc/haproxy/haproxy.cfg
 ```
 Restart the deamon
 ```
@@ -209,7 +209,7 @@ sudo cat /etc/letsencrypt/live/x81da.com/fullchain.pem \
 #### Update HAProxy config
 
 ```
-sudo vim /etc/haproxy/haproxy.cfg
+sudo -e /etc/haproxy/haproxy.cfg
 ```
 ```
 frontend
@@ -283,7 +283,7 @@ sudo cat /etc/letsencrypt/live/node1.x81da.com/fullchain.pem \
 
 Add new line in HAProxy config file
 ```
-sudo vim /etc/haproxy/haproxy.cfg
+sudoedit /etc/haproxy/haproxy.cfg
 ```
 
 

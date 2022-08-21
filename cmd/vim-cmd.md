@@ -206,6 +206,11 @@ In order to use suggestions for misspelled word use:
 z=
 ```
 
+To change the word with the first suggestion
+```
+1z=
+```
+
 To add misspelled word to dictionary
 ```
 zg

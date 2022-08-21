@@ -210,6 +210,10 @@ To add misspelled word to dictionary
 ```
 zg
 ```
+To removed the added work to dictionary
+```
+zug
+```
 
 ##### Open link under cursor
 ```

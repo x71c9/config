@@ -521,11 +521,14 @@ command Vt vertical terminal
 
 
 """""
-" The follwoing command :Sw allow to write in sudo when the file wasn't opened
-" with sudo privileges.
-" The recommended way is to edit the file wiht `sudoedit` tho.
-" `sudoedit` check the environmental variable $EDITOR, that should be set to
-" vim
+" - The follwoing command :Sw allow to write in sudo when the file wasn't opened
+"   with sudo privileges.
+" - The recommended way is to edit the file wiht `sudoedit` though.
+"   `sudoedit` check the environmental variable $EDITOR, that should be set to
+"   `vim`, make a copy in a tmp dir and save it as sudo when finished. [Safer]
+" - `sudoedit` is equivalent to `sudo -e`
+" - Another way is to run `sudo -E vim` -E flag or --preserve-env will keep
+"   the environmental variables so that vim will run the user .vimrc [Not safe]
 "
 """""
 command! -nargs=0 Sw w !sudo tee % > /dev/null

@@ -202,7 +202,7 @@ set backup
 " set backupdir
 "
 """"
-set backupdir=~/.vim_backups/
+set backupdir=~/.vim/.vim_backups/
 
 """""
 " yes will make a copy of the file as backup

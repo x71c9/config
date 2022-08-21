@@ -136,6 +136,15 @@ The configuration file can be found in:
 ```
 sudo -e /etc/haproxy/haproxy.cfg
 ```
+
+Testing Your HAProxy Configuration
+https://www.haproxy.com/blog/testing-your-haproxy-configuration/
+
+Check if file is valid
+```
+haproxy -f /etc/haproxy/haproxy.cfg -c
+```
+
 Restart the deamon
 ```
 sudo systemctl restart haproxy
@@ -162,13 +171,6 @@ backend node2
    server server2 127.0.0.1:7002
 ```
 
-Testing Your HAProxy Configuration
-https://www.haproxy.com/blog/testing-your-haproxy-configuration/
-
-Check if file is valid
-```
-haproxy -f /etc/haproxy/haproxy.cfg -c
-```
 
 Commands:
 ```

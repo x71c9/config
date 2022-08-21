@@ -205,7 +205,8 @@ In order to use suggestions for misspelled word use:
 ```
 z=
 ```
-To replace the misspelled word with the first suggestion:
+
+To add misspelled word to dictionary
 ```
 zg
 ```

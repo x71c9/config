@@ -63,7 +63,7 @@ max-cache-ttl 7200
 ```
 Values are in seconds.
 
-Then RESTART the agent
+Then RESTART the agent. See below.
 
 ##### Restart the agent
 End the session by restarting gpg-agent.

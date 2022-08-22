@@ -25,6 +25,7 @@ alias note='cd ~/repos/notes && ll'
 ## Alias go to
 alias gr='cd ~/repos'
 alias gc='cd ~/repos/config'
+alias gcm='cd ~/repos/config/cmd'
 alias gu='cd ~/repos/uranio'
 alias guc='cd ~/repos/uranio/urn-core'
 alias gua='cd ~/repos/uranio/urn-api'

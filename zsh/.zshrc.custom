@@ -1,6 +1,6 @@
 ### Loading .profile (valid bot for zsh and bash)
-if [ -f ~/repos/config/.profile ]; then
-	. ~/repos/config/.profile
+if [ -f ~/repos/config/profile/.profile ]; then
+	. ~/repos/config/profile/.profile
 fi
 
 #### Remove First character in terminal Hyper `%`

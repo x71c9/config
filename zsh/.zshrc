@@ -5,6 +5,7 @@ if [ -f ~/repos/config/zsh/.zshrc.custom ]; then
 fi
 
 ### The following is usually added by third party software
+### -----------------------------------------------------
 
 #### FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

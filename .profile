@@ -49,7 +49,12 @@ alias om='firefox mail.proton.me'
 ## Run script show_plist
 alias show_plist='sh ~/repos/config/scripts/show_plists.sh';
 
+## Set history with Timestamp
 HISTTIMEFORMAT="%Y-%m-%dT%T "
+
+## Do not put in history commands that starts with a space
+## (For security reason)
+HISTCONTROL=ignoreboth
 
 ## Default ctags not working on Mac
 ## Install via homebrew `brew install ctags` then use this alias

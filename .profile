@@ -49,9 +49,10 @@ alias om='firefox mail.proton.me'
 ## Run script show_plist
 alias show_plist='sh ~/repos/config/scripts/show_plists.sh';
 
+HISTTIMEFORMAT="%Y-%m-%dT%T "
+
 ## Default ctags not working on Mac
 ## Install via homebrew `brew install ctags` then use this alias
-
 # $OSTYPE == darwin* --> it means it is MacOS
 if [[ $OSTYPE == darwin* ]]; then
 alias ctags="`brew --prefix`/bin/ctags"

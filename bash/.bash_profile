@@ -1,4 +1,5 @@
-### .bash_profile (this file) is loaded in interactive login shell
+### .bash_profile (this file) is loaded in interactive login shell (user from
+### terminal)
 
 ### Loading .bashrc
 ### .bashrc is loaded in non-interactive sheel, like scripts, crontab, etc.

@@ -1,6 +1,11 @@
 ### .bashrc (this file) is loaded in non-interactive shell, like scripts,
 ### crontab, etc.
 
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
 ### Loading custom .bash_profile commamnds
 if [ -f ~/repos/config/bash/.bashrc.custom ]; then
 	. ~/repos/config/bash/.bashrc.custom

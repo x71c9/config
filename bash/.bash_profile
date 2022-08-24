@@ -1,12 +1,11 @@
-### Loading .profile
-if [ -f ~/repos/config/.profile ]; then
-	. ~/repos/config/.profile
+### Loading .bashrc
+### .bashrc is loaded in non-interactive sheel, like scripts, crontab, etc.
+### This should be linked to ~/repos/config/bash/.bashrc
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
 fi
 
-# If ~/.inputrc doesn't exist yet: First include the original /etc/inputrc
-# so it won't get overriden
-if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
-
-# Add shell-option to ~/.inputrc to enable case-insensitive tab completion
-echo 'set completion-ignore-case On' >> ~/.inputrc
-
+### Loading custom .bash_profile commamnds
+if [ -f ~/repos/config/bash/.bash_profile.custom ]; then
+	. ~/repos/config/bash/.bash_profile.custom
+fi

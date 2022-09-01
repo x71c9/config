@@ -793,6 +793,14 @@ nnoremap <C-i> <C-i>zz
 nnoremap <C-S> :%s/\<<C-r><C-w>\>/
 
 """""
+" Mapping for search and replace word under cursor in the last Visual
+" selection
+" Ctrl-A
+"
+"""""
+nnoremap <C-A> :%s/\%V\<<C-r><C-w>\>/
+
+"""""
 " Mapping for :grep
 " Ctrl-g
 "

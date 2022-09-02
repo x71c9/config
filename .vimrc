@@ -846,7 +846,7 @@ nmap <silent> <C-M> :cp<CR>zz
 " any message already displayed.
 "
 """"
-nnoremap <silent> <Space> :set hlsearch!<Bar>:echo<CR>
+nnoremap <silent> \ :set hlsearch!<Bar>:echo<CR>
 
 """""
 " Remap CTAGS command "go to defintion"

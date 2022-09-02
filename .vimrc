@@ -72,6 +72,8 @@ set pastetoggle=<F3>
 "
 """"
 nnoremap <SPACE> <Nop>
+noremap <Space> <Nop>
+sunmap <Space>
 let mapleader = " "
 
 """""

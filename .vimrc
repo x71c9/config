@@ -713,6 +713,12 @@ Plug 'darfink/vim-plist'
 """"
 " Plug 'mileszs/ack.vim'
 
+""""
+" Debugger
+"
+""""
+Plug 'puremourning/vimspector'
+
 call plug#end()
 
 """"

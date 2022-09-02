@@ -1479,9 +1479,17 @@ sign define vimspectorCurrentFrame text=>   texthl=Special
 " endfunction      
 " let g:test#custom_strategies = {'jest': function('JestStrategy')}
 
+" nunmenu WinBar deletes the Bar
 func! CustomiseUI()
+  call win_gotoid( g:vimspector_session_windows.output )
+  nunmenu WinBar
+  call win_gotoid( g:vimspector_session_windows.variables )
+  nunmenu WinBar
+  call win_gotoid( g:vimspector_session_windows.stack_trace )
+  nunmenu WinBar
+  call win_gotoid( g:vimspector_session_windows.watches )
+  nunmenu WinBar
   call win_gotoid( g:vimspector_session_windows.code )
-  " Clear the existing WinBar created by Vimspector
   nunmenu WinBar
   " Create our own WinBar
   " nnoremenu WinBar.Kill :call vimspector#Stop( { 'interactive': v:true } )<CR>
@@ -1492,14 +1500,6 @@ func! CustomiseUI()
   " nnoremenu WinBar.Step\ Out :call vimspector#StepOut()<CR>
   " nnoremenu WinBar.Restart :call vimspector#Restart()<CR>
   " nnoremenu WinBar.Exit :call vimspector#Reset()<CR>
-
-  call win_gotoid( g:vimspector_session_windows.watches )
-  nunmenu WinBar
-  call win_gotoid( g:vimspector_session_windows.console )
-  nunmenu WinBar
-  call win_gotoid( g:vimspector_session_windows.variables )
-  nunmenu WinBar
-
 
 endfunction
 

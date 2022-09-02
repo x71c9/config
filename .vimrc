@@ -1444,6 +1444,7 @@ nnoremap <leader>ds :call GotoWindow(g:vimspector_session_windows.stack_trace)<C
 nnoremap <leader>do :call GotoWindow(g:vimspector_session_windows.output)<CR>
 nnoremap <leader>di :call AddToWatch()<CR>
 nnoremap <leader>dx :call vimspector#Reset()<CR>
+nnoremap <leader>dS :call vimspector#Stop()<CR>
 nnoremap <leader>dX :call vimspector#ClearBreakpoints()<CR>
 nnoremap <S-k> :call vimspector#StepOut()<CR>
 nnoremap <S-l> :call vimspector#StepInto()<CR>

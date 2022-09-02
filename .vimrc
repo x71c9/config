@@ -1481,26 +1481,29 @@ sign define vimspectorCurrentFrame text=>   texthl=Special
 
 " nunmenu WinBar deletes the Bar
 func! CustomiseUI()
-  call win_gotoid( g:vimspector_session_windows.output )
-  nunmenu WinBar
-  call win_gotoid( g:vimspector_session_windows.variables )
-  nunmenu WinBar
-  call win_gotoid( g:vimspector_session_windows.stack_trace )
-  nunmenu WinBar
-  call win_gotoid( g:vimspector_session_windows.watches )
-  nunmenu WinBar
-  call win_gotoid( g:vimspector_session_windows.code )
-  nunmenu WinBar
-  " Create our own WinBar
-  " nnoremenu WinBar.Kill :call vimspector#Stop( { 'interactive': v:true } )<CR>
-  " nnoremenu WinBar.Continue :call vimspector#Continue()<CR>
-  " nnoremenu WinBar.Pause :call vimspector#Pause()<CR>
-  " nnoremenu WinBar.Step\ Over  :call vimspector#StepOver()<CR>
-  " nnoremenu WinBar.Step\ In :call vimspector#StepInto()<CR>
-  " nnoremenu WinBar.Step\ Out :call vimspector#StepOut()<CR>
-  " nnoremenu WinBar.Restart :call vimspector#Restart()<CR>
-  " nnoremenu WinBar.Exit :call vimspector#Reset()<CR>
+	call win_gotoid( g:vimspector_session_windows.output )
+	nunmenu WinBar
+	call win_gotoid( g:vimspector_session_windows.variables )
+	nunmenu WinBar
+	call win_gotoid( g:vimspector_session_windows.stack_trace )
+	nunmenu WinBar
+	call win_gotoid( g:vimspector_session_windows.watches )
+	nunmenu WinBar
+	call win_gotoid( g:vimspector_session_windows.code )
+	nunmenu WinBar
+	" Create our own WinBar
+	" nnoremenu WinBar.Kill :call vimspector#Stop( { 'interactive': v:true } )<CR>
+	" nnoremenu WinBar.Continue :call vimspector#Continue()<CR>
+	" nnoremenu WinBar.Pause :call vimspector#Pause()<CR>
+	" nnoremenu WinBar.Step\ Over  :call vimspector#StepOver()<CR>
+	" nnoremenu WinBar.Step\ In :call vimspector#StepInto()<CR>
+	" nnoremenu WinBar.Step\ Out :call vimspector#StepOut()<CR>
+	" nnoremenu WinBar.Restart :call vimspector#Restart()<CR>
+	" nnoremenu WinBar.Exit :call vimspector#Reset()<CR>
 
+	" Close the output window
+	call win_gotoid( g:vimspector_session_windows.output )
+	q
 endfunction
 
 augroup MyVimspectorUICustomistaion

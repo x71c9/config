@@ -1492,6 +1492,15 @@ func! CustomiseUI()
   " nnoremenu WinBar.Step\ Out :call vimspector#StepOut()<CR>
   " nnoremenu WinBar.Restart :call vimspector#Restart()<CR>
   " nnoremenu WinBar.Exit :call vimspector#Reset()<CR>
+
+  call win_gotoid( g:vimspector_session_windows.watches )
+  nunmenu WinBar
+  call win_gotoid( g:vimspector_session_windows.console )
+  nunmenu WinBar
+  call win_gotoid( g:vimspector_session_windows.variables )
+  nunmenu WinBar
+
+
 endfunction
 
 augroup MyVimspectorUICustomistaion

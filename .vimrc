@@ -1461,6 +1461,15 @@ nnoremap <leader>de :call vimspector#ToggleConditionalBreakpoint()<CR>
 "   \    'vimspectorPC':         999,
 "   \ }
 
+sign define vimspectorBP text=o             texthl=WarningMsg
+sign define vimspectorBPCond text=o?        texthl=WarningMsg
+sign define vimspectorBPLog text=!!         texthl=SpellRare
+sign define vimspectorBPDisabled text=o!    texthl=LineNr
+sign define vimspectorPC text=\ >           texthl=MatchParen
+sign define vimspectorPCBP text=o>          texthl=MatchParen
+sign define vimspectorCurrentThread text=>  texthl=MatchParen
+sign define vimspectorCurrentFrame text=>   texthl=Special
+
 " " janko/vim-test and puremourning/vimspector
 " nnoremap <leader>dd :TestNearest -strategy=jest<CR>
 " function! JestStrategy(cmd)

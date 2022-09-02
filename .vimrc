@@ -67,6 +67,11 @@ set smartcase
 """"
 set pastetoggle=<F3>
 
+"""""
+" Change leader key
+"
+""""
+let mapleader = " "
 
 """""
 " If set to high value like 999 the cursor will be always in the middle of
@@ -928,7 +933,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call ShowDocumentation()<CR>
+nnoremap <leader>d :call ShowDocumentation()<CR>
 function! ShowDocumentation()
   if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
@@ -941,7 +946,7 @@ endfunction
 " autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Run the Code Lens action on the current line.
-nmap <leader>cl  <Plug>(coc-codelens-action)
+nmap <leader>cl <Plug>(coc-codelens-action)
 
 " New remap keys from version 0.0.82
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"

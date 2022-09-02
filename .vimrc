@@ -71,7 +71,7 @@ set pastetoggle=<F3>
 " Change leader key
 "
 """"
-nnoremap <SPACE> <Nop>
+nnoremap <Space> <Nop>
 noremap <Space> <Nop>
 sunmap <Space>
 let mapleader = " "

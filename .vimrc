@@ -1484,19 +1484,20 @@ func! CustomiseUI()
   " Clear the existing WinBar created by Vimspector
   nunmenu WinBar
   " Create our own WinBar
-  nnoremenu WinBar.Kill :call vimspector#Stop( { 'interactive': v:true } )<CR>
-  nnoremenu WinBar.Continue :call vimspector#Continue()<CR>
-  nnoremenu WinBar.Pause :call vimspector#Pause()<CR>
-  nnoremenu WinBar.Step\ Over  :call vimspector#StepOver()<CR>
-  nnoremenu WinBar.Step\ In :call vimspector#StepInto()<CR>
-  nnoremenu WinBar.Step\ Out :call vimspector#StepOut()<CR>
-  nnoremenu WinBar.Restart :call vimspector#Restart()<CR>
-  nnoremenu WinBar.Exit :call vimspector#Reset()<CR>
+  " nnoremenu WinBar.Kill :call vimspector#Stop( { 'interactive': v:true } )<CR>
+  " nnoremenu WinBar.Continue :call vimspector#Continue()<CR>
+  " nnoremenu WinBar.Pause :call vimspector#Pause()<CR>
+  " nnoremenu WinBar.Step\ Over  :call vimspector#StepOver()<CR>
+  " nnoremenu WinBar.Step\ In :call vimspector#StepInto()<CR>
+  " nnoremenu WinBar.Step\ Out :call vimspector#StepOut()<CR>
+  " nnoremenu WinBar.Restart :call vimspector#Restart()<CR>
+  " nnoremenu WinBar.Exit :call vimspector#Reset()<CR>
 endfunction
 
 augroup MyVimspectorUICustomistaion
   autocmd!
-  autocmd User VimspectorUICreated call s:CustomiseUI()
+  " autocmd User VimspectorUICreated call s:CustomiseUI()
+  autocmd User VimspectorUICreated call CustomiseUI()
 augroup END
 
 

@@ -1502,20 +1502,14 @@ func! CustomiseUI()
 	" nnoremenu WinBar.Exit :call vimspector#Reset()<CR>
 
 	" Close the output window
-	" call win_gotoid( g:vimspector_session_windows.output )
-	" q
-endfunction
-
-func! ChangeWindowToCode()
-	nunmenu WinBar
-	call win_gotoid( g:vimspector_session_windows.code )
+	call win_gotoid( g:vimspector_session_windows.output )
+	q
 endfunction
 
 augroup MyVimspectorUICustomistaion
   autocmd!
   " autocmd User VimspectorUICreated call s:CustomiseUI()
   autocmd User VimspectorUICreated call CustomiseUI()
-  autocmd User VimspectorTerminalOpened call ChangeWindowToCode()
 augroup END
 
 

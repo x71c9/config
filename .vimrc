@@ -1436,11 +1436,11 @@ let &t_ut=''
 " puremourning/vimspector
 
 fun! GotoWindow(id)
-  :call win_gotoid(a:id)
+	:call win_gotoid(a:id)
 endfun
 func! AddToWatch()
-  let word = expand("<cexpr>")
-  call vimspector#AddWatch(word)
+	let word = expand("<cexpr>")
+	call vimspector#AddWatch(word)
 endfunction
 " let g:vimspector_base_dir = expand('$HOME/.config/vimspector-config')
 let g:vimspector_sidebar_width = 80
@@ -1455,9 +1455,9 @@ nnoremap <leader>di :call AddToWatch()<CR>
 nnoremap <leader>dx :call vimspector#Reset()<CR>
 nnoremap <leader>dS :call vimspector#Stop()<CR>
 nnoremap <leader>dX :call vimspector#ClearBreakpoints()<CR>
-nnoremap <S-k> :call vimspector#StepOut()<CR>
-nnoremap <S-l> :call vimspector#StepInto()<CR>
-nnoremap <S-j> :call vimspector#StepOver()<CR>
+nnoremap <S-k> :call vimspector#StepOut()<CR>zz
+nnoremap <S-l> :call vimspector#StepInto()<CR>zz
+nnoremap <S-j> :call vimspector#StepOver()<CR>zz
 nnoremap <leader>d_ :call vimspector#Restart()<CR>
 nnoremap <leader>dn :call vimspector#Continue()<CR>
 nnoremap <leader>drc :call vimspector#RunToCursor()<CR>

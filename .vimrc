@@ -727,6 +727,12 @@ Plug 'darfink/vim-plist'
 """"
 Plug 'puremourning/vimspector'
 
+""""
+" Debugger
+"
+""""
+Plug 'nikvdp/ejs-syntax'
+
 call plug#end()
 
 """"

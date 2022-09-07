@@ -1452,10 +1452,11 @@ endfunction
 
 func! ToggleVimspectorOutputWindow()
 	if g:vimspector_session_windows.output
-		:call GotoWindow(g:vimspector_session_windows.output)<CR>
+		call GotoWindow(g:vimspector_session_windows.output)
 		q
 	else
 		VimspectorShowOutput Console
+	endif
 endfunction
 
 " let g:vimspector_base_dir = expand('$HOME/.config/vimspector-config')

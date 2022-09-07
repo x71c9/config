@@ -1480,6 +1480,13 @@ nnoremap <F6> :call vimspector#Restart()<CR>
 "   \    'vimspectorPC':         999,
 "   \ }
 
+let g:vimspector_sign_priority = {
+  \    'vimspectorBP':         998,
+  \    'vimspectorBPCond':     997,
+  \    'vimspectorBPDisabled': 996,
+  \    'vimspectorPC':         999,
+  \ }
+
 sign define vimspectorBP text=o             texthl=WarningMsg
 sign define vimspectorBPCond text=o?        texthl=WarningMsg
 sign define vimspectorBPLog text=!!         texthl=SpellRare

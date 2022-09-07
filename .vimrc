@@ -1444,10 +1444,16 @@ let &t_ut=''
 fun! GotoWindow(id)
 	:call win_gotoid(a:id)
 endfun
+
 func! AddToWatch()
 	let word = expand("<cexpr>")
 	call vimspector#AddWatch(word)
 endfunction
+
+func! toggleVimspectorOutputWindow()
+	VimspectorShowOutput Console
+endfunction
+
 " let g:vimspector_base_dir = expand('$HOME/.config/vimspector-config')
 let g:vimspector_sidebar_width = 80
 " let g:vimspector_bottombar_height = 10
@@ -1456,7 +1462,7 @@ nnoremap <leader>dc :call GotoWindow(g:vimspector_session_windows.code)<CR>
 nnoremap <leader>dv :call GotoWindow(g:vimspector_session_windows.variables)<CR>
 nnoremap <leader>dw :call GotoWindow(g:vimspector_session_windows.watches)<CR>
 nnoremap <leader>ds :call GotoWindow(g:vimspector_session_windows.stack_trace)<CR>
-nnoremap <leader>do :call GotoWindow(g:vimspector_session_windows.output)<CR>
+" nnoremap <leader>do :call GotoWindow(g:vimspector_session_windows.output)<CR>
 nnoremap <leader>di :call AddToWatch()<CR>
 nnoremap <leader>dx :call vimspector#Reset()<CR>
 nnoremap <leader>dS :call vimspector#Stop()<CR>
@@ -1472,6 +1478,8 @@ nnoremap <leader>de :call vimspector#ToggleConditionalBreakpoint()<CR>
 
 nnoremap <F5> :call vimspector#ToggleBreakpoint()<CR>
 nnoremap <F6> :call vimspector#Restart()<CR>
+
+nnoremap <leader>do :call toggleVimspectorOutputWindow()<CR>
 
 " let g:vimspector_sign_priority = {
 "   \    'vimspectorBP':         998,

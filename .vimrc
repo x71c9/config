@@ -1450,8 +1450,12 @@ func! AddToWatch()
 	call vimspector#AddWatch(word)
 endfunction
 
-func! toggleVimspectorOutputWindow()
-	VimspectorShowOutput Console
+func! ToggleVimspectorOutputWindow()
+	if g:vimspector_session_windows.output
+		:call GotoWindow(g:vimspector_session_windows.output)<CR>
+		q
+	else
+		VimspectorShowOutput Console
 endfunction
 
 " let g:vimspector_base_dir = expand('$HOME/.config/vimspector-config')
@@ -1479,7 +1483,7 @@ nnoremap <leader>de :call vimspector#ToggleConditionalBreakpoint()<CR>
 nnoremap <F5> :call vimspector#ToggleBreakpoint()<CR>
 nnoremap <F6> :call vimspector#Restart()<CR>
 
-nnoremap <leader>do :call toggleVimspectorOutputWindow()<CR>
+nnoremap <leader>do :call ToggleVimspectorOutputWindow()<CR>
 
 " let g:vimspector_sign_priority = {
 "   \    'vimspectorBP':         998,

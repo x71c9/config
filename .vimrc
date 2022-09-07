@@ -1450,14 +1450,14 @@ func! AddToWatch()
 	call vimspector#AddWatch(word)
 endfunction
 
-func! ToggleVimspectorOutputWindow()
-	if g:vimspector_session_windows.output
-		call GotoWindow(g:vimspector_session_windows.output)
-		q
-	else
-		VimspectorShowOutput Console
-	endif
-endfunction
+" func! ToggleVimspectorOutputWindow()
+" 	if g:vimspector_session_windows.output
+" 		call GotoWindow(g:vimspector_session_windows.output)
+" 		q
+" 	else
+" 		VimspectorShowOutput Console
+" 	endif
+" endfunction
 
 " let g:vimspector_base_dir = expand('$HOME/.config/vimspector-config')
 let g:vimspector_sidebar_width = 80
@@ -1484,7 +1484,7 @@ nnoremap <leader>de :call vimspector#ToggleConditionalBreakpoint()<CR>
 nnoremap <F5> :call vimspector#ToggleBreakpoint()<CR>
 nnoremap <F6> :call vimspector#Restart()<CR>
 
-nnoremap <leader>do :call ToggleVimspectorOutputWindow()<CR>
+" nnoremap <leader>do :call ToggleVimspectorOutputWindow()<CR>
 
 " let g:vimspector_sign_priority = {
 "   \    'vimspectorBP':         998,
@@ -1540,8 +1540,8 @@ func! CustomiseUI()
 	" nnoremenu WinBar.Exit :call vimspector#Reset()<CR>
 	
 	" Close the output window
-	" call win_gotoid( g:vimspector_session_windows.output )
-	" q
+	call win_gotoid( g:vimspector_session_windows.output )
+	q
 endfunction
 
 augroup MyVimspectorUICustomistaion

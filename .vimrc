@@ -1525,7 +1525,7 @@ func! CustomiseUI()
 	" nnoremenu WinBar.Step\ Out :call vimspector#StepOut()<CR>
 	" nnoremenu WinBar.Restart :call vimspector#Restart()<CR>
 	" nnoremenu WinBar.Exit :call vimspector#Reset()<CR>
-
+	
 	" Close the output window
 	call win_gotoid( g:vimspector_session_windows.output )
 	q

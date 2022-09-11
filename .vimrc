@@ -863,9 +863,11 @@ nnoremap <silent> \ :set hlsearch!<Bar>:echo<CR>
 " Uppercase 'gD' go to defintion in a splitted window
 " Both uppercase 'GD' show prompt
 "
+" Overwritten by COC, check below
+"
 """"
-nnoremap gd g]1<CR><CR>zz
-nnoremap gD :<c-u>rightbelow vertical stjump <c-r><c-w><cr>zz
+" nnoremap gd g]1<CR><CR>zz
+" nnoremap gD :<c-u>rightbelow vertical stjump <c-r><c-w><cr>zz
 "nnoremap GD g]
 
 """""

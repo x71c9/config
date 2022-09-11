@@ -806,6 +806,21 @@ nnoremap <C-o> <C-o>zz
 nnoremap <C-i> <C-i>zz
 
 """""
+" Command Remap search `/` and `?` (backward search)
+" with zz at the end for centering the cursor in the middle of the page
+"
+"""""
+function! CenterSearch()
+  let cmdtype = getcmdtype()
+  if cmdtype == '/' || cmdtype == '?'
+    return "\<enter>zz"
+  endif
+  return "\<enter>"
+endfunction
+
+cnoremap <silent> <expr> <enter> CenterSearch()
+
+"""""
 " Mapping for search and replace word under cursor
 " Ctrl-s
 "

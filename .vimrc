@@ -858,7 +858,7 @@ nmap <silent> <C-M> :cp<CR>zz
 nnoremap <silent> \ :set hlsearch!<Bar>:echo<CR>
 
 """""
-" Remap CTAGS command "go to defintion"
+" Remap CTAGS command `go to defintion`
 " Lowercase 'gd' go to defintion by skipping prompt of selecting defintion
 " Uppercase 'gD' go to defintion in a splitted window
 " Both uppercase 'GD' show prompt

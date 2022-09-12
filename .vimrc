@@ -733,6 +733,12 @@ Plug 'puremourning/vimspector'
 """"
 Plug 'nikvdp/ejs-syntax'
 
+""""
+" GraphQL syntax highlight
+"
+""""
+Plug 'jparise/vim-graphql'
+
 call plug#end()
 
 """"

@@ -240,7 +240,8 @@ set includeexpr=substitute(v:fname,'\\.js','.ts','g')
 "
 """"
 " autocmd BufWritePre * let &bex = '-' . strftime("%Y-%m-%d-%H-%M")
-au BufWritePre * let &backupext = substitute(expand('%:p:h'), '/', '%', 'g') . '%' . strftime('%FT%T') .  '~'
+" au BufWritePre * let &backupext = substitute(expand('%:p:h'), '/', '%', 'g') . '%' . strftime('%FT%T') .  '~'
+au BufWritePre * let &bex = expand('%:p:h') . '~'
 
 """""
 " Search down in subfolders of the root

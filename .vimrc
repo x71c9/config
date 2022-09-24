@@ -239,7 +239,8 @@ set includeexpr=substitute(v:fname,'\\.js','.ts','g')
 " &bex is backup extension
 "
 """"
-autocmd BufWritePre * let &bex = '-' . strftime("%Y-%m-%d-%H-%M")
+" autocmd BufWritePre * let &bex = '-' . strftime("%Y-%m-%d-%H-%M")
+au BufWritePre * let &backupext = substitute(expand('%:p:h'), '/', '%', 'g') . '%' . strftime('%FT%T') .  '~'
 
 """""
 " Search down in subfolders of the root

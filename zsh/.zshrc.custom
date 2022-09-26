@@ -20,7 +20,7 @@ function git_branch_name(){
 	then
 		:
 	else
-		echo '('$branch')'
+		echo ''$branch' '
 	fi
 }
 
@@ -35,7 +35,7 @@ precmd() { vcs_info }
 #### Set prompt text
 # PROMPT='%F{green}%D{%a.%d %H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 # PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
-PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f %F{red}${get_branch_name}%f$ '
+PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f %F{magenta}$(git_branch_name)%f$ '
 
 #### HISTORY VARIABLES
 HISTFILE="$HOME/.zsh_history"

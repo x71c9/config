@@ -25,6 +25,7 @@ zstyle ':vcs_info:git:*' formats '%b '
 setopt PROMPT_SUBST
 # PROMPT='%F{green}%D{%a.%d %H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
+RPROMPT=\$vcs_info_msg_0_
 
 #### HISTORY VARIABLES
 HISTFILE="$HOME/.zsh_history"

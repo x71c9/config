@@ -11,6 +11,9 @@ fi
 # with this variable it can set the character instead of "%"
 # export PROMPT_EOL_MARK=""
 
+##### Enable substitution in prompt
+setopt PROMPT_SUBST
+
 ##### Set Version Control System in prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }
@@ -22,11 +25,10 @@ zstyle ':vcs_info:git:*' formats '%b '
 #export PROMPT="%~$ "
 
 #### Set prompt text
-setopt PROMPT_SUBST
 # PROMPT='%F{green}%D{%a.%d %H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
-# PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
-PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f '
-RPROMPT=\$vcs_info_msg_0_
+PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
+# PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f '
+# RPROMPT=\$vcs_info_msg_0_
 
 #### HISTORY VARIABLES
 HISTFILE="$HOME/.zsh_history"

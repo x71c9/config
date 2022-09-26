@@ -18,13 +18,6 @@ precmd() { vcs_info }
 #### Add git branch to prompt
 zstyle ':vcs_info:git:*' formats '%b '
 
-#### Add title to TABs
-# title() { echo -ne "\e]0;$1\a"; }
-# precmd() { echo -en "\e]0;$1\a" }
-precmd() { 
-	echo -en "\033]0;${PWD/#$HOME/~}\007"
-}
-
 #### Set prompt text
 #export PROMPT="%~$ "
 
@@ -50,6 +43,13 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
+
+#### Add title to TABs
+# title() { echo -ne "\e]0;$1\a"; }
+# precmd() { echo -en "\e]0;$1\a" }
+precmd() {
+	echo -en "\033]0;${PWD/#$HOME/~}\007"
+}
 
 #### Autocomplete
 # More info here: https://github.com/zsh-users/zsh-completions/blob/master/zsh-completions-howto.org

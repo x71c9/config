@@ -14,16 +14,20 @@ fi
 ##### Enable substitution in prompt
 setopt PROMPT_SUBST
 
+function git_branch_name(){
+	branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+	if [[ $branch == "" ]];
+	then
+		:
+	else
+		echo '('$branch')'
+	fi
+}
+
 ##### Set Version Control System in prompt
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git svn
-# zstyle ':vcs_info:git:*' formats '%b '
-zstyle ':vcs_info:git*' formats '(%b) '
+zstyle ':vcs_info:git:*' formats '%b '
 precmd() { vcs_info }
-
-# Enable substitution in the prompt.
-setopt prompt_subst
-prompt='%2/ ${vcs_info_msg_0_}> '
 
 #### Set prompt text
 #export PROMPT="%~$ "
@@ -31,8 +35,7 @@ prompt='%2/ ${vcs_info_msg_0_}> '
 #### Set prompt text
 # PROMPT='%F{green}%D{%a.%d %H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 # PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
-# PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f '
-# RPROMPT=\$vcs_info_msg_0_
+PROMPT='%F{green}%D{T%H:%M:%S}%f %F{blue}%~%f %F{red}${get_branch_name}%f$ '
 
 #### HISTORY VARIABLES
 HISTFILE="$HOME/.zsh_history"

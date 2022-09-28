@@ -4,6 +4,5 @@
 	"javascript.suggestionActions.enabled": false,
 	"tsserver.enableJavascript": true,
 	"suggest.autoTrigger": "trigger",
-	"suggest.languageSourcePriority": 99,
-	"coc.preferences.jumpCommand": "tab drop"
+	"suggest.languageSourcePriority": 99
 }

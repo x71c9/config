@@ -847,7 +847,7 @@ nnoremap <C-A> :%s/\%V\<<C-r><C-w>\>/
 " Ctrl-g
 "
 """""
-nnoremap <C-G> :grep -iR 
+nnoremap <C-G> :tabe | grep -iR 
 
 """""
 " Mapping for :tabclose

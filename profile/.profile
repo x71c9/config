@@ -53,6 +53,9 @@ alias show_plist='sh ~/repos/config/scripts/show_plists.sh';
 alias delete_ds_store='find . -name ".DS_Store" -print -type f -delete'
 alias remove_ds_store='find . -name ".DS_Store" -print -type f -delete'
 
+## Delete node_modules dir recursevly
+alias remove_ds_store='find . -name "node_modules" -print -type d -delete'
+
 ## Set history with Timestamp
 HISTTIMEFORMAT="%Y-%m-%dT%T "
 

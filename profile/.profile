@@ -54,7 +54,7 @@ alias delete_ds_store='find . -name ".DS_Store" -print -type f -delete'
 alias remove_ds_store='find . -name ".DS_Store" -print -type f -delete'
 
 ## Delete node_modules dir recursevly
-alias delete_node_modules='find . -name "node_modules" -print -type d -delete'
+alias delete_node_modules='find . -name "node_modules" -type d -prune -exec rm -rf '{}' +'
 
 ## Set history with Timestamp
 HISTTIMEFORMAT="%Y-%m-%dT%T "

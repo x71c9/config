@@ -25,5 +25,7 @@ fi
 for f in "$DIR/"*.mkv;
 do
 	echo -------------------- $f
-	ffmpeg -i "${f}" -c:v libx264 -c:a copy -c:s mov_text "${f%.*}".mp4
+	# ffmpeg -i "${f}" -c:v libx264 -c:a copy -c:s mov_text "${f%.*}".mp4
+	# ffmpeg -i "${f}" -c:v mpeg4 -c:a copy -c:s mov_text "${f%.*}".mp4
+	ffmpeg -i "${f}" -c:v copy -c:a copy -c:s mov_text "${f%.*}".mp4
 done

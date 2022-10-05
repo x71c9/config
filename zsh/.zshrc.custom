@@ -78,7 +78,7 @@ if [ -d ~/repos/config/docker ]; then
 fi
 
 # This enable autocomplete ignoring capitalization
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -D
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 #### Set location for autocomplete cache files

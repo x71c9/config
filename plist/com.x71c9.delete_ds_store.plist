@@ -22,8 +22,6 @@
 		<string>f</string>
 		<string>-delete</string>
 	</array>
-	<key>RunAtLoad</key>
-	<true/>
 	<key>StandardErrorPath</key>
 	<string>/tmp/com.x71c9.delete_ds_store.log</string>
 	<key>StandardOutPath</key>

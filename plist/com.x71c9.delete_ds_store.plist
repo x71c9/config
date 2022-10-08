@@ -11,8 +11,14 @@
 	<string>com.x71c9.delete_ds_store</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>ls</string>
+		<string>find</string>
 		<string>/Users/x71c9/repos</string>
+		<string>-name</string>
+		<string>.DS_Store</string>
+		<string>-print</string>
+		<string>-type</string>
+		<string>f</string>
+		<string>-delete</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

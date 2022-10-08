@@ -15,10 +15,6 @@
 		<string>/Users/x71c9/repos</string>
 		<string>-name</string>
 		<string>".DS_Store"</string>
-		<string>-print</string>
-		<string>-type</string>
-		<string>f</string>
-		<string>-delete</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

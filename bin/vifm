@@ -1,0 +1,9 @@
+#### This allow to vifm to exit to the current directory.
+
+if [ -f ~/.vifm/lastdir ]; then
+    rm ~/.vifm/lastdir
+fi
+/opt/homebrew/bin/vifm "$@"
+if [ -f ~/.vifm/lastdir ]; then
+    cd `cat ~/.vifm/lastdir`
+fi

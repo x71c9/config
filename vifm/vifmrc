@@ -34,6 +34,10 @@ set number
 " Show relative line number
 set relativenumber
 
+" Set command for quitting vifm and change to current directory
+" https://sourceforge.net/p/vifm/feature-requests/24/
+command Q :execute '!echo %d > ~/.vifm/lastdir' | quit
+
 " ------------------------------------------------------------------------------
 
 " Command used to edit files in various contexts.  The default is vim.

@@ -17,6 +17,17 @@ ssh -i "private_key.pem" root@ec2-18-102-49-110.eu-south-1.compute.amazonaws.com
 ssh -i "private_key.pem" ec2-user@ec2-18-102-49-110.eu-south-1.compute.amazonaws.com
 ```
 
+Add to .ssh/config
+```
+Host ec2-35-152-83-161.eu-south-1.compute.amazonaws.com
+	HostName ec2-35-152-83-161.eu-south-1.compute.amazonaws.com
+	User ec2-user
+	IdentityFile ~/.ssh/aws_ec2_ddi.pem
+	IdentitiesOnly yes
+```
+
+
+
 ### Install docker on EC2
 
 ```

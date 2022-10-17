@@ -28,4 +28,8 @@ make
 sudo make install
 ```
 
+#### Check Linux distro
 
+```
+cat /etc/*-release
+```

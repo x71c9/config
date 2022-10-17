@@ -230,3 +230,5 @@ gx
 :%s/pattern//gn
 ```
 The final n will return the number and the lines.
+
+

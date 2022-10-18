@@ -241,4 +241,18 @@ https://vimtricks.com/p/vim-copy-line/?utm_campaign=VimTricks&utm_medium=email&u
 :t20 – Copy the current line and paste it below line 20
 ```
 
-
+#### Create file and directories in netrw
+https://vimtricks.com/p/creating-files-and-directories/
+Open netrw
+```
+vim .
+```
+Open netrw in current buffer
+```
+:e .
+```
+Create file and directories
+```
+% – Create new file from netrw
+d – Create new directory from netrw
+```

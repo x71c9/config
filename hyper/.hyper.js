@@ -11,7 +11,7 @@ module.exports = {
         // default font size in pixels for all tabs
         fontSize: 12,
         // font family with optional fallbacks
-        fontFamily: '"IBM Plex Mono", "Roboto Mono", "Ac437 ToshibaSat 8x14", PxPlus_IBM_VGA8, monospace',
+        fontFamily: '"IBM Plex Mono", "JetBrains Mono", "Roboto Mono", "Ac437 ToshibaSat 8x14", PxPlus_IBM_VGA8, monospace',
         // default font weight: 'normal' or 'bold'
         fontWeight: 'normal',
         // font weight for bold characters: 'normal' or 'bold'

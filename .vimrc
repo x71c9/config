@@ -554,7 +554,7 @@ call plug#begin('~/.vim/plugged')
 " Autocomplete
 "
 """""
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 """""
 " For autocomplete while typeing

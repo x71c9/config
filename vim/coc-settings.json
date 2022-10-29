@@ -1,6 +1,8 @@
 {
 	"diagnostic.checkCurrentLine": true,
 	"diagnostic.messageTarget": "echo",
+	"diagnostic.errorSign": ">>",
+	"diagnostic.warningSign": "->",
 	"javascript.suggestionActions.enabled": false,
 	"tsserver.enableJavascript": true,
 	"suggest.autoTrigger": "trigger",

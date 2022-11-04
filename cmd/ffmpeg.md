@@ -1,3 +1,10 @@
+### Change video format to MP4
+
+```
+ffmpeg -i "video.mpg" -c:v libx264 -c:a aac "output.mp4"
+```
+
+
 ### Get video duration
 
 ```

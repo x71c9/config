@@ -9,6 +9,12 @@ t -> Select item
 w
 ```
 
+### Exit on the current directory
+
+```
+Ctrl+q
+```
+
 ### Install on Centos
 ```
 sudo yum update

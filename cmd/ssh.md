@@ -33,3 +33,9 @@ Host *
 	UseKeychain yes
 	IdentityFile ~/.ssh/id_rsa
 ```
+
+### Check login
+
+```
+ssh -T git@gitlab.com
+```

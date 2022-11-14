@@ -10,3 +10,26 @@ Note: If you are using a legacy system that doesn't support the Ed25519 algorith
 ```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
+
+### Use ssh key only for certain domain
+
+~/.ssh/config
+
+```
+Host domain.com
+	HostName git.domain.com
+	User git
+	IdentityFile ~/.ssh/new_key
+	IdentitiesOnly yes
+```
+
+### Generic SSH key in `config`
+
+~/.ssh/config
+
+```
+Host *
+	AddKeysToAgent yes
+	UseKeychain yes
+	IdentityFile ~/.ssh/id_rsa
+```

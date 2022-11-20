@@ -47,7 +47,7 @@ alias on='firefox npmjs.com/~x71c9'
 alias om='firefox mail.proton.me'
 
 ## Run script show_plist
-alias show_plist='sh ~/repos/config/scripts/show_plists.sh';
+alias show_plist='sh ~/repos/scripts/bash/show_plists.sh';
 
 ## Delete .DS_Store files recursevly
 alias delete_ds_store='find . -name ".DS_Store" -print -type f -delete'

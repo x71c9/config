@@ -70,8 +70,8 @@ precmd() {
 # This line will add the folder with _pass autocomplete function
 # Name of the file must be _pass
 # This must be defined before autoload `compinit` (maybe)
-if [ -d ~/repos/config/pass ]; then
-	fpath=(~/repos/config/pass $fpath)
+if [ -d ~/repos/.config/pass ]; then
+	fpath=(~/repos/.config/pass $fpath)
 fi
 if [ -d ~/repos/config/docker ]; then
 	fpath=(~/repos/config/docker $fpath)

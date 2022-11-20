@@ -1,3 +1,6 @@
+[user]
+	name = x71c9
+	email = 108585118+x71c9@users.noreply.github.com
 [core]
 	editor = /opt/homebrew/bin/vim
 [init]
@@ -9,6 +12,3 @@
 	required = true
 [includeIf "gitdir:~/repos/botshelf/"]
 	path = ~/repos/botshelf/.gitconfig
-[user]
-	name = x71c9
-	email = 108585118+x71c9@users.noreply.github.com

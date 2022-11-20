@@ -11,6 +11,4 @@
 	process = git-lfs filter-process
 	required = true
 [includeIf "gitdir:~/repos/botshelf"]
-	[user]
-			name = Andrea Reni | botshelf.ai
-			email = andrea.reni.consultant@botshelf.ai
+	path = ~/repos/botshelf/.gitconfig

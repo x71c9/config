@@ -1,6 +1,3 @@
-[user]
-	name = x71c9
-	email = 108585118+x71c9@users.noreply.github.com
 [core]
 	editor = /opt/homebrew/bin/vim
 [init]
@@ -10,5 +7,8 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[includeIf "gitdir:~/repos/botshelf"]
+[includeIf "gitdir:~/repos/botshelf/"]
 	path = ~/repos/botshelf/.gitconfig
+[user]
+	name = x71c9
+	email = 108585118+x71c9@users.noreply.github.com

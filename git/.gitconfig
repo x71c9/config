@@ -10,7 +10,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[includeIf "gitdir:/Users/x71c9/repos/botshelf"]
+[includeIf "gitdir:~/repos/botshelf"]
 	[user]
 			name = Andrea Reni | botshelf.ai
 			email = andrea.reni.consultant@botshelf.ai

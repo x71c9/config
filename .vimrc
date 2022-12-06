@@ -140,7 +140,7 @@ set shiftwidth=2
 " set tabs for markdown file type
 "
 """"
-autocmd FileType md setlocal shiftwidth=2 tabstop=2
+" autocmd FileType md setlocal shiftwidth=2 tabstop=2
 
 """""
 " indent after opening curly braces

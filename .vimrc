@@ -841,6 +841,14 @@ cnoremap <silent> <expr> <enter> CenterSearch()
 nnoremap <C-S> :%s/\<<C-r><C-w>\>/
 
 """""
+" Mapping for search and replace word under cursor
+" Globally with a single check on all occurrences
+" Leader(space)Ctrl-s
+"
+"""""
+nnoremap <leader><C-S> :g/<<C-r><C-w>\>/#|s/\<<C-r><C-w>\>/g|#
+
+"""""
 " Mapping for search and replace word under cursor in the last Visual
 " selection
 " Ctrl-A

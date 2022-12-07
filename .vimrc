@@ -846,7 +846,8 @@ nnoremap <C-S> :%s/\<<C-r><C-w>\>/
 " Leader(space)Ctrl-s
 "
 """""
-nnoremap <leader><C-S> :g/<C-r><C-w>/#|s/<C-r><C-w>/
+" nnoremap <leader>gs :g/\<<C-r><C-w>\>/#|s/\<<C-r><C-w>\>/
+nnoremap <leader>gs :g/\<<C-r><C-w>\>/#|%s/<C-r><C-w>/ 
 
 """""
 " Mapping for search and replace word under cursor in the last Visual

@@ -20,7 +20,8 @@ alias trash='move_to_trash'
 alias python='python3'
 
 ## Go to NOTES
-alias note='cd ~/repos/notes && ll'
+# alias note='cd ~/repos/notes && ll'
+alias note='vim $(find ~/repos/notes | fzf --height=20)'
 
 ## Alias go to
 alias gr='cd ~/repos'

@@ -293,7 +293,8 @@ colorscheme edge
 " set custom characters
 "
 """"
-set listchars=tab:\|\ ,trail:•,eol:¶,precedes:«,extends:»
+" set listchars=tab:\|\ ,trail:•,eol:¶,precedes:«,extends:»
+set listchars=tab:\|\ ,trail:.,eol:¶,precedes:<,extends:>
 
 """""
 " in combination with 'set listchars' will make all other character invisible

@@ -164,6 +164,7 @@ inoremap <cr> ~<bs><cr>
 
 """""
 " set show command to true
+" If terminal is slow remove
 "
 """"
 set showcmd

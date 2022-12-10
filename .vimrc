@@ -718,6 +718,18 @@ Plug 'cespare/vim-toml'
 Plug 'darfink/vim-plist'
 
 """"
+" EJS Syntax
+"
+""""
+Plug 'nikvdp/ejs-syntax'
+
+""""
+" GraphQL syntax highlight
+"
+""""
+Plug 'jparise/vim-graphql'
+
+""""
 " Vim-coffe-script syntax
 "
 """"
@@ -734,18 +746,6 @@ Plug 'darfink/vim-plist'
 "
 """"
 Plug 'puremourning/vimspector'
-
-""""
-" Debugger
-"
-""""
-Plug 'nikvdp/ejs-syntax'
-
-""""
-" GraphQL syntax highlight
-"
-""""
-Plug 'jparise/vim-graphql'
 
 call plug#end()
 

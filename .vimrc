@@ -150,9 +150,11 @@ inoremap {}<Left><CR> {<CR>}<C-o>O
 
 """""
 " to not remove the indentation when pressing Esc
+" This is causing the arrow keys to print characters in Insert mode
+" on Debian Linux
 "
 """"
-inoremap <esc> ~<bs><esc>
+"inoremap <esc> ~<bs><esc>
 
 """""
 " to not remove the indentation when pressing Enter
@@ -162,11 +164,9 @@ inoremap <cr> ~<bs><cr>
 
 """""
 " set show command to true
-" This is causing the arrow keys to print characters in Insert mode
-" on Debian Linux
 "
 """"
-"set showcmd
+set showcmd
 
 """""
 " set visual alert

@@ -233,15 +233,6 @@ set backupcopy=yes
 """"
 "set patchmode=.orig
 
-
-"""""
-" Typescript support for importing esmodule with .js extension
-" This allow to use `gf` to go to file with extension '.ts' instead of '.js'
-"
-""""
-set includeexpr=substitute(v:fname,'\\.js','.ts','g')
-
-
 """""
 " Before writing append to its name date and time
 " &bex is backup extension
@@ -249,6 +240,13 @@ set includeexpr=substitute(v:fname,'\\.js','.ts','g')
 """"
 autocmd BufWritePre * let &bex = '-' . strftime("%Y-%m-%d-%H-%M")
 " autocmd BufWritePre * let &bex = '-' . strftime("%Y-%m-%d-%H-%M") . '-' . expand('%')
+
+"""""
+" Typescript support for importing esmodule with .js extension
+" This allow to use `gf` to go to file with extension '.ts' instead of '.js'
+"
+""""
+set includeexpr=substitute(v:fname,'\\.js','.ts','g')
 
 """""
 " Search down in subfolders of the root

@@ -49,6 +49,12 @@ set splitright
 set noea
 
 """""
+" enable swapfile
+"
+""""
+set swapfile
+
+"""""
 " case insensitive search
 "
 """"
@@ -505,13 +511,6 @@ let &t_TE = ""
 "
 """""
 set backspace=indent,eol,start
-
-
-"""""
-" enable swapfile
-"
-""""
-set swapfile
 
 
 """""

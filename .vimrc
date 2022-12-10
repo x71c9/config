@@ -162,9 +162,11 @@ inoremap <cr> ~<bs><cr>
 
 """""
 " set show command to true
+" This is causing the arrow keys to print characters in Insert mode
+" on Debian Linux
 "
 """"
-set showcmd
+"set showcmd
 
 """""
 " set visual alert

@@ -160,7 +160,7 @@ inoremap {}<Left><CR> {<CR>}<C-o>O
 " on Debian Linux
 "
 """"
-"inoremap <esc> ~<bs><esc>
+inoremap <esc> ~<bs><esc>
 
 """""
 " to not remove the indentation when pressing Enter

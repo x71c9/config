@@ -747,6 +747,12 @@ Plug 'jparise/vim-graphql'
 """"
 Plug 'puremourning/vimspector'
 
+""""
+" Syntax for Terraform
+"
+""""
+Plug 'hashivim/vim-terraform'
+
 call plug#end()
 
 """"

@@ -88,7 +88,8 @@ alias ncdu='ncdu --color off'
 
 ## Move to Trash directory
 move_to_trash () {
-	mv "$@" ~/.Trash
+	# mv "$@" ~/.Trash
+	mv "$@" ~/.trash
 }
 
 ## Open link in Firefox - Run `firefox google.com`

@@ -88,8 +88,17 @@ alias cdubersicht='cd ~/Library/Application\ Support/Übersicht/widgets'
 # Alias for NCDU
 alias ncdu='ncdu --color off'
 
+## Open link in Firefox - Run `firefox google.com`
+function aws_set_credentials() {
+	export AWS_PROFILE=$1
+	aws sts get-caller-identity > /dev/null 2>&1
+  export AWS_ACCESS_KEY_ID=$(ls -t  ~/.aws/cli/cache/*.json  | head -n1 | xargs cat | jq -r '.Credentials.AccessKeyId')
+  export AWS_SECRET_ACCESS_KEY=$(ls -t  ~/.aws/cli/cache/*.json  | head -n1 | xargs cat | jq -r '.Credentials.SecretAccessKey')
+  export AWS_SESSION_TOKEN=$(ls -t  ~/.aws/cli/cache/*.json  | head -n1 | xargs cat | jq -r '.Credentials.SessionToken')
+}
+
 ## Move to Trash directory
-move_to_trash () {
+function move_to_trash () {
 	mv "$@" ~/.Trash
 }
 

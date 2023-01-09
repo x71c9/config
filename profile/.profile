@@ -92,9 +92,9 @@ alias ncdu='ncdu --color off'
 function aws_set_credentials() {
 	export AWS_PROFILE=$1
 	aws sts get-caller-identity > /dev/null 2>&1
-  export AWS_ACCESS_KEY_ID=$(ls -t  ~/.aws/cli/cache/*.json  | head -n1 | xargs cat | jq -r '.Credentials.AccessKeyId')
-  export AWS_SECRET_ACCESS_KEY=$(ls -t  ~/.aws/cli/cache/*.json  | head -n1 | xargs cat | jq -r '.Credentials.SecretAccessKey')
-  export AWS_SESSION_TOKEN=$(ls -t  ~/.aws/cli/cache/*.json  | head -n1 | xargs cat | jq -r '.Credentials.SessionToken')
+	export AWS_ACCESS_KEY_ID=$(ls -t  ~/.aws/cli/cache/*.json  | head -n1 | xargs cat | jq -r '.Credentials.AccessKeyId')
+	export AWS_SECRET_ACCESS_KEY=$(ls -t  ~/.aws/cli/cache/*.json  | head -n1 | xargs cat | jq -r '.Credentials.SecretAccessKey')
+	export AWS_SESSION_TOKEN=$(ls -t  ~/.aws/cli/cache/*.json  | head -n1 | xargs cat | jq -r '.Credentials.SessionToken')
 }
 
 ## Move to Trash directory

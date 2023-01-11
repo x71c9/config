@@ -44,7 +44,7 @@ alias guci='cd ~/repos/uranio/urn-cicd'
 alias og='firefox github.com/x71c9'
 
 ## Alias open websites
-alias ogl='firefox gitlab.com'
+alias ogl='firefox gitlab.com/botshelf'
 
 ## Alias open websites
 alias on='firefox npmjs.com/~x71c9'

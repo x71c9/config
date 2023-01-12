@@ -90,6 +90,11 @@ alias cdubersicht='cd ~/Library/Application\ Support/Übersicht/widgets'
 # Alias for NCDU
 alias ncdu='ncdu --color off'
 
+## Git flow release
+function new_release(){
+	git flow release start $1 && GIT_MERGE_AUTOEDIT=no git flow release finish -m "$1" $1 && git push origin && git push origin $1 && git checkout develop
+}
+
 ## Open link in Firefox - Run `firefox google.com`
 function aws_set_credentials() {
 	export AWS_PROFILE=$1

@@ -25,8 +25,7 @@ alias note='vim $(find ~/repos/notes | fzf --height=20)'
 
 ## Alias go to
 alias gb='cd ~/repos/botshelf'
-alias gbb='cd ~/repos/botshelf/botshelf-bots'
-alias gbp='cd ~/repos/botshelf/botshelf-platform'
+alias gbb='cd ~/repos/botshelf/botshelf-bot-shelf'
 alias gc='cd ~/repos/config'
 alias gd='cd ~/repos/docs'
 alias gn='cd ~/repos/notes'

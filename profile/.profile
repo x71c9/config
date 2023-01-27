@@ -143,7 +143,7 @@ function chrome() {
 
 # Add Yarn binaries to PATH
 # export PATH="$(yarn global bin):$PATH"
-export PATH="~/.yarn/bin/:$PATH"
+export PATH="$HOME/.yarn/bin/:$PATH"
 
 #### NVM
 export NVM_DIR="$HOME/.nvm"

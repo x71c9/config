@@ -43,12 +43,9 @@ alias guci='cd ~/repos/uranio/urn-cicd'
 
 ## Alias open websites
 alias og='firefox github.com/x71c9'
-
-## Alias open websites
 alias ogl='firefox gitlab.com/botshelf'
-
-## Alias open websites
-alias on='firefox npmjs.com/~x71c9'
+alias onpm='firefox npmjs.com/~x71c9'
+alias ontl='firefox https://app.netlify.com/teams/nbl7/overview'
 
 ## Alias open websites
 alias om='firefox mail.proton.me'

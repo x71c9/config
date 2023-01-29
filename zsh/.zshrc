@@ -23,3 +23,6 @@ fi
 export PNPM_HOME="/Users/x71c9/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+test -f '/Users/x71c9/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/x71c9/Library/Preferences/netlify/helper/path.zsh.inc'

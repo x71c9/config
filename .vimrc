@@ -894,6 +894,12 @@ nmap <silent> <C-N> :cn<CR>zz
 nmap <silent> <C-M> :cp<CR>zz
 
 """""
+" Remap gx on a link open it in the browser
+"
+"""""
+nmap gx yiW:!open <cWORD><CR> <C-r>" & <CR><CR>
+
+"""""
 " Press Space to turn on/off searched term highlighting and clear
 " any message already displayed.
 "
@@ -1597,4 +1603,4 @@ augroup MyVimspectorUICustomistaion
   autocmd User VimspectorUICreated call CustomiseUI()
 augroup END
 
-nmap gx yiW:!open <cWORD><CR> <C-r>" & <CR><CR>
+

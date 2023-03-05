@@ -1597,4 +1597,4 @@ augroup MyVimspectorUICustomistaion
   autocmd User VimspectorUICreated call CustomiseUI()
 augroup END
 
-
+nmap gx yiW:!open <cWORD><CR> <C-r>" & <CR><CR>

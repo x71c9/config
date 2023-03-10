@@ -20,9 +20,13 @@ if [ -f '/Users/x71c9/installs/google-cloud-sdk/completion.zsh.inc' ]; then
 fi
 
 # pnpm
-export PNPM_HOME="/Users/x71c9/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+#export PNPM_HOME="/Users/x71c9/Library/pnpm"
+#export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
 # The next line updates PATH for Netlify's Git Credential Helper.
-test -f '/Users/x71c9/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/x71c9/Library/Preferences/netlify/helper/path.zsh.inc'
+#test -f '/Users/x71c9/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/x71c9/Library/Preferences/netlify/helper/path.zsh.inc'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

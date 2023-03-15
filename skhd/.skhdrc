@@ -11,7 +11,8 @@
 
 # Fast focus app
 # shift + alt - return : open "/Applications/kitty.app" ~
-shift + alt - n : open "/Applications/Hyper.app"
+# shift + alt - n : open "/Applications/Hyper.app"
+shift + alt - n : open "/Applications/Alacritty.app"
 shift + alt - b : open "/Applications/Brave Browser.app"
 shift + alt - g : open "/Applications/Google Chrome.app"
 shift + alt - m : open "/Applications/Google Chrome Canary.app"

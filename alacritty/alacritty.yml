@@ -26,7 +26,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  #startup_mode: SimpleFullscreen
+  startup_mode: SimpleFullscreen
   # Values for `decorations`:
   #     - full: Borders and title bar
   #     - none: Neither borders nor title bar

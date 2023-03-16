@@ -68,10 +68,17 @@ set smartcase
 
 """""
 " set paste nopaste toggle with F3. If in paste mode, autoindetation is off.
-" usefull when pasting from clipboard.
+" useful when pasting from clipboard.
 "
 """"
 set pastetoggle=<F3>
+
+"""""
+" set paste
+" useful when pasting from clipboard.
+"
+""""
+set paste
 
 """""
 " Change leader key

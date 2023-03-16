@@ -26,7 +26,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: SimpleFullscreen
+  # startup_mode: SimpleFullscreen
   # Values for `decorations`:
   #     - full: Borders and title bar
   #     - none: Neither borders nor title bar
@@ -113,4 +113,5 @@ theme: vscode.dark
 key_bindings:
   - { key: Right, mods: Alt, chars: "\eF" }
   - { key: Left, mods: Alt, chars: "\eB" }
+  - { key: F, mods: Command, action: ToggleSimpleFullscreen   }
 

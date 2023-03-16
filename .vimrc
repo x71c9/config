@@ -74,13 +74,6 @@ set smartcase
 set pastetoggle=<F3>
 
 """""
-" set paste
-" useful when pasting from clipboard.
-"
-""""
-set paste
-
-"""""
 " Change leader key
 "
 """"
@@ -1465,6 +1458,12 @@ let g:tsuquyomi_disable_quickfix = 1
 "   return ""
 " endfunction
 
+if &term =~ "screen"
+	let &t_BE = "\e[?2004h"
+	let &t_BD = "\e[?2004l"
+	exec "set t_PS=\e[200~"
+	exec "set t_PE=\e[201~"
+endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""

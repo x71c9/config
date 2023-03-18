@@ -5,42 +5,14 @@ window:
   dimensions:
     columns: 192
     lines: 54
-  #position:
-  #  x: 0
-  #  y: 0
   padding:
     x: 6
     y: 6
-    # title: Alacritty
-    # class:
-    # Application instance name
-    # instance: Alacritty
-    # General application class
-    # general: Alacritty
-  # Startup Mode (changes require restart)
-  #
-  # Values for `startup_mode`:
-  #   - Windowed
-  #   - Maximized
-  #   - Fullscreen
-  #
-  # Values for `startup_mode` (macOS only):
-  #   - SimpleFullscreen
-  # startup_mode: SimpleFullscreen
-  # Values for `decorations`:
-  #     - full: Borders and title bar
-  #     - none: Neither borders nor title bar
-  #
-  # Values for `decorations` (macOS only):
-  #     - transparent: Title bar, transparent background and title bar buttons
-  #     - buttonless: Title bar, transparent background, but no title bar buttons
   decorations: none
 
 scrolling:
   history: 10000
   multiplier: 10
-  # Scroll to the bottom when new text is written to the terminal.
-  #auto_scroll: false
 
 tabspaces: 2
 
@@ -61,22 +33,12 @@ font:
   offset:
     x: 0
     y: 1
-  #glyph_offset:
-  #  x: 0
-  #  y: 0
+
 draw_bold_text_with_bright_colors: true
 
-#cursor:
-# Cursor style
-#
-# Values for `style`:
-#   - ▇ Block
-#   - _ Underline
-#   - | Beam
-#style: Block
 live_config_reload: true
 
-# Needed for italian keyboard: Alt (Option) is used for  multiple chars.
+# Needed for italian keyboard: Alt (Option) is used for multiple chars.
 alt_send_esc: false
 
 colors:

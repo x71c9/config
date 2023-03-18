@@ -1,0 +1,4 @@
+theme = "edge_default"
+
+[editor.statusline]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type", "position-percentage"]

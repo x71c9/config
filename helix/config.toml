@@ -1,6 +1,6 @@
 theme = "edge_custom"
 
-"yy" = "xy"
+y.y = "xy"
 
 [editor.statusline]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type", "position-percentage"]

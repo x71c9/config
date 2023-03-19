@@ -7,6 +7,6 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 render = true
 character = "╎"
 
-[editor.whitespace]
+[editor.whitespace.render]
 render = true
 character = "•"

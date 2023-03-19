@@ -1,4 +1,4 @@
-theme = "edge_default"
+theme = "edge_custom"
 
 [editor.statusline]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type", "position-percentage"]

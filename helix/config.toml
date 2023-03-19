@@ -1,9 +1,5 @@
 theme = "edge_custom"
 
-[keys.insert]
-y = { y = "xy" } # Map yy -> xy
-d = { d = "xd" } # Map dd -> xd
-
 [editor.statusline]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type", "position-percentage"]
 

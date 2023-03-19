@@ -1,5 +1,11 @@
 theme = "edge_custom"
 
+# Map yy -> xy
+y = { y = "xy" }
+
+# Map dd -> xd
+d = { d = "xd" }
+
 [editor.statusline]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type", "position-percentage"]
 
@@ -12,3 +18,4 @@ tab = "all"
 nbsp = "all"
 space = "all"
 newline = "all"
+

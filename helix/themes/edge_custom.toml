@@ -86,22 +86,14 @@
 
 [palette]
 
-# black = "#202023"
+black = "#202023"
 # bg0 = "#2c2e34"
-# bg1 = "#33353f"
-# bg2 = "#363944"
-# bg3 = "#3b3e48"
-# bg4 = "#414550"
-
-black = "#2B2B2B"
-bg0 = "#2B2B2B"
-bg1 = "#2B2B2B"
-bg2 = "#2B2B2B"
-bg3 = "#2B2B2B"
-
-# bbg_grey = "#828a98"
-bbg_grey = "#2B2B2B"
-
+bg0 = "#000000"
+bg1 = "#33353f"
+bg2 = "#363944"
+bg3 = "#3b3e48"
+bg4 = "#414550"
+bg_grey = "#828a98"
 bg_red = "#ec7279"
 diff_red = "#55393d"
 bg_green = "#a0c980"
@@ -118,8 +110,5 @@ green = "#a0c980"
 cyan = "#5dbbc1"
 blue = "#6cb6eb"
 purple = "#d38aea"
-
-# grey = "#7f8490"
-# grey_dim = "#5b616e"
-grey = "#2B2B2B"
-grey_dim = "#2B2B2B"
+grey = "#7f8490"
+grey_dim = "#5b616e"

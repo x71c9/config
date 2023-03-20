@@ -1,7 +1,8 @@
-theme = "edge_custom"
+theme = "edge_customm
 
 [editor]
-relative = true
+bufferlinee = "always"
+line-number = "relative"
 
 [editor.statusline]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type", "position-percentage"]

@@ -19,3 +19,8 @@ mkdir ~/.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
+## Link coc-config
+```bash
+ln -s ~/repos/config/vim/coc-settings.json ~/.vim/
+```
+

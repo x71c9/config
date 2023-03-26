@@ -18,6 +18,10 @@ mkdir ~/.vim/.vim_backups/
 mkdir ~/.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+Inside Vim:
+```bash
+:PlugInstall
+```
 
 ## Link coc-config
 ```bash

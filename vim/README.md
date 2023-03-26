@@ -23,8 +23,10 @@ Inside Vim:
 :PlugInstall
 ```
 
-## Link coc-config
-```bash
-ln -s ~/repos/config/vim/coc-settings.json ~/.vim/
+##### Installing COC Autocomplte
+```
+ln -s ~/repo/config/coc-settings.json ~/.vim/coc-settings.json
+:CocInstall coc-tsserver coc-json coc-css
+
 ```
 

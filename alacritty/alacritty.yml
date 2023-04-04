@@ -20,7 +20,7 @@ tabspaces: 2
 
 font:
   normal:
-    family: Noto Sans
+    family: Roboto Black
     style: Regular
   # normal:
   #   family: IBM IBM VGA 9x16

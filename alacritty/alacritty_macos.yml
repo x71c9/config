@@ -1,0 +1,79 @@
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 192
+    lines: 54
+  padding:
+    x: 0
+    y: 0
+  decorations: none
+
+scrolling:
+  history: 10000
+  multiplier: 10
+
+tabspaces: 2
+
+font:
+  normal:
+    family: IBM Plex Mono
+    style: Regular
+  bold:
+    family: IBM Plex Mono
+    style: Bold
+  italic:
+    family: IBM Plex Mono
+    style: Italic
+  bold_italic:
+    family: IBM Plex Mono
+    style: Bold Italic
+  size: 12.0
+  offset:
+    x: 0
+    y: 1
+
+draw_bold_text_with_bright_colors: true
+
+live_config_reload: true
+
+# Needed for italian keyboard: Alt (Option) is used for multiple chars.
+alt_send_esc: false
+
+colors:
+  name: vscode (dark)
+  author: senpai-10
+  primary:
+    background: "#1E1E1E"
+    foreground: "#D4D4D4"
+  cursor:
+    text: "#1d1f21"
+    cursor: "#cccccc"
+  normal:
+    black: "#000000"
+    red: "#cd3131"
+    green: "#0dbc79"
+    yellow: "#e5e510"
+    blue: "#2472c8"
+    magenta: "#bc3fbc"
+    cyan: "#11a8cd"
+    white: "#e5e5e5"
+  bright:
+    black: "#666666"
+    red: "#f14c4c"
+    green: "#23d18b"
+    yellow: "#f5f543"
+    blue: "#3b8eea"
+    magenta: "#d670d6"
+    cyan: "#29b8db"
+    white: "#e5e5e5"
+
+theme: vscode.dark
+
+# Other color themes: https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/alacritty/alacritty.yml
+key_bindings:
+  - { key: Right, mods: Alt, chars: "\eF" }
+  - { key: Left, mods: Alt, chars: "\eB" }
+  - { key: F, mods: Command, action: ToggleSimpleFullscreen   }
+

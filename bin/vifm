@@ -3,8 +3,9 @@
 if [ -f ~/.config/vifm/lastdir ]; then
     rm ~/.config/vifm/lastdir
 fi
-#/opt/homebrew/bin/vifm "$@"
-/usr/bin/vifm "$@"
+
+/opt/homebrew/bin/vifm "$@"
+
 if [ -f ~/.config/vifm/lastdir ]; then
     cd `cat ~/.config/vifm/lastdir`
 fi

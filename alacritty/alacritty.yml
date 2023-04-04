@@ -20,7 +20,7 @@ tabspaces: 2
 
 font:
   normal:
-    family: IBM
+    family: iv16x16u
     style: Regular
   # normal:
   #   family: IBM Plex Mono

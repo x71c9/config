@@ -20,7 +20,7 @@ tabspaces: 2
 
 font:
   normal:
-    family: IBM VGA
+    family: -ibm-vga-normal-r-normal--16-120-96-96-c-90-iso10646-1
     style: Regular
   # normal:
   #   family: IBM Plex Mono

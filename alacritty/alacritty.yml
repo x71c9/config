@@ -9,6 +9,7 @@ window:
     x: 0
     y: 0
   decorations: none
+  option_as_alt: false
 
 scrolling:
   history: 10000
@@ -39,7 +40,8 @@ draw_bold_text_with_bright_colors: true
 live_config_reload: true
 
 # Needed for italian keyboard: Alt (Option) is used for multiple chars.
-alt_send_esc: false
+# alt_send_esc: false
+
 
 colors:
   name: vscode (dark)

@@ -20,11 +20,14 @@ tabspaces: 2
 
 font:
   normal:
-    family: IBM IBM VGA 9x16
+    family: Noto Sans
     style: Regular
-  bold:
-    family: IBM IBM VGA 9x16
-    style: Regular
+  # normal:
+  #   family: IBM IBM VGA 9x16
+  #   style: Regular
+  # bold:
+  #   family: IBM IBM VGA 9x16
+  #   style: Regular
   # normal:
   #   family: IBM Plex Mono
   #   style: Regular

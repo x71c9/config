@@ -967,7 +967,7 @@ let g:coc_disable_transparent_cursor = 1
 
 "" GoTo code navigation.
 "" nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gtd :call CocAction('jumpDefinition', 'tab drop')<CR>
+nmap <silent> gvd :call CocAction('jumpDefinition', 'tab drop')<CR>
 nmap <silent> gd :call CocAction('jumpDefinition', 'drop')<CR>
 nmap <silent> gy <Plug>(coc-type-definition)
 "" nmap <silent> gi <Plug>(coc-implementation)

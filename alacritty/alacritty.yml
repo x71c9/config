@@ -37,7 +37,7 @@ font:
   size: 11.0
   offset:
     x: 0
-    y: 2
+    y: 3
 
 # draw_bold_text_with_bright_colors: true
 
@@ -83,3 +83,19 @@ live_config_reload: true
 #   - { key: Left, mods: Alt, chars: "\eB" }
 #  - { key: F, mods: Command, action: ToggleSimpleFullscreen   }
 
+colors:
+  primary:
+    background: "#000000"
+    foreground: "#D4D4D4"
+  cursor:
+    text: "#1d1f21"
+    cursor: "#cccccc"
+  normal:
+    black: "#000000"
+    red: "#cd3131"
+    green: "#0dbc79"
+    yellow: "#e5e510"
+    blue: "#2472c8"
+    magenta: "#bc3fbc"
+    cyan: "#11a8cd"
+    white: "#e5e5e5"

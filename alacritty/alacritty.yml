@@ -89,7 +89,7 @@ colors:
     foreground: "#D4D4D4"
   cursor:
     text: "#1d1f21"
-    cursor: "#cccccc"
+    cursor: "#FF00CC"
   normal:
     black: "#000000"
     red: "#cd3131"

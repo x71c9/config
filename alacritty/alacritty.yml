@@ -20,7 +20,7 @@ tabspaces: 2
 
 font:
   normal:
-    family: Helvetica
+    family: Noto Serif Bengali
     style: Regular
   # normal:
   #   family: IBM IBM VGA 9x16

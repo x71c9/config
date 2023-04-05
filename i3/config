@@ -212,11 +212,11 @@ set $purple       #6c2bf9
 set $white        #fdfdfd
 set $blue         #3c0ef3
 set $purple_light #a265f8
-set $purple_dark  #5718ae
+# set $purple_dark  #5718ae
+set $purple_dark  #230858
 
 # class                  border    background    text    indicator
-client.focused           $purple   $purple_dark  $white  $purple
-
+client.focused           $purple   $purple_dark  $white  $purple_dark
 # client.focused_inactive
 # client.unfocused
 # client.urgent

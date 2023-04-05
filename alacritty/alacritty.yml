@@ -22,9 +22,9 @@ font:
   normal:
     family: IBM IBM VGA 9x16
     style: Regular
-  # normal:
-  #   family: IBM IBM VGA 9x16
-  #   style: Regular
+  bold:
+    family: IBM IBM VGA 9x16
+    style: Regular
   # bold:
   #   family: IBM IBM VGA 9x16
   #   style: Regular

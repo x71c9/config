@@ -204,3 +204,11 @@ bindsym $mod+x exec i3lock
 # Window style
 default_border pixel
 default_floating_border pixel
+
+# Colors
+set $black        #000000
+set $white        #ffffff
+set $purple       #6c2bf9
+set $white        #fdfdfd
+set $blue         #3c0ef3
+set $purple_light #a265f8

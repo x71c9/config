@@ -200,3 +200,7 @@ exec_always feh --bg-fill /home/x71c9/Pictures/Wallpapers/001.jpg
 
 # Keybinding for i3lock
 bindsym $mod+x exec i3lock
+
+# Window style
+default_border pixel
+default_floating_border pixel

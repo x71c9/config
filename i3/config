@@ -202,8 +202,8 @@ exec_always feh --bg-fill /home/x71c9/Pictures/Wallpapers/001.jpg
 bindsym $mod+x exec i3lock
 
 # Window style
-default_border pixel
-default_floating_border pixel
+default_border pixel 10
+default_floating_border pixel 10
 
 # Colors
 set $black        #000000

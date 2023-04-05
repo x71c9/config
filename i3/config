@@ -222,3 +222,6 @@ client.focused           $purple   $purple_dark  $white  $purple_dark
 # client.urgent
 # client.placeholder
 # client.background
+
+# Inner gaps
+gaps inner 10px

@@ -214,7 +214,7 @@ set $blue         #3c0ef3
 set $purple_light #a265f8
 
 # class                  border    background    text
-client.focused           $purple
+client.focused           $purple   $purple        $white
 
 # client.focused_inactive
 # client.unfocused

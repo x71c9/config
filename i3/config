@@ -228,7 +228,7 @@ client.focused           $purple   $purple  $white  $purple
 gaps inner 10px
 
 # Keybinding for volume
-bindsym F2 exec amix -q sset Master 5%-
+bindsym XF86AudioRaseVolume exec amix -q sset Master 5%-
 bindsym F3 exec amix -q sset Master 5%+
 
 

@@ -199,9 +199,6 @@ bar {
 # Display wallpaper
 exec_always --no-startup-id feh --bg-fill /home/x71c9/Pictures/Wallpapers/001.jpg
 
-# Keybinding for i3lock
-bindsym $mod+x exec i3lock
-
 # Window style
 default_border pixel 2
 default_floating_border pixel 2
@@ -236,6 +233,8 @@ bindsym XF86AudioMute exec amixer -q sset Master toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10%
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
 
+# Keybinding for i3lock
+bindsym $mod+x exec i3lock -f -c $blue
 
 
 

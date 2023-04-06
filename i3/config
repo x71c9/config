@@ -234,7 +234,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10%
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
 
 # Keybinding for i3lock
-bindsym $mod+x exec i3lock -f -c $blue
+bindsym $mod+x exec i3lock -f -c 230858 -u
 
 
 

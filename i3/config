@@ -232,6 +232,10 @@ bindsym XF86AudioLowerVolume exec amix -q sset Master 5%-
 bindsym XF86AudioRaiseVolume exec amix -q sset Master 5%+
 bindsym XF86AudioMute exec amix -q sset Master toggle
 
+# Keybinding for brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+
 
 
 

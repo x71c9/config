@@ -228,8 +228,8 @@ client.focused           $purple   $purple  $white  $purple
 gaps inner 10px
 
 # Keybinding for volume
-bindsym XF86AudioLowerVolume exec amix -q sset Master 5%-
-bindsym XF86AudioRaiseVolume exec amix -q sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 5%-
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+
 bindsym XF86AudioMute exec amix -q sset Master toggle
 
 # Keybinding for brightness

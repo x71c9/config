@@ -240,6 +240,6 @@ bindsym $mod+x exec i3lock -f -c 230858 --nofork
 bindsym $mod+y exec xclip -selection clipboard
 
 # Paste cliboard
-bindsym $mod+p exec xclip -o
+bindsym $mod+p exec xclip -selection clipboard -o
 
 

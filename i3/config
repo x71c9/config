@@ -236,5 +236,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
 # Keybinding for i3lock
 bindsym $mod+x exec i3lock -f -c 230858 --nofork
 
+# Paste cliboard
+bindsym $mod+v exec xclip -selection clipboard -f
 
 

@@ -11,8 +11,8 @@ Section "InputClass"
         Identifier "touchpad catchall"
         Driver "synaptics"
         MatchIsTouchpad "on"
-					Option "VertScrollDelta" "-100"
-					Option "HorizScrollDelta" "-100"
+					Option "VertScrollDelta" "-10000"
+					Option "HorizScrollDelta" "-10000"
 # This option is recommend on all Linux systems using evdev, but cannot be
 # enabled by default. See the following link for details:
 # http://who-t.blogspot.com/2010/11/how-to-ignore-configuration-errors.html

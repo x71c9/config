@@ -304,3 +304,6 @@ bindsym $mod+Shift+f gaps inner current set 0
 
 # Start redshift with Berlin lat:lon
 exec --no-startup-id redshift -l 52.520008:13.404954
+
+# Start megasync
+exec --no-startup-id megasync

@@ -196,7 +196,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id setxkbmap it
 
 # Display wallpaper
-exec_always --no-startup-id feh --bg-fill /home/x71c9/Pictures/Wallpapers/001.jpg
+exec_always --no-startup-id feh --bg-fill /home/x71c9/Pictures/Wallpapers/002.jpg
 
 # Window style
 default_border pixel 2

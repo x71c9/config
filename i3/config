@@ -302,3 +302,5 @@ bindsym $mod+x exec i3lock -f -c 230858 --nofork
 bindsym $mod+Shift+g gaps inner current set 10
 bindsym $mod+Shift+f gaps inner current set 0
 
+# Start redshift with Berlin lat:lon
+exec_always --no-startup-id redshift -l 52.520008:13.404954

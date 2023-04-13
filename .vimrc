@@ -308,7 +308,7 @@ set listchars=tab:\|\ ,trail:.,eol:¶,precedes:<,extends:>,space:•,multispace:
 " like a space
 "
 """"
-" set list
+set list
 
 """""
 " overwrite colorscheme highlight colors

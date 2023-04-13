@@ -301,7 +301,7 @@ colorscheme edge
 "
 """"
 " set listchars=tab:\|\ ,trail:•,eol:¶,precedes:«,extends:»
-set listchars=tab:\|\ ,trail:A,eol:¶,precedes:<,extends:>
+set listchars=tab:\|\ ,trail:.,eol:¶,precedes:<,extends:>,space:•
 
 """""
 " in combination with 'set listchars' will make all other character invisible

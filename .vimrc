@@ -753,6 +753,12 @@ Plug 'puremourning/vimspector'
 """"
 Plug 'hashivim/vim-terraform'
 
+""""
+" Plugin for .editorconfig
+"
+""""
+Plug 'editorconfig/editorconfig-vim'
+
 call plug#end()
 
 """"

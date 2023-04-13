@@ -301,14 +301,14 @@ colorscheme edge
 "
 """"
 " set listchars=tab:\|\ ,trail:•,eol:¶,precedes:«,extends:»
-set listchars=tab:\|\ ,trail:\|,eol:¶,precedes:<,extends:>
+set listchars=tab:\|\ ,trail:A,eol:¶,precedes:<,extends:>
 
 """""
 " in combination with 'set listchars' will make all other character invisible
 " like a space
 "
 """"
-set list
+" set list
 
 """""
 " overwrite colorscheme highlight colors

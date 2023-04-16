@@ -699,10 +699,7 @@ Plug 'tpope/vim-surround'
 "
 """"
 " Plug 'prettier/vim-prettier'
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install --frozen-lockfile --production',
-  \ 'branch': 'release/0.x'
-  \ }
+Plug 'prettier/vim-prettier', {'do': 'yarn install --frozen-lockfile --production', 'branch': 'release/0.x' }
 
 """"
 " Vim-pug
@@ -963,6 +960,10 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 map <F9> :echo "fg<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg") . '> bg<'
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"bg") . ">"<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""" Prettier """"""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""
+let g:prettier#autoformat = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""" COC Autocomplete """"""""""""""""""""

@@ -251,7 +251,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
 bindsym $mod+x exec i3lock -f -c 230858 --nofork
 
 # Run i3lock when xss-lock (when lid close)
-exec --no-startup-id xss-lock -- i3lock -c 000000 
+exec --no-startup-id xss-lock -- i3lock -f -c 230858 --nofork
 
 # Paste cliboard
 # bindsym $mod+c exec xclip 

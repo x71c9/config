@@ -252,7 +252,8 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
 
 # Keybinding for screenshot
 bindsym Print exec flameshot full -p ~/pictures/screenshots/$(date +"%Y-%m-%d_%H:%M:%S.%3N").png
-bindsym Shift+Print exec flameshot gui
+bindsym Shift+Print exec flameshot gui -p ~/pictures/screenshots/$(date +"%Y-%m-%d_%H:%M:%S.%3N").png
+bindsym Control+Shift+Print exec flameshot gui -p ~/pictures/screenshots/$(date +"%Y-%m-%d_%H:%M:%S.%3N").png
 
 # Paste cliboard
 # bindsym $mod+c exec xclip 

@@ -250,6 +250,10 @@ bindsym XF86AudioMute exec amixer -q sset Master toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10%
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
 
+# Keybinding for screenshot
+bindsym Print exec flameshot full
+bindsym Shift+Print exec flameshot gui
+
 # Paste cliboard
 # bindsym $mod+c exec xclip 
 

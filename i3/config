@@ -199,7 +199,10 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id setxkbmap it
 
 # Display wallpaper
-exec_always --no-startup-id feh --bg-fill /home/x71c9/pictures/wallpapers/005.jpg
+# exec_always --no-startup-id feh --bg-fill /home/x71c9/pictures/wallpapers/005.jpg
+
+# Display a random wallpaper within a directory
+exec_always --no-startup-id feh --bg-fill $(find ~/pictures/wallpapers/ -type f -print0 | shuf -z -n 1 | xargs -0 realpath)
 
 # Window style
 default_border pixel 2
@@ -226,16 +229,17 @@ client.focused           $purple   $purple  $white  $purple
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status -c /home/x71c9/.config/i3status/i3status.conf
-				# status_command exec /home/x71c9/.config/i3/net-speed.sh
-				separator_symbol "::"
-				colors {
-					background $purple_dark
-					# class							border 				background		text
-					active_workspace 		$purple 			$purple 			$purple
-					focused_workspace 	$purple_dark 	$purple 			$white
-					inactive_workspace 	$purple_dark 	$purple_dark 	$white
-				}
+	tray_padding 5
+	status_command i3status -c /home/x71c9/.config/i3status/i3status.conf
+	# status_command exec /home/x71c9/.config/i3/net-speed.sh
+	separator_symbol "::"
+	colors {
+		background $purple_dark
+		# class							border 				background		text
+		active_workspace 		$purple 			$purple 			$purple
+		focused_workspace 	$purple_dark 	$purple 			$white
+		inactive_workspace 	$purple_dark 	$purple_dark 	$white
+	}
 }
 
 # Inner gaps

@@ -89,7 +89,7 @@ live_config_reload: true
 colors:
   primary:
     background: "#000000"
-    foreground: "#AAAAAA"
+    foreground: "#FFFFFF"
   cursor:
     text: "#1d1f21"
     cursor: "#FF00CC"

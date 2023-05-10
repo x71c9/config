@@ -58,6 +58,12 @@ tiling_drag modifier titlebar
 # bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec alacritty
 
+# start firefox
+bindsym $mod+o exec firefox
+
+# start chromium
+bindsym $mod+e exec chromium
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -101,7 +107,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+o split h
+bindsym $mod+i split h
 
 # split in vertical orientation
 bindsym $mod+v split v

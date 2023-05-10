@@ -62,7 +62,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+o exec firefox
 
 # start chromium
-bindsym $mod+e exec chromium
+bindsym $mod+t exec chromium
 
 # kill focused window
 bindsym $mod+Shift+q kill

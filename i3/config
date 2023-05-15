@@ -256,7 +256,7 @@ bar {
 }
 
 # Inner gaps
-# gaps inner 10px
+gaps inner 10px
 
 # Keybinding for volume
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-

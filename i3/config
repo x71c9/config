@@ -216,10 +216,10 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id setxkbmap it
 
 # Display wallpaper
-# exec_always --no-startup-id feh --bg-fill /home/x71c9/pictures/wallpapers/005.jpg
+# exec_always --no-startup-id feh --bg-fill /home/x71c9/Pictures/wallpapers/005.jpg
 
 # Display a random wallpaper within a directory
-exec_always --no-startup-id feh --bg-fill $(find ~/pictures/wallpapers/ -type f -print0 | shuf -z -n 1 | xargs -0 realpath)
+exec_always --no-startup-id feh --bg-fill $(find ~/Pictures/wallpapers/ -type f -print0 | shuf -z -n 1 | xargs -0 realpath)
 
 # Window style
 default_border pixel 2
@@ -277,8 +277,8 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10%
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10%
 
 # Keybinding for screenshot
-bindsym Print exec --no-startup-id flameshot full -p ~/pictures/screenshots/$(date +"%Y-%m-%d_%H:%M:%S.%3N").png
-bindsym Shift+Print exec --no-startup-id flameshot gui -p ~/pictures/screenshots/$(date +"%Y-%m-%d_%H:%M:%S.%3N").png
+bindsym Print exec --no-startup-id flameshot full -p ~/Pictures/screenshots/$(date +"%Y-%m-%d_%H:%M:%S.%3N").png
+bindsym Shift+Print exec --no-startup-id flameshot gui -p ~/Pictures/screenshots/$(date +"%Y-%m-%d_%H:%M:%S.%3N").png
 bindsym Control+Print exec --no-startup-id flameshot full -c
 bindsym Control+Shift+Print exec --no-startup-id flameshot gui -c
 

@@ -1364,6 +1364,10 @@ let g:NERDDefaultAlign = 'left'
 "nnoremap <C-_> :call NERDComment(0, "toggle")<C-m>
 " nnoremap <C-_> :call nerdcommenter#Comment(0, "toggle")<C-m>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""" Svelte Plugin """""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vim_svelte_plugin_use_typescript = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""" MatchTagAlways """"""""""""""""""""

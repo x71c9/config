@@ -761,6 +761,12 @@ Plug 'hashivim/vim-terraform'
 """"
 Plug 'editorconfig/editorconfig-vim'
 
+""""
+" Plugin for Svelte
+"
+""""
+Plug 'leafOfTree/vim-svelte-plugin'
+
 call plug#end()
 
 """"

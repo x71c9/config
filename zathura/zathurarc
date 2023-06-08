@@ -9,5 +9,5 @@ map r reload
 map R rotate
 map i recolor
 map p print
-map Down goto full-down
-map Up goto full-up
+map Down scroll full-down
+map Up scroll full-up

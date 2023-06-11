@@ -72,8 +72,8 @@ bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed 
 # change container layout (toggle split)
 bindsym $mod+e layout toggle split
 
-# reload the configuration file
-bindsym $mod+r reload
+# enter mode resize
+bindsym $mod+r mode "resize"
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -125,6 +125,9 @@ bindsym $mod+Shift+semicolon move right
 
 # Keybinding for i3lock
 bindsym $mod+x exec --no-startup-id i3lock -f -c 230858 --nofork
+
+# reload the configuration file
+bindsym $mod+c reload
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -213,8 +216,6 @@ mode "resize" {
 	bindsym Escape mode "default"
 	bindsym $mod+r mode "default"
 }
-
-bindsym $mod+r mode "resize"
 
 # Set italian keyboard layout
 exec_always --no-startup-id setxkbmap it

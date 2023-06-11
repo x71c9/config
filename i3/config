@@ -62,7 +62,7 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+o exec --no-startup-id firefox
 
 # start chromium
-bindsym $mod+u exec --no-startup-id chromiuim
+bindsym $mod+p exec --no-startup-id chromiuim
 
 # kill focused window
 bindsym $mod+Shift+q kill

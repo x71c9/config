@@ -99,8 +99,7 @@ bindsym $mod+o exec --no-startup-id firefox
 bindsym $mod+u exec --no-startup-id chromiuim
 
 # keybind for passmenu
-# bindsym $mod+p exec --no-startup-id passmenu
-bindsym $mod+p exec --no-startup-id rofi-pass
+dindsym $mod+p exec --no-startup-id rofi-pass
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle

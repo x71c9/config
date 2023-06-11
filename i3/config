@@ -96,7 +96,7 @@ bindsym $mod+i split h
 bindsym $mod+o exec --no-startup-id firefox
 
 # start chromium
-bindsym $mod+u exec --no-startup-id chromiuim
+bindsym $mod+u exec --no-startup-id chromiuim &
 
 # keybind for passmenu
 bindsym $mod+p exec --no-startup-id rofi-pass

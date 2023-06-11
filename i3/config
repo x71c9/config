@@ -59,10 +59,10 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec --no-startup-id alacritty
 
 # start firefox
-bindsym $mod+o exec --no-startup-id firefox
+bindsym $mod+i exec --no-startup-id firefox
 
 # start chromium
-bindsym $mod+t exec --no-startup-id chromium
+bindsym $mod+h exec --no-startup-id chromiuim
 
 # kill focused window
 bindsym $mod+Shift+q kill

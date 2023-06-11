@@ -167,6 +167,10 @@ set $ws10 "0"
 bindsym $mod+Mod1+Tab workspace next
 bindsym $mod+Mod1+Shift+Tab workspace prev
 
+# Focus next window
+bindsym $mod+Tab focus next
+bindsym $mod+Shift+Tab focus prev
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2

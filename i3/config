@@ -164,8 +164,8 @@ set $ws9 "9"
 set $ws10 "0"
 
 # Next/Prev workspace
-bindsym $mod+Alt+Tab workspace next
-bindsym $mod+Alt+Shift+Tab workspace prev
+bindsym $mod+Mod1+Tab workspace next
+bindsym $mod+Mod1+Shift+Tab workspace prev
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1

@@ -93,10 +93,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+i split h
 
 # start firefox
-bindsym $mod+u exec --no-startup-id firefox
+bindsym $mod+o exec --no-startup-id firefox
 
 # start chromium
-bindsym $mod+y exec --no-startup-id chromiuim
+bindsym $mod+u exec --no-startup-id chromiuim
 
 # keybind for passmenu
 # bindsym $mod+p exec --no-startup-id passmenu

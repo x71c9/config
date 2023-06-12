@@ -136,7 +136,7 @@ set complete+=kspell
 "
 """"
 set autoindent
-set noexpandtab
+" set noexpandtab
 set smartindent
 set smarttab
 set tabstop=2

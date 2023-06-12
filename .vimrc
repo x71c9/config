@@ -132,15 +132,21 @@ set complete+=kspell
 "set spell
 
 """""
-" force indentation of two with one tab only
+" indentation of 2 spaces with 1 tab
 "
 """"
 set autoindent
-" set noexpandtab
 set smartindent
 set smarttab
 set tabstop=2
 set shiftwidth=2
+set expandtab
+
+"""""
+" force indentation of two with one tab only
+"
+""""
+" set noexpandtab
 
 """""
 " set tabs for markdown file type

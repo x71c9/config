@@ -97,6 +97,8 @@ bindsym $mod+o exec --no-startup-id firefox
 
 # start chromium
 bindsym $mod+m exec --no-startup-id chromium
+# bindsym $mod+m exec --no-startup-id [ "$(i3-msg -t get_workspaces | jq '.[] | select(.focused==true).name')" = "1" ] chromium --profile-directory="Profile 1" || chromium
+
 
 # keybind for passmenu
 bindsym $mod+p exec --no-startup-id rofi-pass

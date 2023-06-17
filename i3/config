@@ -96,7 +96,8 @@ bindsym $mod+i split h
 bindsym $mod+o exec --no-startup-id firefox
 
 # start pchromium (alias for bash ~/repos/scripts/bash/i3_open_chromium.sh)
-bindsym $mod+m exec --no-startup-id pchromium
+# bindsym $mod+m exec --no-startup-id pchromium
+bindsym $mod+m exec --no-startup-id bash ~/repos/scripts/bash/i3_open_chromium.sh
 
 # keybind for passmenu
 bindsym $mod+p exec --no-startup-id rofi-pass

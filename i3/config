@@ -18,6 +18,13 @@ set $mod Mod4
 # font pango:Hack 9
 font pango:IBM Plex Mono 10
 
+# Create arithmetic window in alacritty
+for_window [instance="hidden"] floating enable
+for_window [instance="hidden"] resize set 625 400
+for_window [instance="hidden"] move scratchpad
+for_window [instance="hidden"] border pixel 5
+exec --no-startup-id alacritty --title hidden -e node
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 # font pango:DejaVu Sans Mono 8

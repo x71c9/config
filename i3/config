@@ -106,6 +106,9 @@ bindsym $mod+o exec --no-startup-id firefox
 # bindsym $mod+m exec --no-startup-id pchromium
 bindsym $mod+m exec --no-startup-id bash ~/repos/scripts/bash/i3_open_chromium.sh
 
+# Show scratchpad for arithmetic
+bindsym $mod+Shift+m [instance="hidden"] scratchpad show; [instance="hidden"] move position center
+
 # keybind for passmenu
 bindsym $mod+p exec --no-startup-id rofi-pass
 

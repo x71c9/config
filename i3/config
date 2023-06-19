@@ -23,7 +23,7 @@ for_window [instance="hidden"] floating enable
 for_window [instance="hidden"] resize set 625 400
 for_window [instance="hidden"] move scratchpad
 for_window [instance="hidden"] border pixel 5
-exec --no-startup-id alacritty --title hidden -e node
+exec --no-startup-id alacritty --title hidden -o font.size=15 -e node
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).

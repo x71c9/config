@@ -21,11 +21,11 @@ font pango:IBM Plex Mono 10
 for_window [class="^floating$"] floating enable
 
 # Create arithmetic window in alacritty
-for_window [class="math"] floating enable
-for_window [class="math"] resize set 625 400
-for_window [class="math"] move scratchpad
-for_window [class="math"] border pixel 5
-exec --no-startup-id alacritty --class="math" -e node
+for_window [title="math"] floating enable
+for_window [title="math"] resize set 625 400
+for_window [title="math"] move scratchpad
+for_window [title="math"] border pixel 5
+exec --no-startup-id alacritty --title math -e node
 # exec --no-startup-id alacritty --class="math" --title="math"
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -110,7 +110,7 @@ bindsym $mod+o exec --no-startup-id firefox
 bindsym $mod+m exec --no-startup-id bash ~/repos/scripts/bash/i3_open_chromium.sh
 
 # Show scratchpad for arithmetic
-bindsym $mod+Shift+m [class="math"] scratchpad show
+bindsym $mod+Shift+m [title="math"] scratchpad show
 # bindsym $mod+Shift+m [class="math"] scratchpad show; [class="math"] move position center
 
 # keybind for passmenu

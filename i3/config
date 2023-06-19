@@ -25,7 +25,7 @@ for_window [title="math"] floating enable
 for_window [title="math"] resize set 625 400
 for_window [title="math"] move scratchpad
 for_window [title="math"] border pixel 3
-exec --no-startup-id alacritty --title math -o font.size=15 padding.x=299 -e node
+exec --no-startup-id alacritty --title math -o font.size=13 window.padding.y=15 window.padding.x=15 -e node
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).

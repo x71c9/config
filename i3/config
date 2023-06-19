@@ -21,10 +21,11 @@ font pango:IBM Plex Mono 10
 # Create arithmetic window in alacritty
 # for_window [class="math"] floating enable
 # for_window [class="math"] resize set 625 400
-for_window [class="math"] move scratchpad
+# for_window [class="math"] move scratchpad
 # for_window [class="math"] border pixel 5
 # exec --no-startup-id alacritty --class="math" -e node
-exec --no-startup-id alacritty --class="math" --title="math"
+# exec --no-startup-id alacritty --class="math" --title="math"
+exec --no-startup-id alacritty
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).

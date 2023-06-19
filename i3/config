@@ -19,11 +19,11 @@ set $mod Mod4
 font pango:IBM Plex Mono 10
 
 # Create arithmetic window in alacritty
-for_window [instance="hidden"] floating enable
-for_window [instance="hidden"] resize set 625 400
-for_window [instance="hidden"] move scratchpad
-for_window [instance="hidden"] border pixel 5
-exec --no-startup-id alacritty --title hidden -o font.size=15 -e node
+for_window [instance="math"] floating enable
+for_window [instance="math"] resize set 625 400
+for_window [instance="math"] move scratchpad
+for_window [instance="math"] border pixel 5
+exec --no-startup-id alacritty --title math -o font.size=15 -e node
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -107,7 +107,7 @@ bindsym $mod+o exec --no-startup-id firefox
 bindsym $mod+m exec --no-startup-id bash ~/repos/scripts/bash/i3_open_chromium.sh
 
 # Show scratchpad for arithmetic
-bindsym $mod+Shift+m [instance="hidden"] scratchpad show; [instance="hidden"] move position center
+bindsym $mod+Shift+m [instance="math"] scratchpad show; [instance="math"] move position center
 
 # keybind for passmenu
 bindsym $mod+p exec --no-startup-id rofi-pass

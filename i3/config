@@ -103,7 +103,7 @@ bindsym $mod+m exec --no-startup-id bash ~/repos/scripts/bash/i3_open_chromium.s
 bindsym $mod+p exec --no-startup-id rofi-pass
 
 # keybind for opening typescript playground in a new window of firefox
-bindsym $mod+Shift+p exec --no-startup-id playground
+bindsym $mod+Shift+p exec --no-startup-id firefox --new-window https://www.typescriptlang.org/play
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle

@@ -19,6 +19,7 @@ set $mod Mod4
 font pango:IBM Plex Mono 10
 
 for_window [title="floating"] floating enable
+for_window [class="^floating$"] floating enable
 
 # Create arithmetic window in alacritty
 for_window [class="math"] floating enable

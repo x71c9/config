@@ -2,14 +2,8 @@
   "diagnostic.checkCurrentLine": true,
   "diagnostic.messageTarget": "float",
   "diagnostic.errorSign": ">>",
-  "diagnostic.format": "%message (%source%code)",
   "diagnostic.warningSign": "->",
-  "diagnostic.virtualText": false,
-  "diagnostic.virtualTextCurrentLineOnly": false,
-  "diagnostic.enableSign": true,
-  "diagnostic.enableMessage": "jump",
   "javascript.suggestionActions.enabled": false,
-  "tsserver.enableJavascript": true,
   "suggest.autoTrigger": "trigger",
   "suggest.languageSourcePriority": 99
 }

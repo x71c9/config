@@ -8,9 +8,8 @@
   "diagnostic.virtualTextCurrentLineOnly": false,
   "diagnostic.enableSign": true,
   "diagnostic.enableMessage": "jump",
-  "diagnostic.floatConfig": {},
   "javascript.suggestionActions.enabled": false,
   "tsserver.enableJavascript": true,
   "suggest.autoTrigger": "trigger",
-  "suggest.languageSourcePriority": 99,
+  "suggest.languageSourcePriority": 99
 }

@@ -980,6 +980,11 @@ let g:prettier#autoformat = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""" COC Autocomplete """"""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved
+set signcolumn=yes
+
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1

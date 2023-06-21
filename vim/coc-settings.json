@@ -3,7 +3,7 @@
   "diagnostic.messageTarget": "echo",
   "diagnostic.errorSign": ">>",
   "diagnostic.warningSign": "->",
-  "diagnostic.virtualText": true,
+  "diagnostic.virtualText": false,
   "diagnostic.virtualTextCurrentLineOnly": false,
   "diagnostic.enableSign": true,
   "diagnostic.enableMessage": "jump",

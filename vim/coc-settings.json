@@ -5,6 +5,8 @@
   "diagnostic.warningSign": "->",
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.enableSign": false,
+  "diagnostic.enableMessage": "always",
   "javascript.suggestionActions.enabled": false,
   "tsserver.enableJavascript": true,
   "suggest.autoTrigger": "trigger",

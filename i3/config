@@ -24,6 +24,7 @@ for_window [class="^floating$"] floating enable
 for_window [title="math"] floating enable
 for_window [title="math"] resize set 625 400
 for_window [title="math"] move scratchpad
+for_window [title="math"] move position center
 for_window [title="math"] border pixel 3
 exec --no-startup-id alacritty --title math -o font.size=13 window.padding.y=15 window.padding.x=15 -e node
 

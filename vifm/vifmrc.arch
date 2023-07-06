@@ -202,9 +202,9 @@ command! reload :write | restart full
 
 " Pdf
 filetype {*.pdf},<application/pdf>
-       \ zathura
+       \ zathura %c
+fileviewer {*.pdf},<application/pdf> zathura %c
 " fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
-fileviewer {*.pdf},<application/pdf> zathura
 
 " PostScript
 " filetype {*.ps,*.eps,*.ps.gz},<application/postscript> open -a Preview.app
@@ -215,39 +215,27 @@ fileviewer {*.pdf},<application/pdf> zathura
 " Audio
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus},
         \<audio/*>
-       \ play
-fileviewer *.mp3 play
-fileviewer *.flac play
+       \ play %c
+fileviewer *.mp3 play %c
+fileviewer *.flac play %c
 
 " Video
 filetype {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
          \*.fl[icv],*.m2v,*.mov,*.webm,*.mts,*.m4v,*.r[am],*.qt,*.divx,
          \*.as[fx]},
         \<video/*>
-       \ {Open in VLC}
-       \ open -a VLC.app,
-       \ {Open in QuickTime Player}
-       \ open -a QuickTime\ Player.app,
-       \ {Open in MPlayerX}
-       \ open -a MPlayerX.app,
+       \ mpv %c
 fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
            \*.fl[icv],*.m2v,*.mov,*.webm,*.mts,*.m4v,*.r[am],*.qt,*.divx,
            \*.as[fx]},
           \<video/*>
-         \ ffprobe -pretty %c 2>&1
+         \ mpv %c
+" \ ffprobe -pretty %c 2>&1
 
 " Web
 filetype {*.html,*.htm},<text/html>
        \ {Open in vim}
        \ vim,
-       \ {Open in Brave}
-       \ open -a Brave\ Browser.app,
-       \ {Open in Safari}
-       \ open -a Safari.app,
-       \ {Open in Firefox}
-       \ open -a Firefox.app,
-       \ {Open in Chrome}
-       \ open -a Google\ Chrome.app,
 fileviewer {*.html,*.htm},<text/html> w3m -dump -T text/html
 
 " Object

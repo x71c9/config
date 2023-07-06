@@ -215,14 +215,9 @@ fileviewer {*.pdf},<application/pdf> zathura
 " Audio
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus},
         \<audio/*>
-       \ {Play using MPlayerX}
-       \ open -a MPlayerX.app,
-       \ {Open in iTunes}
-       \ open -a iTunes.app,
-       \ {Open in QuickTime Player}
-       \ open -a QuickTime\ Player.app,
-fileviewer *.mp3 mp3info
-fileviewer *.flac soxi
+       \ play
+fileviewer *.mp3 play
+fileviewer *.flac play
 
 " Video
 filetype {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,

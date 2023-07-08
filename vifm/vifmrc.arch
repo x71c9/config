@@ -202,13 +202,18 @@ command! reload :write | restart full
 
 " Pdf
 filetype {*.pdf},<application/pdf>
-  \ {Open in Zathura}
-  \ zathura %c
-fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
+  \{Open in Zathura}
+  \zathura %c
+fileviewer {*.pdf},<application/pdf>
+  \pdftotext -nopgbrk %c -
 
 " Audio
-filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus}, <audio/*> play %c
-fileviewer {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus}, <audio/*> sox %c -n stat
+filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,
+  \*.opus},<audio/*>
+  \{Open with SoX}
+  \play %c
+fileviewer {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,
+  \*.opus},<audio/*> sox %c -n stat
 
 " Video
 filetype {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,

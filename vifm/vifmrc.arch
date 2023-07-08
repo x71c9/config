@@ -200,13 +200,6 @@ command! reload :write | restart full
 " You can also add %CLEAR if you want to clear screen before running FUSE
 " program.
 
-" Pdf
-filetype {*.pdf},<application/pdf>
-  \{Open with Zathura}
-  \zathura %c
-fileviewer {*.pdf},<application/pdf>
-  \pdftotext -nopgbrk %c -
-
 " Audio
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,
   \*.opus},<audio/*>
@@ -236,6 +229,13 @@ filetype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
 fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
   \identify %f
 
+" Pdf
+filetype {*.pdf},<application/pdf>
+  \{Open with Zathura}
+  \zathura %c
+fileviewer {*.pdf},<application/pdf>
+  \pdftotext -nopgbrk %c -
+
 " Web
 filetype {*.html,*.htm},<text/html>
   \{Open in vim}
@@ -255,7 +255,6 @@ fileviewer {*.html,*.htm},<text/html>
 " Man page
 filetype {*.[1-8]},<text/troff> man ./%c
 fileviewer {*.[1-8]},<text/troff> man ./%c | col -b
-
 
 " MD5
 filetype *.md5
@@ -278,8 +277,8 @@ filetype *.sha512
        \ sha512sum -c %f %S,
 
 " Torrent
-filetype {*.torrent},<application/x-bittorrent> open -a Transmission.app
-fileviewer {*.torrent},<application/x-bittorrent> dumptorrent -v %c
+" filetype {*.torrent},<application/x-bittorrent> open -a Transmission.app
+" fileviewer {*.torrent},<application/x-bittorrent> dumptorrent -v %c
 
 " Extract zip files
 filetype {*.zip},<application/zip,application/java-archive> unzip %f

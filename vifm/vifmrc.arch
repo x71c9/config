@@ -229,6 +229,13 @@ fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
   \<video/*>
   \ffmpeg -i %c
 
+" Image
+filetype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
+  \{Open with Chrome}
+  \pc %c,
+fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
+  \identify %f
+
 " Web
 filetype {*.html,*.htm},<text/html>
   \{Open in vim}
@@ -243,17 +250,12 @@ fileviewer {*.html,*.htm},<text/html>
 " filetype {*.djvu},<image/vnd.djvu> open -a MacDjView.app
 
 " Object
-filetype {*.o},<application/x-object> nm %f | less
+" filetype {*.o},<application/x-object> nm %f | less
 
 " Man page
 filetype {*.[1-8]},<text/troff> man ./%c
 fileviewer {*.[1-8]},<text/troff> man ./%c | col -b
 
-" Image
-filetype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
-       \ open -a Preview.app,
-fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
-         \ identify %f
 
 " MD5
 filetype *.md5

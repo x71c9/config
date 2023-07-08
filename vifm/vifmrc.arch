@@ -200,6 +200,13 @@ command! reload :write | restart full
 " You can also add %CLEAR if you want to clear screen before running FUSE
 " program.
 
+" Text
+filetype {*.txt,*.md,*.js,*.ts,*.json,*.config,*.sh},<text/*>
+  \ {Open with Vim}
+  \ vim %c
+fileviewer {*.txt,*.md,*.js,*.ts,*.json,*.config,*.sh},<text/*>
+  \ bat %c
+
 " Audio
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,
   \*.opus},<audio/*>

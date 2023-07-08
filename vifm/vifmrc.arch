@@ -203,45 +203,45 @@ command! reload :write | restart full
 " Audio
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,
   \*.opus},<audio/*>
-  \{Open with SoX}
-  \play %c
+  \ {Open with SoX}
+  \ play %c
 fileviewer {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,
   \*.opus},<audio/*>
-  \sox %c -n stat
+  \ sox %c -n stat
 
 " Video
 filetype {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
   \*.fl[icv],*.m2v,*.mov,*.webm,*.mts,*.m4v,*.r[am],*.qt,*.divx,
   \*.as[fx]},
-  \<video/*>
-  \{Open with MPV}
-  \mpv %c
+  \ <video/*>
+  \ {Open with MPV}
+  \ mpv %c
 fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
   \*.fl[icv],*.m2v,*.mov,*.webm,*.mts,*.m4v,*.r[am],*.qt,*.divx,
   \*.as[fx]},
-  \<video/*>
-  \ffmpeg -i %c
+  \ <video/*>
+  \ ffmpeg -i %c
 
 " Image
 filetype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
   \{Open with Chrome}
-  \pc %c,
+  \ pc %c,
 fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
-  \identify %f
+  \ identify %f
 
 " Pdf
 filetype {*.pdf},<application/pdf>
-  \{Open with Zathura}
-  \zathura %c
+  \ {Open with Zathura}
+  \ zathura %c
 fileviewer {*.pdf},<application/pdf>
-  \pdftotext -nopgbrk %c -
+  \ pdftotext -nopgbrk %c -
 
 " Web
 filetype {*.html,*.htm},<text/html>
   \{Open in vim}
-  \vim %c,
+  \ vim %c,
 fileviewer {*.html,*.htm},<text/html>
-  \w3m -dump -T text/html
+  \ w3m -dump -T text/html
 
 " PostScript
 " filetype {*.ps,*.eps,*.ps.gz},<application/postscript> open -a Preview.app

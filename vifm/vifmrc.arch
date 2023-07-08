@@ -202,19 +202,10 @@ command! reload :write | restart full
 
 " Pdf
 filetype {*.pdf},<application/pdf> zathura %c
-" fileviewer {*.pdf},<application/pdf> zathura %c
-" fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
-
-" PostScript
-" filetype {*.ps,*.eps,*.ps.gz},<application/postscript> open -a Preview.app
-
-" Djvu
-" filetype {*.djvu},<image/vnd.djvu> open -a MacDjView.app
+fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
 
 " Audio
-" filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus},
-"         \<audio/*>
-"        \ play %c
+filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus}, <audio/*> play %c
 fileviewer *.mp3 play %c
 fileviewer *.wav play %c
 fileviewer *.flac play %c
@@ -237,6 +228,12 @@ fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
 "        \ {Open in vim}
 "        \ vim,
 fileviewer {*.html,*.htm},<text/html> w3m -dump -T text/html
+
+" PostScript
+" filetype {*.ps,*.eps,*.ps.gz},<application/postscript> open -a Preview.app
+
+" Djvu
+" filetype {*.djvu},<image/vnd.djvu> open -a MacDjView.app
 
 " Object
 filetype {*.o},<application/x-object> nm %f | less

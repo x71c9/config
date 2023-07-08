@@ -222,6 +222,8 @@ fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
   \ <video/*>
   \ ffprobe -i %c -show_streams -show_format
 
+" \ ffprobe -i %c -show_streams -show_format -print_format json
+
 " Image
 filetype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
   \{Open with Chrome}

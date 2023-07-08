@@ -201,9 +201,8 @@ command! reload :write | restart full
 " program.
 
 " Pdf
-" filetype {*.pdf},<application/pdf>
-"        \ zathura %c
-fileviewer {*.pdf},<application/pdf> zathura %c
+filetype {*.pdf},<application/pdf> zathura %c
+" fileviewer {*.pdf},<application/pdf> zathura %c
 " fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
 
 " PostScript

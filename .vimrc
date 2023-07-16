@@ -704,8 +704,8 @@ Plug 'tpope/vim-surround'
 " Vim-prettier
 "
 """"
-" Plug 'prettier/vim-prettier'
-Plug 'prettier/vim-prettier', {'do': 'yarn install --frozen-lockfile --production', 'branch': 'release/0.x' }
+Plug 'prettier/vim-prettier'
+" Plug 'prettier/vim-prettier', {'do': 'yarn install --frozen-lockfile --production', 'branch': 'release/0.x' }
 
 """"
 " Vim-pug

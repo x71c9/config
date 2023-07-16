@@ -773,6 +773,12 @@ Plug 'editorconfig/editorconfig-vim'
 """"
 Plug 'leafOfTree/vim-svelte-plugin'
 
+""""
+" Plugin for Astro
+"
+""""
+Plug 'wuelnerdotexe/vim-astro'
+
 call plug#end()
 
 """"

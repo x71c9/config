@@ -983,9 +983,9 @@ map <F9> :echo "fg<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg") .
 """"""""""""""" Prettier """"""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""
 " let g:prettier#autoformat = 1
-let g:prettier#autoformat_config_present = 1
-let g:prettier#quickfix_enabled = 0
-let g:prettier#quickfix_auto_focus = 0
+" let g:prettier#autoformat_config_present = 1
+" let g:prettier#quickfix_enabled = 0
+" let g:prettier#quickfix_auto_focus = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""" COC Autocomplete """"""""""""""""""""

@@ -58,7 +58,7 @@ set swapfile
 " all yanked buffer will be saved also to xclip X default clipboard
 "
 """"
-set clipboard=unnamed
+" set clipboard=unnamed
 
 """""
 " case insensitive search

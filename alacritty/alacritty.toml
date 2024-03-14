@@ -1,0 +1,57 @@
+live_config_reload = true
+# tabspaces = 2
+
+[colors.cursor]
+cursor = "#FF00CC"
+text = "#1d1f21"
+
+[colors.normal]
+black = "#000000"
+blue = "#2472c8"
+cyan = "#11a8cd"
+green = "#0dbc79"
+magenta = "#bc3fbc"
+red = "#cd3131"
+white = "#e5e5e5"
+yellow = "#e5e510"
+
+[colors.primary]
+background = "#000000"
+foreground = "#FFFFFF"
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1"
+
+[font]
+size = 10.5
+
+[font.bold]
+family = "IBM Plex Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "IBM Plex Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "IBM Plex Mono"
+style = "Italic"
+
+[font.normal]
+family = "IBM Plex Mono"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 2
+
+[scrolling]
+history = 10000
+multiplier = 10
+
+[window]
+# option_as_alt = false
+
+[window.padding]
+x = 0
+y = 0

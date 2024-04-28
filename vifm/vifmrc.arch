@@ -208,8 +208,7 @@ fileviewer {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,
   \*.opus},<audio/*>
   \ sox %c -n stat
 
-filetype {.mp4},<audio/*>
-  \ {Open with MPV}
+filetype {*.mp4}
   \ mpv %c
 
 " Video

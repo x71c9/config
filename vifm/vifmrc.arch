@@ -227,7 +227,7 @@ fileviewer {*.txt,*.md,*.js,*.ts,*.json,*.config,*.sh},<text/*>
 
 " Image
 filetype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
-  \ pc %c,
+  bash ~/repos/scripts/bash/system/i3_open_chromium.sh %c,
 fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
   \ identify %f
 

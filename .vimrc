@@ -89,6 +89,14 @@ sunmap <Space>
 let mapleader = " "
 
 """""
+" Copy to mac cliboard
+" Map Ctrl + C in visual mode to copy to clipboard
+"
+""""
+vnoremap <C-c> :w !pbcopy<CR><CR>
+
+
+"""""
 " If set to high value like 999 the cursor will be always in the middle of
 " the window.
 " The value is how many rows must be always before and after the cursor.

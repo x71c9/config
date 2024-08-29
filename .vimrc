@@ -1004,7 +1004,9 @@ map <F9> :echo "fg<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg") .
 " let g:prettier#autoformat_config_present = 1
 " let g:prettier#quickfix_enabled = 0
 " let g:prettier#quickfix_auto_focus = 0
-command! Prettier :%!prettier --bracket-same-line --log-level=error
+" command! Prettier :%!prettier --bracket-same-line --log-level=error
+command! Prettier :silent exec '!prettier --write % >/dev/null 2>&1'
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""

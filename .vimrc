@@ -94,7 +94,10 @@ let mapleader = " "
 "
 """"
 " vnoremap <C-c> :w !pbcopy<CR><CR>
-vnoremap <C-c> :w !pbcopy
+" MacOS
+" vnoremap <C-c> :w !pbcopy
+" Arch
+vnoremap <C-c> :w !xclip -selection clipboard
 
 
 """""

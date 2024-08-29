@@ -1004,8 +1004,14 @@ map <F9> :echo "fg<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg") .
 " let g:prettier#autoformat_config_present = 1
 " let g:prettier#quickfix_enabled = 0
 " let g:prettier#quickfix_auto_focus = 0
+
+" Enable silent mode for vim-prettier to suppress messages
+let g:prettier#exec_cmd_async = 1
+let g:prettier#quickfix_enabled = 0
+let g:prettier#exec_cmd_bang = 1
+
 " command! Prettier :%!prettier --bracket-same-line --log-level=error
-command! Prettier :silent exec '!prettier --write % >/dev/null 2>&1'
+" command! Prettier :silent exec '!prettier --write % >/dev/null 2>&1'
 
 
 

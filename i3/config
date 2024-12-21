@@ -278,7 +278,7 @@ bindsym $mod+z bar mode toggle
 bar {
 	mode hide
 	# hidden_state hide
-	modifier Ctrl
+	# modifier Ctrl
 	tray_padding 5
 	status_command i3status -c /home/x71c9/.config/i3status/i3status.conf
 	# status_command exec /home/x71c9/.config/i3/net-speed.sh

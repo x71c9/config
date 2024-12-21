@@ -16,7 +16,8 @@ set $mod Mod4
 # font pango:monospace 8
 # font pango:IBM VGA 9x16 9
 # font pango:Hack 9
-font pango:IBM Plex Mono 10
+# font pango:IBM Plex Mono 10
+font pango:IBM Plex Mono 0
 
 for_window [class="^floating$"] floating enable
 
@@ -164,7 +165,7 @@ bindsym $mod+Shift+Right move right
 
 bindsym $mod+g gaps inner current set 10, border pixel 2
 bindsym $mod+Shift+g gaps inner current set 0, border pixel 2
-# bindsym $mod+f gaps inner current set 0, border pixel 0
+bindsym $mod+f gaps inner current set 0, border pixel 0
 bindsym $mod+Shift+f fullscreen toggle
 
 # focus the child container

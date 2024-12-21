@@ -167,7 +167,10 @@ bindsym $mod+Shift+Right move right
 
 bindsym $mod+g gaps inner current set 10, border pixel 2
 bindsym $mod+f gaps inner current set 0, border pixel 2
-bindsym $mod+Shift+f gaps inner current set 0, border pixel 0, font pango:DejaVu Sans Mono 0, for_window [class=".*"] title_format "<span alpha='1'>%title</span>"
+bindsym $mod+Shift+f gaps inner current set 0, border pixel 0
+
+# font pango:DejaVu Sans Mono 0
+# for_window [class=".*"] title_format "<span alpha='1'>%title</span>"
 
 # focus the child container
 #bindsym $mod+d focus child

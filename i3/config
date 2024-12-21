@@ -167,6 +167,8 @@ bindsym $mod+Shift+g gaps inner current set 0, border pixel 2
 bindsym $mod+f gaps inner current set 0, border pixel 0
 bindsym $mod+Shift+f fullscreen toggle
 
+force_focus_wrapping yes
+
 # focus the child container
 #bindsym $mod+d focus child
 

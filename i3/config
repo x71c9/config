@@ -170,7 +170,7 @@ bindsym $mod+Shift+f fullscreen toggle
 # bindsym $mod+f exec i3-msg "font pango:DejaVu Sans Mono 0, for_window [class=.*] title_format '<span alpha=\"1\">%title</span>', border pixel 0"
 # bindsym $mod+f exec i3-msg "font pango:DejaVu Sans Mono 0; for_window [class=.*] title_format '<span alpha=\"1\">%title</span>'; border pixel 0"
 
-border pixel 0
+for_window [title=".*"] border pixel 0
 
 
 

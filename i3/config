@@ -165,8 +165,8 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+Shift+g gaps inner current set 10
 bindsym $mod+Shift+f gaps inner current set 0
 
-bindsym $mod+d gaps inner current set 0 border pixel 0
-bindsym $mod+Shift+d gaps inner current set 10 border pixel 3
+bindsym $mod+d gaps inner current set 0, border none
+bindsym $mod+Shift+d gaps inner current set 10, border pixel 3
 
 # focus the child container
 #bindsym $mod+d focus child

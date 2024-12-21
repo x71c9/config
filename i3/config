@@ -119,9 +119,6 @@ bindsym $mod+p exec --no-startup-id rofi-pass
 # keybind for opening typescript playground in a new window of firefox
 bindsym $mod+Shift+p exec --no-startup-id firefox --new-window https://www.typescriptlang.org/play
 
-# enter fullscreen mode for the focused container
-# bindsym $mod+f fullscreen toggle
-
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -166,8 +163,13 @@ bindsym $mod+Shift+Right move right
 # bindsym $mod+Shift+f gaps inner current set 0
 
 bindsym $mod+g gaps inner current set 10, border pixel 2
-bindsym $mod+f gaps inner current set 0, border pixel 2
-bindsym $mod+Shift+f gaps inner current set 0, border pixel 0
+bindsym $mod+Shift+g gaps inner current set 0, border pixel 2
+# bindsym $mod+f gaps inner current set 0, border pixel 0
+bindsym $mod+Shift+f fullscreen toggle
+
+bindsym $mod+f exec i3-msg "font pango:DejaVu Sans Mono 0, for_window [class=.*] title_format '<span alpha=\"1\">%title</span>', border pixel 0"
+
+
 
 # font pango:DejaVu Sans Mono 0
 # for_window [class=".*"] title_format "<span alpha='1'>%title</span>"

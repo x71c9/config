@@ -120,7 +120,7 @@ bindsym $mod+p exec --no-startup-id rofi-pass
 bindsym $mod+Shift+p exec --no-startup-id firefox --new-window https://www.typescriptlang.org/play
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+# bindsym $mod+f fullscreen toggle
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -162,11 +162,12 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # Keybind to set gap or no gap
-bindsym $mod+Shift+g gaps inner current set 10
-bindsym $mod+Shift+f gaps inner current set 0
+# bindsym $mod+Shift+g gaps inner current set 10
+# bindsym $mod+Shift+f gaps inner current set 0
 
-bindsym $mod+d gaps inner current set 0, border none
-bindsym $mod+Shift+d gaps inner current set 10, border pixel 3
+bindsym $mod+g gaps inner current set 10, border pixel 2
+bindsym $mod+f gaps inner current set 0, border pixel 2
+bindsym $mod+Shift+f gaps inner current set 0, border pixel 0
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -368,3 +369,6 @@ exec --no-startup-id redshift -l 52.520008:13.404954
 
 # Start megasync
 exec --no-startup-id megasync
+
+font pango:DejaVu Sans Mono 0
+for_window [class=".*"] title_format "<span alpha='0'>%title</span>"

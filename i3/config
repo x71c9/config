@@ -94,7 +94,7 @@ bindsym $mod+a focus parent
 
 # change focus between tiling / floating windows
 # bindsym $mod+space focus mode_toggle
-bindsym $mod+d focus mode_toggle
+# bindsym $mod+d focus mode_toggle
 
 # change container layout (stacked, tabbed)
 bindsym $mod+s layout stacking
@@ -164,6 +164,9 @@ bindsym $mod+Shift+Right move right
 # Keybind to set gap or no gap
 bindsym $mod+Shift+g gaps inner current set 10
 bindsym $mod+Shift+f gaps inner current set 0
+
+bindsym $mod+d gaps inner current set 0 border pixel 0
+bindsym $mod+Shift+d gaps inner current set 10 border pixel 3
 
 # focus the child container
 #bindsym $mod+d focus child

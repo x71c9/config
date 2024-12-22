@@ -36,10 +36,10 @@ y = 2
 history = 10000
 multiplier = 10
 
-[window]
-# option_as_alt = false
-
 [window.padding]
 x = 0
 y = 0
+
+[window]
+# option_as_alt = false
 

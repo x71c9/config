@@ -14,7 +14,7 @@ size = 10.5
 
 [font.normal]
 # family = "IBM Plex Mono"
-family = "Inconsolata"
+family = "DejaVu Sans Mono"
 style = "Regular"
 
 [font.bold]

@@ -10,11 +10,11 @@ import = ["/home/x71c9/.config/alacritty/rootloops.toml"]
 WINIT_X11_SCALE_FACTOR = "1"
 
 [font]
-size = 10.5
+size = 9.5
 
 [font.normal]
 # family = "IBM Plex Mono"
-family = "DejaVu Sans Mono"
+family = "JetBrains Mono"
 style = "Regular"
 
 [font.bold]

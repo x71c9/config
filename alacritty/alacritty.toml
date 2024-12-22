@@ -14,7 +14,7 @@ size = 10.5
 
 [font.normal]
 # family = "IBM Plex Mono"
-family = "P052"
+family = "Liberation Mono"
 style = "Regular"
 
 [font.bold]

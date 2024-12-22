@@ -1,23 +1,25 @@
 live_config_reload = true
 # tabspaces = 2
 
-[colors.cursor]
-cursor = "#FF00CC"
-text = "#1d1f21"
+import = ["/home/x71c9/.config/alacritty/dracula.toml"]
 
-[colors.normal]
-black = "#000000"
-blue = "#2472c8"
-cyan = "#11a8cd"
-green = "#0dbc79"
-magenta = "#bc3fbc"
-red = "#cd3131"
-white = "#e5e5e5"
-yellow = "#e5e510"
+# [colors.cursor]
+# cursor = "#FF00CC"
+# text = "#1d1f21"
 
-[colors.primary]
-background = "#000000"
-foreground = "#FFFFFF"
+# [colors.normal]
+# black = "#000000"
+# blue = "#2472c8"
+# cyan = "#11a8cd"
+# green = "#0dbc79"
+# magenta = "#bc3fbc"
+# red = "#cd3131"
+# white = "#e5e5e5"
+# yellow = "#e5e510"
+
+# [colors.primary]
+# background = "#000000"
+# foreground = "#FFFFFF"
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1"
@@ -56,4 +58,3 @@ multiplier = 10
 x = 0
 y = 0
 
-import = ["./dracula.toml"]

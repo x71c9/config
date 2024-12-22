@@ -3,7 +3,8 @@ live_config_reload = true
 
 # import = ["/home/x71c9/.config/alacritty/dracula.toml"]
 # import = ["/home/x71c9/.config/alacritty/custom.toml"]
-import = ["/home/x71c9/.config/alacritty/catpuccin.toml"]
+# import = ["/home/x71c9/.config/alacritty/catpuccin.toml"]
+import = ["/home/x71c9/.config/alacritty/rootloops.toml"]
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1"

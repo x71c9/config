@@ -1,7 +1,8 @@
 live_config_reload = true
 # tabspaces = 2
 
-import = ["/home/x71c9/.config/alacritty/dracula.toml"]
+# import = ["/home/x71c9/.config/alacritty/dracula.toml"]
+import = ["/home/x71c9/.config/alacritty/catpuccin.toml"]
 
 # [colors.cursor]
 # cursor = "#FF00CC"

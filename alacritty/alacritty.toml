@@ -13,20 +13,19 @@ WINIT_X11_SCALE_FACTOR = "1"
 size = 10.5
 
 [font.normal]
-# family = "IBM Plex Mono"
 family = "JetBrains Mono"
 style = "Regular"
 
 [font.bold]
-family = "IBM Plex Mono"
+family = "JetBrains Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "IBM Plex Mono"
+family = "JetBrains Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "IBM Plex Mono"
+family = "JetBrains Mono"
 style = "Italic"
 
 [font.offset]

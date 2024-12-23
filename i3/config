@@ -16,7 +16,8 @@ set $mod Mod4
 # font pango:monospace 8
 # font pango:IBM VGA 9x16 9
 # font pango:Hack 9
-font pango:IBM Plex Mono 10
+# font pango:IBM Plex Mono 10
+font pango:JetBrain Mono 10
 
 for_window [class="^floating$"] floating enable
 

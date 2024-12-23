@@ -256,6 +256,7 @@ default_floating_border pixel 2
 
 # Colors
 set $black        #000000
+set $grey         #999999
 set $white        #ffffff
 # set $purple       #6c2bf9
 set $purple       #6c2bf9
@@ -268,7 +269,7 @@ set $purple_dark  #230858
 # class                  border    background    text    indicator
 client.focused           $purple_dark   $purple_dark  $white  $purple
 # client.focused_inactive  $purple_dark   $purple_dark  $white  $purple
-client.unfocused $purple_dark   $purple_dark  $white  $purple
+client.unfocused $black   $black  $grey  $purple
 # client.urgent
 # client.placeholder
 # client.background

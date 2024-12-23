@@ -17,7 +17,7 @@ set $mod Mod4
 # font pango:IBM VGA 9x16 9
 # font pango:Hack 9
 # font pango:IBM Plex Mono 10
-font pango:JetBrain Mono 10
+font pango:JetBrains Mono 10
 
 for_window [class="^floating$"] floating enable
 
@@ -285,11 +285,11 @@ bar {
 	# status_command exec /home/x71c9/.config/i3/net-speed.sh
 	separator_symbol "::"
 	colors {
-		background $purple_dark
+		background $black
 		# class							border 				background		text
 		active_workspace 		$purple 			$purple 			$purple
 		focused_workspace 	$purple_dark 	$purple 			$white
-		inactive_workspace 	$purple_dark 	$purple_dark 	$white
+		inactive_workspace 	$black 	$black 	$white
 	}
 }
 

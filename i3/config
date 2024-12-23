@@ -267,8 +267,8 @@ set $purple_dark  #230858
 
 # class                  border    background    text    indicator
 client.focused           $purple_dark   $purple_dark  $white  $purple
-# client.focused_inactive
-# client.unfocused
+# client.focused_inactive  $purple_dark   $purple_dark  $white  $purple
+client.unfocused $purple_dark   $purple_dark  $white  $purple
 # client.urgent
 # client.placeholder
 # client.background

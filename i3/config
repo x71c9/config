@@ -257,7 +257,8 @@ default_floating_border pixel 2
 # Colors
 set $black        #000000
 set $white        #ffffff
-set $purple       #6c2bf9
+# set $purple       #6c2bf9
+set $purple       #b77ed1
 set $white        #fdfdfd
 set $blue         #3c0ef3
 set $purple_light #a265f8

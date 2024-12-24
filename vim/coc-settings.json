@@ -7,13 +7,11 @@
   "suggest.autoTrigger": "trigger",
   "suggest.languageSourcePriority": 99,
   "tsserver.useLocalTsdk": true,
-  "languageserver": {
-    "rust-analyzer": {
-      "inlayHints": {
-        "typeHints": false,
-        "parameterHints": true,
-        "chainingHints": true
-      }
+  "rust-analyzer": {
+    "inlayHints": {
+      "typeHints": false,
+      "parameterHints": true,
+      "chainingHints": true
     }
   }
 }

@@ -1684,5 +1684,5 @@ augroup END
 """"""""""""""""""""" RUST """"""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " leader+f to format rust file 
-nnoremap <silent> <leader>f :w<CR>:!rustfmt %<CR>:e<CR>
+nnoremap <silent> <leader>f :w<CR>:call system('rustfmt ' . shellescape(expand('%')))<CR>:edit<CR>
 

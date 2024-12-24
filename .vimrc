@@ -1680,3 +1680,9 @@ augroup MyVimspectorUICustomistaion
 augroup END
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""" RUST """"""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" leader+f to format rust file 
+nnoremap <silent> <leader>f :w<CR>:!rustfmt %<CR>:e<CR>
+

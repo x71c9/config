@@ -1686,3 +1686,6 @@ augroup END
 " leader+f to format rust file 
 nnoremap <silent> <leader>f :w<CR>:call system('rustfmt ' . shellescape(expand('%')))<CR>:edit<CR>
 
+" Set 2 space for Rust tab
+autocmd FileType rust setlocal shiftwidth=2 tabstop=2 expandtab
+

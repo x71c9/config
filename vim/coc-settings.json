@@ -7,12 +7,11 @@
   "suggest.autoTrigger": "trigger",
   "suggest.languageSourcePriority": 99,
   "tsserver.useLocalTsdk": true,
-  "rust-analyzer.serverPath": "/home/x71c9/.cargo/bin/rust-analyzer",
   "rust-analyzer": {
     "inlayHints": {
       "typeHints": false,
-      "parameterHints": true,
-      "chainingHints": true
+      "parameterHints": false,
+      "chainingHints": false
     }
   }
 }

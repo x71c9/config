@@ -93,11 +93,13 @@ let mapleader = " "
 " Map Ctrl + C in visual mode to copy to clipboard
 "
 """"
-" vnoremap <C-c> :w !pbcopy<CR><CR>
 " MacOS
-" vnoremap <C-c> :w !pbcopy
+" vnoremap <C-c> :w !pbcopy<CR><CR>
 " Arch
-vnoremap <C-c> :w !xclip -selection clipboard
+" vnoremap <C-c> :w !pbcopy
+" Current
+" vnoremap <C-c> :w !xclip -selection clipboard
+vnoremap <C-c> :w !pbcopy
 
 
 """""

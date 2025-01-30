@@ -1702,8 +1702,8 @@ autocmd FileType rust setlocal shiftwidth=2 tabstop=2 expandtab
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " complete text on the current line or in visual selection
-nnoremap <leader>a :AI<CR>
-xnoremap <leader>a :AI<CR>
+nnoremap <leader>a :AI
+xnoremap <leader>a :AI
 
 " edit text with a custom prompt
 xnoremap <leader>s :AIEdit fix grammar and spelling<CR>

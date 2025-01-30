@@ -800,6 +800,12 @@ Plug 'leafOfTree/vim-svelte-plugin'
 """"
 Plug 'wuelnerdotexe/vim-astro'
 
+""""
+" Plugin for AI
+"
+""""
+Plug 'madox2/vim-ai'
+
 call plug#end()
 
 """"

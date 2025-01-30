@@ -1709,18 +1709,20 @@ let g:vim_ai_roles_config_file = '~/.vim/vim-ai/roles.ini'
 "   \ 'model': 'mistral',
 "   \ 'stream': v:true
 "   \ }
-let g:vim_ai_provider = {
-      \ 'url': 'http://localhost:11434/api/generate',
-      \ 'method': 'POST',
-      \ 'headers': {'Content-Type': 'application/json'},
-      \ 'body': {
-      \   'model': 'mistral',
-      \   'prompt': '<PROMPT>',
-      \   'stream': 'v:false',
-      \ },
-      \ 'stream': 1
-      \ }
+" let g:vim_ai_provider = {
+"       \ 'url': 'http://localhost:11434/api/generate',
+"       \ 'method': 'POST',
+"       \ 'headers': {'Content-Type': 'application/json'},
+"       \ 'body': {
+"       \   'model': 'mistral',
+"       \   'prompt': '<PROMPT>',
+"       \   'stream': 'v:false',
+"       \ },
+"       \ 'stream': 1
+"       \ }
 
+let s:vim_ai_endpoint_url = "http://localhost:1337/v1/chat/completions"
+let s:vim_ai_model = "mistral"
 
 " complete text on the current line or in visual selection
 nnoremap <leader>a :AI

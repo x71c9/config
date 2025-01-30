@@ -1725,16 +1725,16 @@ let g:vim_ai_roles_config_file = '~/.vim/vim-ai/roles.ini'
 let g:vim_ai_chat = s:vim_ai_chat_config
 
 " complete text on the current line or in visual selection
-nnoremap <leader>a :AI
-xnoremap <leader>a :AI
+nnoremap <leader>a :AIChat
+" xnoremap <leader>a :AIChat
 
 " edit text with a custom prompt
-xnoremap <leader>s :AIEdit fix grammar and spelling<CR>
-nnoremap <leader>s :AIEdit fix grammar and spelling<CR>
+" xnoremap <leader>s :AIEdit fix grammar and spelling<CR>
+" nnoremap <leader>s :AIEdit fix grammar and spelling<CR>
 
-" trigger chat
-xnoremap <leader>c :AIChat<CR>
-nnoremap <leader>c :AIChat<CR>
+" " trigger chat
+" xnoremap <leader>c :AIChat<CR>
+" nnoremap <leader>c :AIChat<CR>
 
-" redo last AI command
-nnoremap <leader>r :AIRedo<CR>
+" " redo last AI command
+" nnoremap <leader>r :AIRedo<CR>

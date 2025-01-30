@@ -1697,3 +1697,21 @@ nnoremap <silent> <leader>f :w<CR>:call system('rustfmt ' . shellescape(expand('
 " Set 2 space for Rust tab
 autocmd FileType rust setlocal shiftwidth=2 tabstop=2 expandtab
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""" VIM AI """""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" complete text on the current line or in visual selection
+nnoremap <leader>a :AI<CR>
+xnoremap <leader>a :AI<CR>
+
+" edit text with a custom prompt
+xnoremap <leader>s :AIEdit fix grammar and spelling<CR>
+nnoremap <leader>s :AIEdit fix grammar and spelling<CR>
+
+" trigger chat
+xnoremap <leader>c :AIChat<CR>
+nnoremap <leader>c :AIChat<CR>
+
+" redo last AI command
+nnoremap <leader>r :AIRedo<CR>

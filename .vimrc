@@ -1704,11 +1704,23 @@ autocmd FileType rust setlocal shiftwidth=2 tabstop=2 expandtab
 let g:vim_ai_roles_config_file = '~/.vim/vim-ai/roles.ini'
 
 " set up for ollama
-let g:vim_ai_chat_model = 'http://localhost:11434/api/generate'
-let g:vim_ai_chat_params = {
-  \ 'model': 'mistral',
-  \ 'stream': v:true
-  \ }
+" let g:vim_ai_chat_model = 'http://localhost:11434/api/generate'
+" let g:vim_ai_chat_params = {
+"   \ 'model': 'mistral',
+"   \ 'stream': v:true
+"   \ }
+let g:vim_ai_provider = {
+      \ 'url': 'http://localhost:11434/api/generate',
+      \ 'method': 'POST',
+      \ 'headers': {'Content-Type': 'application/json'},
+      \ 'body': {
+      \   'model': 'mistral',
+      \   'prompt': '<PROMPT>',
+      \   'stream': 'v:false',
+      \ },
+      \ 'stream': 1
+      \ }
+
 
 " complete text on the current line or in visual selection
 nnoremap <leader>a :AI

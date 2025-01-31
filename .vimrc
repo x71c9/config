@@ -1725,7 +1725,7 @@ let g:vim_ai_roles_config_file = '~/.vim/vim-ai/roles.ini'
 " let g:vim_ai_chat = s:vim_ai_chat_config
 
 " complete text on the current line or in visual selection
-nnoremap <leader>a :AIChat<CR>
+nnoremap <leader>a :AIChat /tab<CR>
 " nnoremap <leader>m :AIChat /mistral<CR>
 " xnoremap <leader>a :AIChat
 

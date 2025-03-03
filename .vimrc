@@ -98,8 +98,8 @@ let mapleader = " "
 " Arch
 " vnoremap <C-c> :w !pbcopy
 " Current
-" vnoremap <C-c> :w !xclip -selection clipboard
-vnoremap <C-c> :w !pbcopy
+vnoremap <C-c> :w !xclip -selection clipboard
+" vnoremap <C-c> :w !pbcopy
 
 
 """""

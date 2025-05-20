@@ -166,7 +166,8 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+g gaps inner current set 10, border pixel 2
 bindsym $mod+Shift+g gaps inner current set 0, border pixel 2
 bindsym $mod+f gaps inner current set 0, border pixel 0
-bindsym $mod+Shift+f fullscreen toggle
+bindsym $mod+Shift+f gaps inner current set 0, border pixel 2
+# bindsym $mod+Shift+f fullscreen toggle
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -248,11 +249,12 @@ exec_always --no-startup-id setxkbmap it
 # exec_always --no-startup-id feh --bg-fill /home/x71c9/Pictures/wallpapers/005.jpg
 
 # Display a random wallpaper within a directory
-exec_always --no-startup-id feh --bg-fill $(find ~/Pictures/wallpapers/ -type f -print0 | shuf -z -n 1 | xargs -0 realpath)
+# exec_always --no-startup-id feh --bg-fill $(find ~/Pictures/wallpapers/ -type f -print0 | shuf -z -n 1 | xargs -0 realpath)
 
 # Window style
-default_border pixel 2
-default_floating_border pixel 2
+# default_border pixel 2
+default_border pixel 0
+default_floating_border pixel 3
 
 # Colors
 set $black        #000000
@@ -274,12 +276,13 @@ client.unfocused $black   $black  $grey  $purple
 # client.placeholder
 # client.background
 
-bindsym $mod+z bar mode toggle
+bindsym $mod+z bar mode invisible
+bindsym $mod+Shift+z bar mode dock
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	mode hide
+	mode invisible
 	# hidden_state hide
 	# modifier Ctrl
 	tray_padding 5
@@ -296,7 +299,8 @@ bar {
 }
 
 # Inner gaps
-gaps inner 10px
+# gaps inner 10px
+gaps inner 0px
 
 # Keybinding for volume
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-

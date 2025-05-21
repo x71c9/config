@@ -933,10 +933,10 @@ command! Tc :tabclose
 " Mapping missspelled
 "
 """""
-command WQ wq
-command Wq wq
-command W w
-command Q q
+" command WQ wq
+" command Wq wq
+" command W w
+" command Q q
 
 """""
 " Remap ctrl-n to :cn for going next entry to quicklist after :grep

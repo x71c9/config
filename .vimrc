@@ -99,7 +99,12 @@ let mapleader = " "
 " vnoremap <C-c> :w !pbcopy
 " Current
 " vnoremap <C-c> :w !xclip -selection clipboard
-vnoremap <C-c> :w !pbcopy
+" vnoremap <C-c> :w !pbcopy
+if has("macunix")
+  vnoremap <C-c> :w !pbcopy<CR>
+elseif has("unix")
+  vnoremap <C-c> :w !xclip -selection clipboard<CR>
+endif
 
 
 """""

@@ -138,6 +138,16 @@ bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
+# move focused workspace to another external monitor
+bindsym $mod+Ctrl+Left move workspace to output left
+bindsym $mod+Ctrl+j move workspace to output left
+bindsym $mod+Ctrl+Right move workspace to output right
+bindsym $mod+Ctrl+l move workspace to output right
+bindsym $mod+Ctrl+Up move workspace to output up
+bindsym $mod+Ctrl+k move workspace to output up
+bindsym $mod+Ctrl+Down move workspace to output down
+bindsym $mod+Ctrl+j move workspace to output down
+
 # Keybinding for i3lock
 bindsym $mod+x exec --no-startup-id i3lock -f -c 230858 --nofork
 

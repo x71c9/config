@@ -171,6 +171,8 @@ bindsym $mod+x exec --no-startup-id \
   XSECURELOCK_PASSWORD_PROMPT=time_hex \
   XSECURELOCK_SHOW_DATETIME=1 \
   XSECURELOCK_FONT=monospace-10 \
+  XSECURELOCK_SAVER=saver_text \
+  TEXT_X_ALIGNMENT=start \
   xsecurelock
 
 # reload the configuration file

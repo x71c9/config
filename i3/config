@@ -159,7 +159,10 @@ bindsym $mod+Ctrl+Space move workspace to output eDP1
 # bindsym $mod+x exec --no-startup-id i3lock -f -c 230858 --nofork
 
 # Keybinding for xsecurelock
-bindsym $mod+x exec --no-startup-id xsecurelock
+bindsym $mod+x exec --no-startup-id \
+  XSECURELOCK_SHOW_DATETIME=1 \
+  XSECURELOCK_FONT=monospace-10 \
+  xsecurelock
 
 # reload the configuration file
 bindsym $mod+c reload
